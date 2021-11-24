@@ -2,61 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="546c8965-a5c2-42b4-851c-68550b195efc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Controller.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Controller.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Grid.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Grid.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Skybox Light.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Materials/Skybox Light.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models/XRControllerLeft.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models/XRControllerLeft.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models/XRControllerRight.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Models/XRControllerRight.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs/XRControllerLeft.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs/XRControllerLeft.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs/XRControllerRight.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Prefabs/XRControllerRight.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Textures/Grid_Light_512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Textures/Grid_Light_512x512.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images/1-welcome-screen-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images/1-welcome-screen-image.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images/project-header-vr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/Images/project-header-vr.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialContainer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialContainer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialProjectSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialProjectSettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialStyle.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialStyle.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialWelcomePage.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Tutorial/VRTutorialWelcomePage.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Loaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Loaders.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Loaders/Oculus Loader.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Loaders/Oculus Loader.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Loaders/Windows MR Loader.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Loaders/Windows MR Loader.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Windows MR Package Settings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Windows MR Package Settings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +14,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.8/Runtime/CameraOffset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/MovementTypeManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21A8TlWMOdvaEDHSfnWGBXYdcaG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -113,6 +60,8 @@
       <option name="presentableId" value="Default" />
       <updated>1637372545664</updated>
       <workItem from="1637372545666" duration="2155000" />
+      <workItem from="1637509214774" duration="3690000" />
+      <workItem from="1637630529231" duration="6473000" />
     </task>
     <servers />
   </component>
@@ -122,6 +71,18 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
