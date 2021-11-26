@@ -1,0 +1,33 @@
+{
+    "name": "CatacombsTesting",
+    "maps": [
+        {
+            "name": "Default",
+            "id": "bc7b1e67-201a-4552-ba7d-4db08a7a844a",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "088dd5d1-aa08-45eb-96f4-04438c942ec0",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c0186f24-5a5c-4ae5-93ce-c5665803844c",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
