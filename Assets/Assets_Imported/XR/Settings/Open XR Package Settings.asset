@@ -28,13 +28,13 @@ MonoBehaviour:
   m_Name: WSA
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -5020403904505872697}
-  - {fileID: 525010687891301071}
-  - {fileID: -5926334345299491812}
-  - {fileID: -2435196786254347634}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 3433460861682210786}
-  - {fileID: -1610698438490692892}
-  - {fileID: 4555900950678648565}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -7505816792569636385}
   - {fileID: 7649316936511985670}
   m_renderMode: 1
