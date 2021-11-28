@@ -3,6 +3,55 @@
   <component name="ChangeListManager">
     <list default="true" id="546c8965-a5c2-42b4-851c-68550b195efc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Materials/Controller.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Materials/Controller.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Materials/Grid.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Materials/Grid.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Materials/Skybox Light.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Materials/Skybox Light.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Models/XRControllerLeft.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Models/XRControllerLeft.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Models/XRControllerRight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Models/XRControllerRight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Prefabs/XRControllerLeft.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Prefabs/XRControllerLeft.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Prefabs/XRControllerRight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Prefabs/XRControllerRight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Textures/Grid_Light_512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Textures/Grid_Light_512x512.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/Images/1-welcome-screen-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/Images/1-welcome-screen-image.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/Images/project-header-vr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/Images/project-header-vr.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/VRTutorialContainer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/VRTutorialContainer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/VRTutorialProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/VRTutorialProjectSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/VRTutorialStyle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/VRTutorialStyle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/VRTutorialWelcomePage.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/ExampleAssets/Tutorial/VRTutorialWelcomePage.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/OculusHandModels1.0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/OculusHandModels1.0/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/OculusHandModels1.0/LICENSE.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/OculusHandModels1.0/LeftHand.mb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/OculusHandModels1.0/LeftHand.mb.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/OculusHandModels1.0/RightHand.mb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/OculusHandModels1.0/RightHand.mb.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets_Imported/XR/Settings/Open XR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets_Imported/XR/Settings/Open XR Package Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XR Rig.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/XR Rig.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/1.0.0-pre.8/Default Input Actions/XRI Default Input Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/1.0.0-pre.8/Default Input Actions/XRI Default Input Actions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_HubWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_HubWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +63,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.8/Runtime/CameraOffset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.8/Editor/Interaction/Controllers/XRBaseControllerEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.8/Runtime/Interaction/Controllers/XRBaseController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/MovementTypeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.8/Runtime/Interaction/Controllers/XRController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21A8TlWMOdvaEDHSfnWGBXYdcaG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,6 +114,7 @@
       <workItem from="1637372545666" duration="2155000" />
       <workItem from="1637509214774" duration="3690000" />
       <workItem from="1637630529231" duration="6473000" />
+      <workItem from="1638062363783" duration="3797000" />
     </task>
     <servers />
   </component>
