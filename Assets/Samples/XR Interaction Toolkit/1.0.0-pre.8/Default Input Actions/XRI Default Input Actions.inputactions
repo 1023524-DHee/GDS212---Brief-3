@@ -170,6 +170,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "c18a35ba-a5a1-43ea-a753-23acb79b6674",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -500,6 +508,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59993538-f191-4fdc-9314-da06c1b6a9a5",
+                    "path": "<XRController>{LeftHand}/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
