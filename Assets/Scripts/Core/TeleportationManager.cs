@@ -62,6 +62,7 @@ namespace HorrorVR.Core
         private void OnTeleportActivate(InputAction.CallbackContext context)
         {
             if (_isActive) return;
+            if (MenuUI.current._menuIsOpen) return;
             
             CheckActiveController(context);
 
