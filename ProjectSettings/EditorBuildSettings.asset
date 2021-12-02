@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Testing_HubWorld.unity
+    guid: 79108bb51aac23943b8b89d5f60f79f1
+  - enabled: 1
+    path: Assets/Scenes/Scene_HubWorld.unity
+    guid: d07a3565b19ebaf4484135d9c0b8cb14
+  - enabled: 1
     path: Assets/Scenes/Scene_Forest.unity
     guid: b52311d9664ca1640b88378ac51e00d1
+  - enabled: 1
+    path: Assets/Scenes/Scene_Catacombs.unity
+    guid: db7127869b5ca90419538cdc71feed79
+  - enabled: 1
+    path: Assets/Scenes/Scene_PuzzleRoom.unity
+    guid: 655b025ebde22bb49bf44cf0f572bb29
+  - enabled: 1
+    path: Assets/Scenes/Puzzle_Greybox.unity
+    guid: b45604748e916184a86ea2404f3e51f1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
