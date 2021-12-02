@@ -79,27 +79,23 @@ namespace HorrorVR.Core
         
         private void OnTeleportConfirm(InputAction.CallbackContext context)
         {
-            RaycastHit hit;
+            RaycastHit hit = new RaycastHit();
             bool canTeleport = false;
             
             if (_currentController == ControllerTracker.Lcontroller)
             {
                 lRayInteractor.TryGetCurrent3DRaycastHit(out hit);
-                if (hit.collider.CompareTag("Ground"))
-                {
-                    canTeleport = true;
-                }
-
             }
-            else
+            else if(_currentController == ControllerTracker.Rcontroller)
             {
                 rRayInteractor.TryGetCurrent3DRaycastHit(out hit);
-                if (hit.collider.CompareTag("Ground"))
-                {
-                    canTeleport = true;
-                }
             }
 
+            if (hit.collider.CompareTag("Ground"))
+            {
+                canTeleport = true;
+            }
+            
             if (canTeleport)
             {
                 TeleportRequest request = new TeleportRequest()

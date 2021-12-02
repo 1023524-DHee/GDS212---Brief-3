@@ -345,16 +345,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 124442710185071468, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Scene_Forest
-      objectReference: {fileID: 0}
-    - target: {fileID: 2271056958196529053, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Scene_Catacombs
-      objectReference: {fileID: 0}
     - target: {fileID: 5005704542361647151, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_Name
@@ -419,15 +409,21 @@ PrefabInstance:
         type: 3}
       propertyPath: teleportationManager
       value: 
-      objectReference: {fileID: 5005704544220067924, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-        type: 3}
-    - target: {fileID: 8364737758777809467, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Scene_HubWorld
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 417380665}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d6d86672c692a4c861b3b7c7bbf41a, type: 3}
+--- !u!114 &417380665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 900693243, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+    type: 3}
+  m_PrefabInstance: {fileID: 417380664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1bfa440836ab644935ca960c1261f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &551355803
 GameObject:
   m_ObjectHideFlags: 0
