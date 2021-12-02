@@ -6226,6 +6226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Dwarf_Floor_08_With_Box_Collider
       objectReference: {fileID: 0}
+    - target: {fileID: 1995897829987142, guid: d0b3252380d3c2e409b4766ce183458c, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4846616323437562, guid: d0b3252380d3c2e409b4766ce183458c, type: 3}
       propertyPath: m_RootOrder
       value: 0
