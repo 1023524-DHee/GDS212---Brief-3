@@ -14,7 +14,6 @@ namespace HorrorVR.Core
         
         [SerializeField] private InputActionAsset actionAsset;
         [SerializeField] private ActionBasedContinuousMoveProvider continuousMoveProvider;
-        [SerializeField] private ActionBasedContinuousTurnProvider continuousTurnProvider;
         [SerializeField] private ActionBasedSnapTurnProvider snapTurnProvider;
         [SerializeField] private TeleportationProvider teleportationProvider;
         [SerializeField] private TeleportationManager teleportationManager;
@@ -56,7 +55,6 @@ namespace HorrorVR.Core
             
             continuousMoveProvider.enabled = true;
             
-            continuousTurnProvider.enabled = true;
             snapTurnProvider.enabled = true;
             
             teleportationProvider.enabled = false;
@@ -71,7 +69,6 @@ namespace HorrorVR.Core
             
             continuousMoveProvider.enabled = false;
             
-            continuousTurnProvider.enabled = false;
             snapTurnProvider.enabled = false;
             
             teleportationProvider.enabled = true;

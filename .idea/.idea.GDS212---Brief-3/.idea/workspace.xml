@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="546c8965-a5c2-42b4-851c-68550b195efc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XR Rig.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/XR Rig.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Forest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing_HubWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing_HubWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_HubWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_HubWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/MovementTypeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/MovementTypeManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/TeleportationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/TeleportationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
@@ -27,7 +26,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/RayToggler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/MenuUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/MovementTypeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HubWorld/BookLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.8/Runtime/Interaction/Controllers/XRController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.8/Runtime/XR/XRRig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/OffsetGrab.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21A8TlWMOdvaEDHSfnWGBXYdcaG" />
@@ -78,6 +79,9 @@
       <workItem from="1637630529231" duration="6473000" />
       <workItem from="1638062363783" duration="3797000" />
       <workItem from="1638428673254" duration="766000" />
+      <workItem from="1638429469625" duration="2046000" />
+      <workItem from="1638433987768" duration="1863000" />
+      <workItem from="1638435937818" duration="335000" />
     </task>
     <servers />
   </component>
