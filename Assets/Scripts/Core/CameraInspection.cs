@@ -60,10 +60,13 @@ namespace HorrorVR
         private bool InView (IInspectable inspectable)
         {
             Vector3 displacement = inspectable.Transform.position - transform.position;
-            return 
+            print (Vector3.Angle (-displacement, inspectable.Transform.forward));
+            return
                 displacement.sqrMagnitude <= inspectable.DistanceThreshold * inspectable.DistanceThreshold // Within distance threshold
                 &&
-                Vector3.Angle (displacement, transform.forward) <= inspectable.AngleThreshold; // Within angle threshold
+                Vector3.Angle (displacement, transform.forward) <= inspectable.LookAngleThreshold // Within look angle threshold
+                &&
+                Vector3.Angle (-displacement, inspectable.Transform.forward) <= inspectable.RelativeAngleThreshold; // Within relative angle threshold
         }
     }
 }
