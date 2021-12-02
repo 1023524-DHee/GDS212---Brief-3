@@ -462,6 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ef134574e65fc42b4b1617c402c80a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
   cubeAnimator: {fileID: 0}
   correctPosition: 0
   positionNumber: 0
@@ -747,6 +749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ef134574e65fc42b4b1617c402c80a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
   cubeAnimator: {fileID: 0}
   correctPosition: 0
   positionNumber: 0
@@ -3543,6 +3547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ef134574e65fc42b4b1617c402c80a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
   cubeAnimator: {fileID: 0}
   correctPosition: 0
   positionNumber: 270
@@ -4430,10 +4436,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ef134574e65fc42b4b1617c402c80a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
   cubeAnimator: {fileID: 0}
   correctPosition: 0
   positionNumber: 270
-  gate: {fileID: 0}
+  gate: {fileID: 733899633}
 --- !u!1001 &1764906393
 PrefabInstance:
   m_ObjectHideFlags: 0
