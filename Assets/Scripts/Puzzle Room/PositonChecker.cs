@@ -9,12 +9,14 @@ public class PositonChecker : MonoBehaviour
     public ObjectSpin objectThree;
     public ObjectSpin objectFour;
     public bool gateOpened;
+    public Animator gateAnimator;
     
     void Update()
     {
         if(objectOne.correctPosition == true && objectTwo.correctPosition == true 
             && objectThree.correctPosition == true && objectFour.correctPosition == true)
         {
+			gateAnimator.Play("OpenGateAnim");
             Debug.Log("Gate Opened");
             gateOpened = true;
         }

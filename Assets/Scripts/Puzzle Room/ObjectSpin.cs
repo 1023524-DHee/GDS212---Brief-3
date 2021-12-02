@@ -32,7 +32,7 @@ public class ObjectSpin : MonoBehaviour
 
             case 1:
                 //0-90 
-                cubeAnimator.Play("CubeAnim0-90");
+                cubeAnimator.Play("0 - 90");
                 if (positionNumber == 90)
                 {
                     correctPosition = true;
@@ -41,7 +41,7 @@ public class ObjectSpin : MonoBehaviour
 
             case 2:
                 //90-180
-                cubeAnimator.Play("CubeAnim90-180");
+                cubeAnimator.Play("90 - 180");
                 if (positionNumber == 180)
                 {
                     correctPosition = true;
@@ -50,7 +50,7 @@ public class ObjectSpin : MonoBehaviour
 
             case 3:
                 //180-270 
-                cubeAnimator.Play("CubeAnim180-270");
+                cubeAnimator.Play("180 - 270");
                 if (positionNumber == 270)
                 {
                     correctPosition = true;
@@ -59,7 +59,7 @@ public class ObjectSpin : MonoBehaviour
 
             case 4:
                 //270-360
-                cubeAnimator.Play("CubeAnim270-0");
+                cubeAnimator.Play("270 - 360");
                 if (positionNumber == 0)
                 {
                     correctPosition = true;
