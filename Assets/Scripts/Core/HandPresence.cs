@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,31 +19,36 @@ namespace HorrorVR.Core
         private Animator _LHandAnimator;
         private Animator _RHandAnimator;
 
+        private InputAction L_Grip;
+        private InputAction R_Grip;
+        private InputAction L_Trigger;
+        private InputAction R_Trigger;
+        
         // Start is called before the first frame update
         void Start()
         {
-            var L_Grip = actionAsset.FindActionMap("XRI LeftHand").FindAction("Grip");
+            _LHandAnimator = LSpawnedHandModel.GetComponent<Animator>();
+            _RHandAnimator = RSpawnedHandModel.GetComponent<Animator>();
+            
+            L_Grip = actionAsset.FindActionMap("XRI LeftHand").FindAction("Grip");
             L_Grip.Enable();
             L_Grip.performed += LGripAnimation;
             L_Grip.canceled += LUnGripAnimation;
             
-            var R_Grip = actionAsset.FindActionMap("XRI RightHand").FindAction("Grip");
+            R_Grip = actionAsset.FindActionMap("XRI RightHand").FindAction("Grip");
             R_Grip.Enable();
             R_Grip.performed += RGripAnimation;
             R_Grip.canceled += RUnGripAnimation;
             
-            var L_Trigger = actionAsset.FindActionMap("XRI LeftHand").FindAction("Trigger");
+            L_Trigger = actionAsset.FindActionMap("XRI LeftHand").FindAction("Trigger");
             L_Trigger.Enable();
             L_Trigger.performed += LPinchAnimation;
             L_Trigger.canceled += LUnPinchAnimation;
             
-            var R_Trigger = actionAsset.FindActionMap("XRI RightHand").FindAction("Trigger");
+            R_Trigger = actionAsset.FindActionMap("XRI RightHand").FindAction("Trigger");
             R_Trigger.Enable();
             R_Trigger.performed += RPinchAnimation;
             R_Trigger.canceled += RUnPinchAnimation;
-            
-            _LHandAnimator = LSpawnedHandModel.GetComponent<Animator>();
-            _RHandAnimator = RSpawnedHandModel.GetComponent<Animator>();
         }
 
         private void RGripAnimation(InputAction.CallbackContext context)
@@ -83,6 +89,26 @@ namespace HorrorVR.Core
         private void LUnPinchAnimation(InputAction.CallbackContext context)
         {
             _LHandAnimator.SetBool(triggerAnimBool, false);
+        }
+
+        private void OnDisable()
+        {
+            L_Grip.performed -= LGripAnimation;
+            L_Grip.canceled -= LUnGripAnimation;
+            
+            R_Grip.performed -= RGripAnimation;
+            R_Grip.canceled -= RUnGripAnimation;
+            
+            L_Trigger.performed -= LPinchAnimation;
+            L_Trigger.canceled -= LUnPinchAnimation;
+            
+            R_Trigger.performed -= RPinchAnimation;
+            R_Trigger.canceled -= RUnPinchAnimation;
+            
+            L_Grip.Disable();
+            R_Grip.Disable();
+            L_Trigger.Disable();
+            R_Trigger.Disable();
         }
     }
 }

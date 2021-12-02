@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,11 @@ namespace HorrorVR.Core
         [SerializeField] private TeleportationProvider teleportationProvider;
         [SerializeField] private Material blackoutMaterial;
 
+        private InputAction L_Activate;
+        private InputAction R_Activate;
+        private InputAction L_Cancel;
+        private InputAction R_Cancel;
+        
         private ControllerTracker _currentController;
         private bool _isActive;
         private bool _isFading;
@@ -34,23 +40,23 @@ namespace HorrorVR.Core
             lRayInteractor.enabled = false;
             rRayInteractor.enabled = false;
             
-            var L_activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
-            L_activate.Enable();
-            L_activate.performed += OnTeleportActivate;
-            L_activate.canceled += OnTeleportConfirm;
+            L_Activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
+            L_Activate.Enable();
+            L_Activate.performed += OnTeleportActivate;
+            L_Activate.canceled += OnTeleportConfirm;
             
-            var L_Cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Cancel");
+            L_Cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Cancel");
             L_Cancel.Enable();
             L_Cancel.performed += OnTeleportCancel;
             
-            var R_activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
-            R_activate.Enable();
-            R_activate.performed += OnTeleportActivate;
-            R_activate.canceled += OnTeleportConfirm;
+            R_Activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
+            R_Activate.Enable();
+            R_Activate.performed += OnTeleportActivate;
+            R_Activate.canceled += OnTeleportConfirm;
             
-            var R_cancel = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Cancel");
-            R_cancel.Enable();
-            R_cancel.performed += OnTeleportCancel;
+            R_Cancel = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Cancel");
+            R_Cancel.Enable();
+            R_Cancel.performed += OnTeleportCancel;
         }
 
         private void CheckActiveController(InputAction.CallbackContext context)
@@ -68,8 +74,9 @@ namespace HorrorVR.Core
         private void OnTeleportActivate(InputAction.CallbackContext context)
         {
             if (_isActive) return;
-            if (MenuUI.current._menuIsOpen) return;
             if (_isFading) return;
+            if (MenuUI.current._menuIsOpen) return;
+            if (!MenuUI.current.teleportEnabled) return;
             
             CheckActiveController(context);
 
@@ -86,6 +93,9 @@ namespace HorrorVR.Core
         
         private void OnTeleportConfirm(InputAction.CallbackContext context)
         {
+            if (MenuUI.current._menuIsOpen) return;
+            if (!MenuUI.current.teleportEnabled) return;
+            
             RaycastHit hit = new RaycastHit();
             bool canTeleport = false;
             
@@ -149,6 +159,24 @@ namespace HorrorVR.Core
             lRayInteractor.enabled = false;
             rRayInteractor.enabled = false;
             _isActive = false;
+        }
+
+        private void OnDisable()
+        {
+            L_Activate.performed -= OnTeleportActivate;
+            L_Activate.canceled -= OnTeleportConfirm;
+
+            L_Cancel.performed -= OnTeleportCancel;
+            
+            R_Activate.performed -= OnTeleportActivate;
+            R_Activate.canceled -= OnTeleportConfirm;
+            
+            R_Cancel.performed -= OnTeleportCancel;
+            
+            L_Activate.Disable();
+            R_Activate.Disable();
+            L_Cancel.Disable();
+            R_Cancel.Disable();
         }
     }
 }

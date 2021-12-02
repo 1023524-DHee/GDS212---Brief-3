@@ -5763,18 +5763,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &645850975 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 900693243, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-    type: 3}
-  m_PrefabInstance: {fileID: 5005704543743243394}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c1bfa440836ab644935ca960c1261f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &678591265
 GameObject:
   m_ObjectHideFlags: 0
@@ -23333,6 +23321,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3470543842412327792, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 343
+      objectReference: {fileID: 0}
+    - target: {fileID: 3756716070599262873, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 343
+      objectReference: {fileID: 0}
     - target: {fileID: 5005704542361647151, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_Name
@@ -23393,10 +23391,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5005704544220067935, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-        type: 3}
-      propertyPath: teleportationManager
-      value: 
-      objectReference: {fileID: 645850975}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d6d86672c692a4c861b3b7c7bbf41a, type: 3}
