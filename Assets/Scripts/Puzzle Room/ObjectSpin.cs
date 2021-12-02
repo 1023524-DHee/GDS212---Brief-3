@@ -99,15 +99,19 @@ public class ObjectSpin : MonoBehaviour
     {
         isSpinning = true;
         float startTime = Time.time;
-        Quaternion newRotation = Quaternion.Euler(0f, transform.localRotation.y + 90f, 0f);
+        currentSpinPosition = (currentSpinPosition + 90)%360;
+        Quaternion newRotation = Quaternion.Euler(0f, currentSpinPosition, 0f);
 
-        while (Time.time < startTime + 1f)
-        {
-            transform.localRotation = Quaternion.Lerp(transform.localRotation, newRotation, (Time.time - startTime));
-            yield return null;
-        }
+		while (Time.time < (startTime + 1f))
+		{
+			transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, (Time.time - startTime));
+			yield return null;
+		}
 
-        currentSpinPosition += 90;
+		//transform.Rotate(new Vector3(0, transform.rotation.y + 90f, 0f));
+		//yield return new WaitForSeconds(0.5f);
+
+		
         if (currentSpinPosition == positionNumber)
         {
             correctPosition = true;
@@ -128,5 +132,5 @@ public class ObjectSpin : MonoBehaviour
 	private void OnTriggerExit(Collider other)
 	{
         canInteract = false;
-	}
+    }
 }
