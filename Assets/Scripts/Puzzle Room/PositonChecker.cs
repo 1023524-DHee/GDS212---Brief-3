@@ -9,14 +9,39 @@ public class PositonChecker : MonoBehaviour
     public ObjectSpin objectThree;
     public ObjectSpin objectFour;
     public bool gateOpened;
-    
-    void Update()
+
+    private Vector3 initialPosition;
+    public Vector3 finalPosition;
+
+
+	private void Start()
+	{
+        initialPosition = transform.position;
+	}
+
+	void Update()
     {
         if(objectOne.correctPosition == true && objectTwo.correctPosition == true 
-            && objectThree.correctPosition == true && objectFour.correctPosition == true)
+            && objectThree.correctPosition == true && objectFour.correctPosition == true && gateOpened == false)
         {
-            Debug.Log("Gate Opened");
-            gateOpened = true;
+            OpenGate();
+        }
+    }
+
+    private void OpenGate()
+    {
+        gateOpened = true;
+        StartCoroutine(OpenGate_Coroutine());
+    }
+
+    private IEnumerator OpenGate_Coroutine()
+    {
+        float startTime = Time.time;
+
+        while (Time.time < (startTime + 2f))
+        {
+            transform.position = Vector3.Lerp(initialPosition, finalPosition, (Time.time - startTime) / 2f);
+            yield return null;
         }
     }
 }

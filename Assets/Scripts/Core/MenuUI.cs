@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 namespace HorrorVR.Core
 {
@@ -15,6 +16,12 @@ namespace HorrorVR.Core
         [SerializeField] private InputActionAsset actionAsset;
         [SerializeField] private XRRayInteractor rayInteractor;
 
+        public string hubSceneName;
+        public string forestSceneName;
+        public string catacombsSceneName;
+        public string puzzleRoomSceneName;
+        public string treasureRoomSceneName;
+        
         public bool _menuIsOpen;
 
         private void Awake()
@@ -36,6 +43,11 @@ namespace HorrorVR.Core
             _menuIsOpen = !_menuIsOpen;
             rayInteractor.enabled = _menuIsOpen;
             menuCanvas.gameObject.SetActive(_menuIsOpen);
+        }
+
+        public void LoadScene(string sceneName)
+        {
+            SceneManager.LoadScene(sceneName);
         }
     }
 }

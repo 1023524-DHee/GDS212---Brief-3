@@ -8,7 +8,8 @@ namespace HorrorVR
     {
         bool DisableAfterNextUse { get; }
         float DistanceThreshold { get; }
-        float AngleThreshold { get; }
+        float LookAngleThreshold { get; }
+        float RelativeAngleThreshold { get; }
         Transform Transform { get; }
         void OnInspect ();
         void OnInspectEnd ();
