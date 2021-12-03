@@ -16,14 +16,18 @@ namespace HorrorVR.Core
         [SerializeField] private InputActionAsset actionAsset;
         [SerializeField] private XRRayInteractor rayInteractor;
 
-        public string hubSceneName;
-        public string forestSceneName;
-        public string catacombsSceneName;
-        public string puzzleRoomSceneName;
-        public string treasureRoomSceneName;
+        private InputAction Menu_Press;
         
+        public GameObject optionsPanel;
+        public GameObject mainMenuPanel;
         public bool _menuIsOpen;
 
+        // OPTIONS
+        public bool continuousMovementEnabled { get; set; }
+        public bool snapTurnEnabled { get; set; }
+        public bool continuousTurnEnabled { get; set; }
+        public bool teleportEnabled { get; set; }
+        
         private void Awake()
         {
             current = this;
@@ -32,22 +36,60 @@ namespace HorrorVR.Core
         private void Start()
         {
             rayInteractor.enabled = _menuIsOpen;
-            
-            var Menu_Press = actionAsset.FindActionMap("XRI LeftHand").FindAction("Menu");
+
+            Menu_Press = actionAsset.FindActionMap("XRI LeftHand").FindAction("Menu");
             Menu_Press.Enable();
             Menu_Press.performed += ToggleMenu;
         }
 
         private void ToggleMenu(InputAction.CallbackContext context)
         {
-            _menuIsOpen = !_menuIsOpen;
-            rayInteractor.enabled = _menuIsOpen;
-            menuCanvas.gameObject.SetActive(_menuIsOpen);
+            ToggleMenu();
         }
 
+        public void ToggleMenu()
+        {
+            _menuIsOpen = !_menuIsOpen;
+            Time.timeScale = _menuIsOpen ? 0 : 1;
+            
+            rayInteractor.enabled = _menuIsOpen;
+            
+            menuCanvas.gameObject.SetActive(_menuIsOpen);
+            optionsPanel.gameObject.SetActive(false);
+            mainMenuPanel.gameObject.SetActive(true);
+
+            if (continuousMovementEnabled) PlayerSettings.continuousMovementEnabled = true;
+            if (teleportEnabled) PlayerSettings.teleportMovementEnabled = true;
+            if (continuousTurnEnabled) PlayerSettings.continuousTurnEnabled = true;
+            if (snapTurnEnabled) PlayerSettings.snapTurnEnabled = true;
+        }
+        
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
+        }
+
+        public void OpenOptionsMenu()
+        {
+            optionsPanel.gameObject.SetActive(true);
+            mainMenuPanel.gameObject.SetActive(false);
+        }
+
+        public void OpenMainMenu()
+        {
+            optionsPanel.gameObject.SetActive(false);
+            mainMenuPanel.gameObject.SetActive(true);
+        }
+
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
+
+        private void OnDisable()
+        {
+            Menu_Press.performed -= ToggleMenu;
+            Menu_Press.Disable();
         }
     }
 }
