@@ -28,7 +28,7 @@ namespace HorrorVR.Core
 
         private void Start()
         {
-            Invoke("InitialSetup", 1f);
+            Invoke("MovementCheck", 0.1f);
         }
 
         private void Update()
@@ -36,12 +36,13 @@ namespace HorrorVR.Core
             CapsuleFollowHeadset();
         }
 
-        private void InitialSetup()
+
+        public void MovementCheck()
         {
-            if(MenuUI.current.continuousMovementEnabled) EnableContinuousMovement();
-            if(MenuUI.current.teleportEnabled) EnableTeleportationMovement();
-            if(MenuUI.current.continuousTurnEnabled) EnableContinuousTurn();
-            if(MenuUI.current.snapTurnEnabled) EnableSnapTurn();
+            if(PlayerSettings.continuousMovementEnabled) EnableContinuousMovement();
+            if(PlayerSettings.teleportMovementEnabled) EnableTeleportationMovement();
+            if(PlayerSettings.continuousTurnEnabled) EnableContinuousTurn();
+            if(PlayerSettings.snapTurnEnabled) EnableSnapTurn();
         }
         
         private void CapsuleFollowHeadset()

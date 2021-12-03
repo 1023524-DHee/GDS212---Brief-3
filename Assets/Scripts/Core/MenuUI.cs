@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.SceneManagement;
@@ -17,7 +18,12 @@ namespace HorrorVR.Core
         [SerializeField] private XRRayInteractor rayInteractor;
 
         private InputAction Menu_Press;
-        
+
+        public Toggle continuousMovementToggle;
+        public Toggle teleportMovementToggle;
+        public Toggle continuousTurnToggle;
+        public Toggle snapTurnToggle;
+
         public GameObject optionsPanel;
         public GameObject mainMenuPanel;
         public bool _menuIsOpen;
@@ -37,10 +43,15 @@ namespace HorrorVR.Core
         {
             rayInteractor.enabled = _menuIsOpen;
 
-            continuousMovementEnabled = true;
-            snapTurnEnabled = false;
-            continuousTurnEnabled = true;
-            teleportEnabled = false;
+            continuousMovementEnabled = PlayerSettings.continuousMovementEnabled;
+            teleportEnabled = PlayerSettings.teleportMovementEnabled;
+            continuousTurnEnabled = PlayerSettings.continuousTurnEnabled;
+            snapTurnEnabled = PlayerSettings.snapTurnEnabled;
+
+            continuousMovementToggle.isOn = continuousMovementEnabled;
+            teleportMovementToggle.isOn = teleportEnabled;
+            continuousTurnToggle.isOn = continuousTurnEnabled;
+            snapTurnToggle.isOn = snapTurnEnabled;
 
             Menu_Press = actionAsset.FindActionMap("XRI LeftHand").FindAction("Menu");
             Menu_Press.Enable();
@@ -62,11 +73,13 @@ namespace HorrorVR.Core
             menuCanvas.gameObject.SetActive(_menuIsOpen);
             optionsPanel.gameObject.SetActive(false);
             mainMenuPanel.gameObject.SetActive(true);
-            
-            if(continuousMovementEnabled) MovementTypeManager.current.EnableContinuousMovement();
-            if(teleportEnabled) MovementTypeManager.current.EnableTeleportationMovement();
-            if(continuousTurnEnabled) MovementTypeManager.current.EnableContinuousTurn();
-            if(snapTurnEnabled) MovementTypeManager.current.EnableSnapTurn();
+
+            PlayerSettings.continuousMovementEnabled = continuousMovementEnabled;
+            PlayerSettings.teleportMovementEnabled = teleportEnabled;
+            PlayerSettings.continuousTurnEnabled = continuousTurnEnabled;
+            PlayerSettings.snapTurnEnabled = snapTurnEnabled;
+
+            MovementTypeManager.current.MovementCheck();
         }
         
         public void LoadScene(string sceneName)
