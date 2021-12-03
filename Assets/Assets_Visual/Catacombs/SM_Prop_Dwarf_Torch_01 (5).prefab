@@ -8,9 +8,9 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3313505271411636511}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.15
+  m_Radius: 0.13
   m_Height: 0.18
   m_Direction: 1
   m_Center: {x: -0.00056062633, y: 1.2, z: 0.00000008450374}
@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2168afce9dc9f64eb510f2d9996c1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light: {fileID: 5274874621091210442}
+  torchGO: {fileID: 5274874621091210442}
   torchTime: 15
 --- !u!1 &3314518149118156774
 GameObject:
