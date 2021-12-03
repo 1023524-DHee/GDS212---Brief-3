@@ -498,9 +498,14 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - BOB
   - Catacombs
   - EscapeRoom
+  - Interactions
+  - Player
   - SpookyForest
+  - Sword
+  - Torch
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
