@@ -12,6 +12,7 @@ namespace HorrorVR.Catacombs
         public static Sword Instance;
 
         public Transform midPoint;
+        public Transform tip;
 
         public float minimumVelocity = 5f;
 
@@ -36,7 +37,7 @@ namespace HorrorVR.Catacombs
         {
             Instance = this;
 
-            previousPosition = midPoint.position;
+            previousPosition = tip.position;
         }
 
         private void FixedUpdate()
@@ -48,8 +49,8 @@ namespace HorrorVR.Catacombs
             }
 
             // Add the velocity to the queue
-            velocities.Enqueue(new Line { from = previousPosition, to = midPoint.position, velocity = Vector3.Distance(midPoint.position, previousPosition) / Time.deltaTime });
-            previousPosition = midPoint.position;
+            velocities.Enqueue(new Line { from = previousPosition, to = tip.position, velocity = Vector3.Distance(tip.position, previousPosition) / Time.deltaTime });
+            previousPosition = tip.position;
         }
 
         public SwordSwipe GetVelocityVector()
@@ -65,7 +66,7 @@ namespace HorrorVR.Catacombs
             // Pass these values into a SwordSwipe
             return new SwordSwipe
             {
-                midPoint = (starting + ending) / 0.5f,
+                midPoint = (starting + ending) / 2f,
                 velocity = (ending - starting).normalized * averageVelocity, // Get the direction from the start to the end, and then multiply it by the average velocity. This will give the velocity vector of the swipe
                 isFastEnough = value >= 1f
             };

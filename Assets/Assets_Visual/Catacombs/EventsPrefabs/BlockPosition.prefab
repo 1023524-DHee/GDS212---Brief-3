@@ -399,5 +399,6 @@ MonoBehaviour:
   onFailed:
     m_PersistentCalls:
       m_Calls: []
-  minimumDistance: 0.25
-  minimumRotation: 0.16666667
+  perpetrator: {fileID: 0}
+  minimumDistance: 0.4
+  minimumRotation: 30
