@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.07329123, g: 0.074347086, b: 0.084905684, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.3
@@ -306,6 +306,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &19046154 stripped
@@ -400,6 +405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -553,6 +563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &26780856 stripped
@@ -652,6 +667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (137)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -948,6 +968,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (123)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &51074289 stripped
@@ -1237,6 +1262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (223)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -5631,6 +5661,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &98298650 stripped
@@ -5730,6 +5765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -6115,6 +6155,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -6544,6 +6589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &151383598 stripped
@@ -6638,6 +6688,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -6839,6 +6894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (115)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &160771819 stripped
@@ -6933,6 +6993,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -7131,6 +7196,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -7841,6 +7911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &200713100 stripped
@@ -7940,6 +8015,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -8274,6 +8354,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_Willow_Tree (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7436500730555733800, guid: 847f2251cd009a340b306edfce8c36de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7816017697103498642, guid: 847f2251cd009a340b306edfce8c36de,
         type: 3}
       propertyPath: m_RootOrder
@@ -8548,6 +8633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -8939,6 +9029,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &258576263 stripped
@@ -9157,17 +9252,17 @@ PrefabInstance:
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.14124994
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.33396393
+      value: 0.34897
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21687482
+      value: 0.43896416
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
@@ -9177,47 +9272,47 @@ PrefabInstance:
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.046527028
+      value: 0.022999998
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.364047
+      value: 7.412
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.091524266
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.09129742
+      value: 0.9991473
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.98930043
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.067622215
+      value: 0.041287955
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 54.379
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 68.77
+      value: -4.7330017
       objectReference: {fileID: 0}
     - target: {fileID: 32443089906838881, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 176.827
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 808557199149266907, guid: 8cddc9af981e53149ba31657393669e3,
         type: 3}
@@ -9636,6 +9731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &281175984 stripped
@@ -9731,6 +9831,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &283201312 stripped
@@ -9810,6 +9915,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (118)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -9986,6 +10096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (117)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &292876071 stripped
@@ -10155,6 +10270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (102)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -10445,6 +10565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -10950,6 +11075,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &318347714 stripped
@@ -11165,6 +11295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_Willow_Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7436500730555733800, guid: 847f2251cd009a340b306edfce8c36de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7816017697103498642, guid: 847f2251cd009a340b306edfce8c36de,
         type: 3}
       propertyPath: m_RootOrder
@@ -11340,6 +11475,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &325034865 stripped
@@ -11435,6 +11575,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &329929349 stripped
@@ -11529,6 +11674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -11725,6 +11875,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &365247149 stripped
@@ -11915,6 +12070,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &378256893 stripped
@@ -12009,6 +12169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -12105,6 +12270,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (158)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &383672110 stripped
@@ -12199,6 +12369,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -12299,6 +12474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (143)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -13621,6 +13801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &411920280 stripped
@@ -13715,6 +13900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -13890,6 +14080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -14138,6 +14333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &445728882 stripped
@@ -14232,6 +14432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -15285,6 +15490,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (101)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &514006345 stripped
@@ -15459,6 +15669,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -15735,6 +15950,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &543804200 stripped
@@ -15835,6 +16055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &545423400 stripped
@@ -15929,6 +16154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -16124,6 +16354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -16415,6 +16650,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &576326623 stripped
@@ -16514,6 +16754,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (110)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -16697,6 +16942,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &599640461 stripped
@@ -16796,6 +17046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (126)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -18478,6 +18733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &612434443 stripped
@@ -18788,6 +19048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &635538175 stripped
@@ -18915,6 +19180,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &645925952 stripped
@@ -19009,6 +19279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -19105,6 +19380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &649597405 stripped
@@ -19199,6 +19479,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -19299,6 +19584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -20811,6 +21101,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (120)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &676925901 stripped
@@ -20905,6 +21200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -21005,6 +21305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -21730,6 +22035,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &704864380 stripped
@@ -21824,6 +22134,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -21924,6 +22239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -22114,6 +22434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -22310,6 +22635,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &733303681 stripped
@@ -22394,6 +22724,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (123)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -22595,6 +22930,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &741593271 stripped
@@ -22695,6 +23035,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &764908889 stripped
@@ -22789,6 +23134,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -22885,6 +23235,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &778829066 stripped
@@ -22969,6 +23324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (121)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -23424,6 +23784,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -24188,6 +24553,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &835508697 stripped
@@ -24282,6 +24652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -24478,6 +24853,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (188)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &844182567 stripped
@@ -24668,6 +25048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &853224118 stripped
@@ -24767,6 +25152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -25666,6 +26056,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (124)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &907666249 stripped
@@ -25765,6 +26160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -26051,6 +26451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &914902939 stripped
@@ -26240,6 +26645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (106)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -26536,6 +26946,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &931844093 stripped
@@ -26630,6 +27045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -26726,6 +27146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &942822262 stripped
@@ -26820,6 +27245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -27115,6 +27545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -27414,6 +27849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &965210989 stripped
@@ -27699,6 +28139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &993299121 stripped
@@ -27733,6 +28178,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 855229158376939392, guid: 481a571b7fb8159469b7fa6695e6fea9,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 855229158376939392, guid: 481a571b7fb8159469b7fa6695e6fea9,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 5.83e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 855229158376939392, guid: 481a571b7fb8159469b7fa6695e6fea9,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 855229158376939392, guid: 481a571b7fb8159469b7fa6695e6fea9,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 2.91e-43
       objectReference: {fileID: 0}
     - target: {fileID: 855229158376939393, guid: 481a571b7fb8159469b7fa6695e6fea9,
         type: 3}
@@ -28168,6 +28633,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_Willow_Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7436500730555733800, guid: 847f2251cd009a340b306edfce8c36de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7816017697103498642, guid: 847f2251cd009a340b306edfce8c36de,
         type: 3}
       propertyPath: m_RootOrder
@@ -28442,6 +28912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -28728,6 +29203,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1034152544 stripped
@@ -28807,6 +29287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -29272,6 +29757,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (152)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1040801415 stripped
@@ -29366,6 +29856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -29467,6 +29962,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1055335903 stripped
@@ -29561,6 +30061,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -29926,6 +30431,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1067157971 stripped
@@ -30026,6 +30536,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1069793101 stripped
@@ -30120,6 +30635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -30216,6 +30736,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1080321233 stripped
@@ -30311,6 +30836,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1082873360 stripped
@@ -30395,6 +30925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (122)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -30591,6 +31126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1112952483 stripped
@@ -30690,6 +31230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (100)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -30986,6 +31531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1124302181 stripped
@@ -31181,6 +31731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1143097239 stripped
@@ -31275,6 +31830,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -31375,6 +31935,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (114)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -31841,6 +32406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1163866222 stripped
@@ -31940,6 +32510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (136)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -32041,6 +32616,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1165566973 stripped
@@ -32140,6 +32720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -33826,6 +34411,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1214625649 stripped
@@ -34221,6 +34811,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (159)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1231512178 stripped
@@ -34316,6 +34911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1234772915 stripped
@@ -34410,6 +35010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -35056,6 +35661,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1250258835 stripped
@@ -35255,6 +35865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -36941,6 +37556,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1274808629 stripped
@@ -37035,6 +37655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -39020,6 +39645,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1312855521 stripped
@@ -39114,6 +39744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -39385,6 +40020,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1322714692 stripped
@@ -39479,6 +40119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -41001,6 +41646,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1342819317 stripped
@@ -41191,6 +41841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (120)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1347210606 stripped
@@ -41285,6 +41940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -41500,6 +42160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -41791,6 +42456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1408948691 stripped
@@ -41970,6 +42640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -42336,6 +43011,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1430889915 stripped
@@ -42430,6 +43110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -42985,6 +43670,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (107)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1446120784 stripped
@@ -43099,6 +43789,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_Willow_Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7436500730555733800, guid: 847f2251cd009a340b306edfce8c36de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7816017697103498642, guid: 847f2251cd009a340b306edfce8c36de,
         type: 3}
@@ -43279,6 +43974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -43465,6 +44165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1485153281 stripped
@@ -43559,6 +44264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -43755,6 +44465,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1500317916 stripped
@@ -43850,6 +44565,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1501225391 stripped
@@ -43944,6 +44664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -44044,6 +44769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (148)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -44239,6 +44969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -45032,6 +45767,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1532128682 stripped
@@ -45327,6 +46067,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1537697122 stripped
@@ -45426,6 +46171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -45699,6 +46449,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1570278167 stripped
@@ -45823,6 +46578,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1575550884 stripped
@@ -45923,6 +46683,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (104)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1576492264 stripped
@@ -46017,6 +46782,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -46212,6 +46982,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -46411,6 +47186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1601904752 stripped
@@ -46511,6 +47291,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1602086926 stripped
@@ -46605,6 +47390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -46980,6 +47770,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1620537025 stripped
@@ -47175,6 +47970,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1629611386 stripped
@@ -47270,6 +48070,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1637543486 stripped
@@ -47364,6 +48169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -47962,6 +48772,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (147)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1663682948 stripped
@@ -48152,6 +48967,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1675660489 stripped
@@ -48231,6 +49051,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5445920000178487511, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
         type: 3}
@@ -48765,6 +49590,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1682659307 stripped
@@ -48993,6 +49823,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1690847956 stripped
@@ -49092,6 +49927,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -49583,6 +50423,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1709857777 stripped
@@ -49683,6 +50528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1711569063 stripped
@@ -49777,6 +50627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -51104,6 +51959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1718892351 stripped
@@ -51866,6 +52726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (125)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1764500316 stripped
@@ -52317,6 +53182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1774543611 stripped
@@ -52411,6 +53281,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -52512,6 +53387,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1787949431 stripped
@@ -52606,6 +53486,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -52702,6 +53587,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1796215853 stripped
@@ -52796,6 +53686,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -52992,6 +53887,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1806917813 stripped
@@ -53092,6 +53992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1808203483 stripped
@@ -53186,6 +54091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -53398,6 +54308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -53684,6 +54599,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1852463670 stripped
@@ -53878,6 +54798,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -54296,6 +55221,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (153)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1908664501 stripped
@@ -54490,6 +55420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -54691,6 +55626,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1933069586 stripped
@@ -54785,6 +55725,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -55140,6 +56085,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1954425876 stripped
@@ -55435,6 +56385,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1960709902 stripped
@@ -55519,6 +56474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -55620,6 +56580,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (115)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1965997836 stripped
@@ -55719,6 +56684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -55915,6 +56885,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1983220830 stripped
@@ -56015,6 +56990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &1983230115 stripped
@@ -56069,6 +57049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Medium_Willow_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 7436500730555733800, guid: 847f2251cd009a340b306edfce8c36de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7816017697103498642, guid: 847f2251cd009a340b306edfce8c36de,
         type: 3}
@@ -56245,6 +57230,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &1986362029 stripped
@@ -56339,6 +57329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -57310,6 +58305,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &2050126624 stripped
@@ -57674,6 +58674,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &2070270881 stripped
@@ -57937,6 +58942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -58733,6 +59743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &2104188886 stripped
@@ -58827,6 +59842,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -59008,6 +60028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &2121944813 stripped
@@ -59148,6 +60173,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &2125533459 stripped
@@ -59227,6 +60257,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree small 2 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
@@ -59323,6 +60358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &2130732664 stripped
@@ -59417,6 +60457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -59518,6 +60563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree large (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
 --- !u!4 &2131410397 stripped
@@ -59613,6 +60663,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &2131642638 stripped
@@ -59707,6 +60762,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
@@ -59808,6 +60868,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pine tree small 2 (144)
       objectReference: {fileID: 0}
+    - target: {fileID: 1858766639274694380, guid: ca3832627c738684397108014f91020c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3832627c738684397108014f91020c, type: 3}
 --- !u!4 &2143044042 stripped
@@ -59907,6 +60972,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pine tree large (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517007589067553088, guid: 4f95b119c3b6791438a9a7c9717e5ddb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f95b119c3b6791438a9a7c9717e5ddb, type: 3}
