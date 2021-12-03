@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -399,5 +399,6 @@ MonoBehaviour:
   onFailed:
     m_PersistentCalls:
       m_Calls: []
-  minimumDistance: 0.25
-  minimumRotation: 0.16666667
+  perpetrator: {fileID: 0}
+  minimumDistance: 0.4
+  minimumRotation: 30

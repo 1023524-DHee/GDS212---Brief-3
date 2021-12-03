@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,33 +19,26 @@ namespace HorrorVR.Core
         [SerializeField] private XRRayInteractor lRayInteractor;
         [SerializeField] private XRRayInteractor rRayInteractor;
         [SerializeField] private TeleportationProvider teleportationProvider;
+        [SerializeField] private Material blackoutMaterial;
 
+        private InputAction L_Activate;
+        private InputAction R_Activate;
+        private InputAction L_Cancel;
+        private InputAction R_Cancel;
+        
         private ControllerTracker _currentController;
         private bool _isActive;
-        
+        private bool _isFading;
+
         // Start is called before the first frame update
         void Start()
         {
+            Color currentColor = blackoutMaterial.color;
+            currentColor.a = 0;
+            blackoutMaterial.color = currentColor;
+            
             lRayInteractor.enabled = false;
             rRayInteractor.enabled = false;
-            
-            var L_activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
-            L_activate.Enable();
-            L_activate.performed += OnTeleportActivate;
-            L_activate.canceled += OnTeleportConfirm;
-            
-            var L_Cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Cancel");
-            L_Cancel.Enable();
-            L_Cancel.performed += OnTeleportCancel;
-            
-            var R_activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
-            R_activate.Enable();
-            R_activate.performed += OnTeleportActivate;
-            R_activate.canceled += OnTeleportConfirm;
-            
-            var R_cancel = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Cancel");
-            R_cancel.Enable();
-            R_cancel.performed += OnTeleportCancel;
         }
 
         private void CheckActiveController(InputAction.CallbackContext context)
@@ -61,8 +55,10 @@ namespace HorrorVR.Core
         
         private void OnTeleportActivate(InputAction.CallbackContext context)
         {
+            if (!PlayerSettings.teleportMovementEnabled) return;
             if (_isActive) return;
-            if (MenuUI.current._menuIsOpen) return;
+            if (_isFading) return;
+            if (MenuUI.current._menuIsOpen) return;            
             
             CheckActiveController(context);
 
@@ -79,6 +75,9 @@ namespace HorrorVR.Core
         
         private void OnTeleportConfirm(InputAction.CallbackContext context)
         {
+            if (!PlayerSettings.teleportMovementEnabled) return;
+            if (MenuUI.current._menuIsOpen) return;
+           
             RaycastHit hit = new RaycastHit();
             bool canTeleport = false;
             
@@ -98,23 +97,89 @@ namespace HorrorVR.Core
             
             if (canTeleport)
             {
-                TeleportRequest request = new TeleportRequest()
-                {
-                    destinationPosition = hit.point
-                };
-                teleportationProvider.QueueTeleportRequest(request);
+                StartCoroutine(Teleport_Coroutine(hit));
             }
 
             lRayInteractor.enabled = false;
             rRayInteractor.enabled = false;
             _isActive = false;
         }
-        
+
         private void OnTeleportCancel(InputAction.CallbackContext context)
         {
             lRayInteractor.enabled = false;
             rRayInteractor.enabled = false;
             _isActive = false;
+        }
+        
+        private IEnumerator Teleport_Coroutine(RaycastHit hit)
+        {
+            _isFading = true;
+            
+            float startTime = Time.time;
+            Color currentColor = blackoutMaterial.color;
+            while (Time.time < startTime + 0.5f)
+            {
+                currentColor.a = Mathf.Lerp(0, 1, (Time.time - startTime) / 0.5f);
+                blackoutMaterial.color = currentColor;
+                yield return null;
+            }
+
+            TeleportRequest request = new TeleportRequest()
+            {
+                destinationPosition = hit.point
+            };
+            teleportationProvider.QueueTeleportRequest(request);
+            yield return new WaitForSeconds(0.5f);
+            
+            startTime = Time.time;
+            while (Time.time < startTime + 0.5f)
+            {
+                currentColor.a = Mathf.Lerp(1, 0, (Time.time - startTime) / 0.5f);
+                blackoutMaterial.color = currentColor;
+                yield return null;
+            }
+
+            _isFading = false;
+        }
+
+        private void OnEnable()
+        {
+            L_Activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
+            L_Activate.Enable();
+            L_Activate.performed += OnTeleportActivate;
+            L_Activate.canceled += OnTeleportConfirm;
+            
+            L_Cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Cancel");
+            L_Cancel.Enable();
+            L_Cancel.performed += OnTeleportCancel;
+            
+            R_Activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
+            R_Activate.Enable();
+            R_Activate.performed += OnTeleportActivate;
+            R_Activate.canceled += OnTeleportConfirm;
+            
+            R_Cancel = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Cancel");
+            R_Cancel.Enable();
+            R_Cancel.performed += OnTeleportCancel;
+        }
+
+        private void OnDisable()
+        {
+            L_Activate.performed -= OnTeleportActivate;
+            L_Activate.canceled -= OnTeleportConfirm;
+
+            L_Cancel.performed -= OnTeleportCancel;
+            
+            R_Activate.performed -= OnTeleportActivate;
+            R_Activate.canceled -= OnTeleportConfirm;
+            
+            R_Cancel.performed -= OnTeleportCancel;
+            
+            L_Activate.Disable();
+            R_Activate.Disable();
+            L_Cancel.Disable();
+            R_Cancel.Disable();
         }
     }
 }
