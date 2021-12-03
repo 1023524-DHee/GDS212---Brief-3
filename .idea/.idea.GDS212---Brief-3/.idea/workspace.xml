@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="546c8965-a5c2-42b4-851c-68550b195efc" name="Changes" comment="" />
+    <list default="true" id="546c8965-a5c2-42b4-851c-68550b195efc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XR Rig.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/XR Rig.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Forest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing_HubWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing_HubWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/TeleportationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/TeleportationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +77,7 @@
       <workItem from="1637509214774" duration="3690000" />
       <workItem from="1637630529231" duration="6473000" />
       <workItem from="1638062363783" duration="3797000" />
+      <workItem from="1638428673254" duration="766000" />
     </task>
     <servers />
   </component>
