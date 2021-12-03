@@ -29,7 +29,7 @@ namespace HorrorVR.Core
         private ControllerTracker _currentController;
         private bool _isActive;
         private bool _isFading;
-        
+
         // Start is called before the first frame update
         void Start()
         {
@@ -39,24 +39,6 @@ namespace HorrorVR.Core
             
             lRayInteractor.enabled = false;
             rRayInteractor.enabled = false;
-            
-            L_Activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
-            L_Activate.Enable();
-            L_Activate.performed += OnTeleportActivate;
-            L_Activate.canceled += OnTeleportConfirm;
-            
-            L_Cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Cancel");
-            L_Cancel.Enable();
-            L_Cancel.performed += OnTeleportCancel;
-            
-            R_Activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
-            R_Activate.Enable();
-            R_Activate.performed += OnTeleportActivate;
-            R_Activate.canceled += OnTeleportConfirm;
-            
-            R_Cancel = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Cancel");
-            R_Cancel.Enable();
-            R_Cancel.performed += OnTeleportCancel;
         }
 
         private void CheckActiveController(InputAction.CallbackContext context)
@@ -123,6 +105,13 @@ namespace HorrorVR.Core
             _isActive = false;
         }
 
+        private void OnTeleportCancel(InputAction.CallbackContext context)
+        {
+            lRayInteractor.enabled = false;
+            rRayInteractor.enabled = false;
+            _isActive = false;
+        }
+        
         private IEnumerator Teleport_Coroutine(RaycastHit hit)
         {
             _isFading = true;
@@ -150,15 +139,29 @@ namespace HorrorVR.Core
                 blackoutMaterial.color = currentColor;
                 yield return null;
             }
-            
+
             _isFading = false;
         }
-        
-        private void OnTeleportCancel(InputAction.CallbackContext context)
+
+        private void OnEnable()
         {
-            lRayInteractor.enabled = false;
-            rRayInteractor.enabled = false;
-            _isActive = false;
+            L_Activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
+            L_Activate.Enable();
+            L_Activate.performed += OnTeleportActivate;
+            L_Activate.canceled += OnTeleportConfirm;
+            
+            L_Cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Cancel");
+            L_Cancel.Enable();
+            L_Cancel.performed += OnTeleportCancel;
+            
+            R_Activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
+            R_Activate.Enable();
+            R_Activate.performed += OnTeleportActivate;
+            R_Activate.canceled += OnTeleportConfirm;
+            
+            R_Cancel = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Cancel");
+            R_Cancel.Enable();
+            R_Cancel.performed += OnTeleportCancel;
         }
 
         private void OnDisable()

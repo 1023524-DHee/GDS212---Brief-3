@@ -37,11 +37,10 @@ namespace HorrorVR.Core
         {
             rayInteractor.enabled = _menuIsOpen;
 
-            continuousMovementEnabled = false;
-            snapTurnEnabled = true;
-            continuousTurnEnabled = false;
-            teleportEnabled = true;
-
+            continuousMovementEnabled = true;
+            snapTurnEnabled = false;
+            continuousTurnEnabled = true;
+            teleportEnabled = false;
 
             Menu_Press = actionAsset.FindActionMap("XRI LeftHand").FindAction("Menu");
             Menu_Press.Enable();
@@ -51,6 +50,7 @@ namespace HorrorVR.Core
         private void ToggleMenu(InputAction.CallbackContext context)
         {
             _menuIsOpen = !_menuIsOpen;
+            Time.timeScale = _menuIsOpen ? 0 : 1;
             
             rayInteractor.enabled = _menuIsOpen;
             

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -25,11 +26,24 @@ namespace HorrorVR.Core
             current = this;
         }
 
+        private void Start()
+        {
+            Invoke("InitialSetup", 1f);
+        }
+
         private void Update()
         {
             CapsuleFollowHeadset();
         }
 
+        private void InitialSetup()
+        {
+            if(MenuUI.current.continuousMovementEnabled) EnableContinuousMovement();
+            if(MenuUI.current.teleportEnabled) EnableTeleportationMovement();
+            if(MenuUI.current.continuousTurnEnabled) EnableContinuousTurn();
+            if(MenuUI.current.snapTurnEnabled) EnableSnapTurn();
+        }
+        
         private void CapsuleFollowHeadset()
         {
             Vector3 capsuleCenter = transform.InverseTransformPoint(rig.cameraGameObject.transform.position);
