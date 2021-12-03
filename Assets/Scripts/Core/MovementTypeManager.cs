@@ -36,12 +36,13 @@ namespace HorrorVR.Core
             CapsuleFollowHeadset();
         }
 
+
         private void InitialSetup()
         {
-            if(MenuUI.current.continuousMovementEnabled) EnableContinuousMovement();
-            if(MenuUI.current.teleportEnabled) EnableTeleportationMovement();
-            if(MenuUI.current.continuousTurnEnabled) EnableContinuousTurn();
-            if(MenuUI.current.snapTurnEnabled) EnableSnapTurn();
+            if(PlayerSettings.continuousMovementEnabled) EnableContinuousMovement();
+            if(PlayerSettings.teleportMovementEnabled) EnableTeleportationMovement();
+            if(PlayerSettings.continuousTurnEnabled) EnableContinuousTurn();
+            if(PlayerSettings.snapTurnEnabled) EnableSnapTurn();
         }
         
         private void CapsuleFollowHeadset()

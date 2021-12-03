@@ -55,10 +55,10 @@ namespace HorrorVR.Core
         
         private void OnTeleportActivate(InputAction.CallbackContext context)
         {
+            if (!PlayerSettings.teleportMovementEnabled) return;
             if (_isActive) return;
             if (_isFading) return;
-            if (MenuUI.current._menuIsOpen) return;
-            if (!MenuUI.current.teleportEnabled) return;
+            if (MenuUI.current._menuIsOpen) return;            
             
             CheckActiveController(context);
 
@@ -75,9 +75,9 @@ namespace HorrorVR.Core
         
         private void OnTeleportConfirm(InputAction.CallbackContext context)
         {
+            if (!PlayerSettings.teleportMovementEnabled) return;
             if (MenuUI.current._menuIsOpen) return;
-            if (!MenuUI.current.teleportEnabled) return;
-            
+           
             RaycastHit hit = new RaycastHit();
             bool canTeleport = false;
             

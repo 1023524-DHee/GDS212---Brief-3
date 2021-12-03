@@ -37,11 +37,6 @@ namespace HorrorVR.Core
         {
             rayInteractor.enabled = _menuIsOpen;
 
-            continuousMovementEnabled = true;
-            snapTurnEnabled = false;
-            continuousTurnEnabled = true;
-            teleportEnabled = false;
-
             Menu_Press = actionAsset.FindActionMap("XRI LeftHand").FindAction("Menu");
             Menu_Press.Enable();
             Menu_Press.performed += ToggleMenu;
@@ -62,11 +57,11 @@ namespace HorrorVR.Core
             menuCanvas.gameObject.SetActive(_menuIsOpen);
             optionsPanel.gameObject.SetActive(false);
             mainMenuPanel.gameObject.SetActive(true);
-            
-            if(continuousMovementEnabled) MovementTypeManager.current.EnableContinuousMovement();
-            if(teleportEnabled) MovementTypeManager.current.EnableTeleportationMovement();
-            if(continuousTurnEnabled) MovementTypeManager.current.EnableContinuousTurn();
-            if(snapTurnEnabled) MovementTypeManager.current.EnableSnapTurn();
+
+            if (continuousMovementEnabled) PlayerSettings.continuousMovementEnabled = true;
+            if (teleportEnabled) PlayerSettings.teleportMovementEnabled = true;
+            if (continuousTurnEnabled) PlayerSettings.continuousTurnEnabled = true;
+            if (snapTurnEnabled) PlayerSettings.snapTurnEnabled = true;
         }
         
         public void LoadScene(string sceneName)
