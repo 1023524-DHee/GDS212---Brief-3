@@ -72,23 +72,24 @@ namespace HorrorVR.Catacombs
             };
         }
 
-#if UNITY_EDITOR
-        // Draw the sword swipe
-        private void OnDrawGizmos()
-        {
-            if (velocities.Count > 0)
+    #if UNITY_EDITOR
+            // Draw the sword swipe
+            private void OnDrawGizmos()
             {
-                Vector3 starting = velocities.First().from;
-                Vector3 ending = velocities.Last().to;
+                if (velocities.Count > 0)
+                {
+                    Vector3 starting = velocities.First().from;
+                    Vector3 ending = velocities.Last().to;
 
-                float averageVelocity = velocities.Average(a => a.velocity);
+                    float averageVelocity = velocities.Average(a => a.velocity);
 
-                float value = averageVelocity / minimumVelocity;
+                    float value = averageVelocity / minimumVelocity;
 
-                Gizmos.color = Color.Lerp(Color.green, Color.red, value);
-                Gizmos.DrawLine(starting, ending);
+                    Gizmos.color = Color.Lerp(Color.green, Color.red, value);
+                    Gizmos.DrawLine(starting, ending);
+                }
             }
-        }
+
+    #endif
     }
-#endif
 }
