@@ -6,31 +6,35 @@ namespace HorrorVR
 {
     public class Torch : MonoBehaviour
     {
-        public GameObject Light;
+        public GameObject torchGO;
+        public float torchTime;
 
-        // Update is called once per frame
-        //void OnCollisionEnter(Collision collision)
-        //{
-        //    if (collision.gameObject.tag == "Torch")
-        //    {
-        //        Light.SetActive(true);
-        //        //StartCoroutine(TorchCoroutine());
-        //    }
-        //}
-
-        void Update()
+        void OnTriggerEnter(Collider Torch)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Torch.gameObject.tag == "Torch")
             {
-                Light.SetActive(true);
+                torchGO.SetActive(true);
+                StopCoroutine(TorchCoroutine());
             }
         }
 
-        
-        //IEnumerator TorchCoroutine()
-        //{
-        //    yield return new WaitForSeconds(15);
-        //    Light.SetActive(false);
-        //}
+        private void OnTriggerExit(Collider other)
+        {
+            StartCoroutine(TorchCoroutine());
+        }
+
+
+        IEnumerator TorchCoroutine()
+        {
+            torchGO.SetActive(true);
+            float startTime = Time.time;
+
+            while(Time.time < (startTime + torchTime))
+            {
+                torchGO.GetComponent<Light>().intensity = Mathf.Lerp(3, 0.1f, (Time.time - startTime) / torchTime);
+                yield return null;
+            }
+            torchGO.SetActive(false);
+        }
     }
 }

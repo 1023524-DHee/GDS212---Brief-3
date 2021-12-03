@@ -27,6 +27,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Light: {fileID: 5274874621091210442}
+  torchTime: 15
 --- !u!1 &3314518149118156774
 GameObject:
   m_ObjectHideFlags: 0
