@@ -24,8 +24,6 @@ namespace HorrorVR.Catacombs
             Mathfx.ClosestPointOnLineSegment(Camera.main.transform.position, transform.position, Sword.Instance.midPoint.position, out Vector3 pointOnLine, false);
             float distance = Vector3.Distance(Sword.Instance.midPoint.position, pointOnLine);
 
-            Debug.Log(distance);
-
             // If we are within the min distance and min rotation, then we have fulfilled the requirements
             if (distance <= minimumDistance && dot > (90f - minimumRotation) / 90f)
             {
