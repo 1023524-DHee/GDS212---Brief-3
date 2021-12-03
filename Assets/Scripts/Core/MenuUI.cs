@@ -49,6 +49,11 @@ namespace HorrorVR.Core
 
         private void ToggleMenu(InputAction.CallbackContext context)
         {
+            ToggleMenu();
+        }
+
+        public void ToggleMenu()
+        {
             _menuIsOpen = !_menuIsOpen;
             Time.timeScale = _menuIsOpen ? 0 : 1;
             
@@ -62,13 +67,8 @@ namespace HorrorVR.Core
             if(teleportEnabled) MovementTypeManager.current.EnableTeleportationMovement();
             if(continuousTurnEnabled) MovementTypeManager.current.EnableContinuousTurn();
             if(snapTurnEnabled) MovementTypeManager.current.EnableSnapTurn();
-            
-            Debug.Log(continuousMovementEnabled);
-            Debug.Log(teleportEnabled);
-            Debug.Log(continuousTurnEnabled);
-            Debug.Log(snapTurnEnabled);
         }
-
+        
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);
