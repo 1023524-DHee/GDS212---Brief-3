@@ -15,10 +15,13 @@ namespace HorrorVR.Catacombs
         private Slider slider;
 
         public bool isFinished { private set; get; } = false;
+        public bool hasStarted { private set; get; } = false;
 
         public UnityEvent onStarted = new UnityEvent();
         public UnityEvent onSucceeded = new UnityEvent();
         public UnityEvent onFailed = new UnityEvent();
+
+        public EnemyController perpetrator;
 
         private void Start()
         {
@@ -31,6 +34,7 @@ namespace HorrorVR.Catacombs
 
         IEnumerator Sequence()
         {
+            hasStarted = true;
             float currentTime = 0f;
             while (true)
             {
@@ -55,8 +59,8 @@ namespace HorrorVR.Catacombs
                         Debug.Log("Failed");
                     }
 
-                    gameObject.SetActive(false);
                     isFinished = true;
+                    gameObject.SetActive(false);
                 }
 
                 yield return null;
@@ -73,11 +77,11 @@ namespace HorrorVR.Catacombs
         /// </summary>
         protected void Complete()
         {
-            StopCoroutine(Sequence());
+            StopAllCoroutines();
             slider.SetValueWithoutNotify(1f);
             onSucceeded.Invoke();
             isFinished = true;
-            gameObject.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
 }
