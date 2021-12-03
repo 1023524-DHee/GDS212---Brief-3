@@ -183,14 +183,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.15199757, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.95140254, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6fb938b5f67398b47b747f1d4bde2881, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dec5516ebbb4ee84886072248ba8dadf, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 54caccb85c0aed347882c44dc332a019, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 538d01ede0ddcb1478495e14b8978828, type: 3}
   m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -287,9 +287,9 @@ GameObject:
   - component: {fileID: 3761864695837046086}
   - component: {fileID: 3761864695837046087}
   - component: {fileID: 3761864695837046088}
-  - component: {fileID: 3761864695837046084}
+  - component: {fileID: 7327022925154068974}
   m_Layer: 5
-  m_Name: BlockPosition
+  m_Name: AttackPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3761864695837046084
+--- !u!114 &7327022925154068974
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3761864695837046089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fc0b1a20a2c1074fb4206f7764f3f35, type: 3}
+  m_Script: {fileID: 11500000, guid: 4fe34a9a9d3eb52459d3d0dc3acd8cfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
@@ -400,4 +400,4 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   minimumDistance: 0.25
-  minimumRotation: 0.16666667
+  minimumRotation: 0.1666667

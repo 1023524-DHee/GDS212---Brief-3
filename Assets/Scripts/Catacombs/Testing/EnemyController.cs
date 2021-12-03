@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.InputSystem.InputAction;
+using Random = UnityEngine.Random;
 
 namespace HorrorVR.Catacombs
 {
@@ -19,6 +20,9 @@ namespace HorrorVR.Catacombs
         [SerializeField]
         private Transform lookTarget;
 
+        [SerializeField]
+        private Transform targetPosition; 
+
         [Header("Attacks")]
         [SerializeField]
         private EventSequence[] attackPatterns;
@@ -31,6 +35,7 @@ namespace HorrorVR.Catacombs
         private Vector2 smoothedInput;
         private Vector2 previousInput;
         private Vector3 wantedPosition;
+        private bool isMovingToTargetLocation = true;
 
         // Head looking
         private bool lookAtTarget = true;
@@ -40,7 +45,7 @@ namespace HorrorVR.Catacombs
         // Start is called before the first frame update
         void Start()
         {
-            wantedPosition = transform.position;
+            wantedPosition = targetPosition.position;//transform.position;
 
             lookAtPosition = lookTarget.position;
         }
@@ -51,9 +56,20 @@ namespace HorrorVR.Catacombs
             GetInput();
             Movement();
 
-            if (!isAttacking)
+            if (isMovingToTargetLocation)
             {
-                StartCoroutine(AttackSequence(attackPatterns[0]));
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("Sword Idle And Rotate Blend Tree") && !animator.IsInTransition(0))
+                {
+                    isMovingToTargetLocation = false;
+                }
+            }
+
+            if (!isMovingToTargetLocation)
+            {
+                if (!isAttacking)
+                {
+                    StartCoroutine(AttackSequence(attackPatterns[Random.Range(0, attackPatterns.Length)]));
+                }
             }
         }
 
@@ -66,14 +82,19 @@ namespace HorrorVR.Catacombs
 
             yield return new WaitForSeconds(attackPattern.timeUntilAttacks);
 
+            if (attackPattern.isAttack)
+            {
+                // Play the attack animation
+                animator.SetInteger("AttackValue", attackPattern.attack);
+                animator.SetTrigger("AttackTrigger");
 
-            // Play the attack animation
-            animator.SetInteger("AttackValue", attackPattern.attack);
-            animator.SetTrigger("AttackTrigger");
+                // Wait until we return back into the idle state
+                yield return new WaitForEndOfFrame();
+                yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Sword Idle And Rotate Blend Tree") && !animator.IsInTransition(0));
+            }
 
-            // Wait until we return back into the idle state
-            yield return new WaitForEndOfFrame();
-            yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Sword Idle And Rotate Blend Tree") && !animator.IsInTransition(0));
+            // Wait until the pattern is finished
+            yield return new WaitUntil(() => attackPattern.isFinished);
 
             isAttacking = false;
         }
@@ -170,7 +191,7 @@ namespace HorrorVR.Catacombs
 
         public void GetInput()
         {
-            if (Vector3.Distance(transform.position, wantedPosition) >= 1f)
+            if (Vector3.Distance(transform.position, wantedPosition) >= 0.5f)
             {
                 Vector3 diff = wantedPosition - transform.position;
 
