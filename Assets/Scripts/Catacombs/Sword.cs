@@ -88,6 +88,6 @@ namespace HorrorVR.Catacombs
                 Gizmos.DrawLine(starting, ending);
             }
         }
-    }
 #endif
+    }
 }

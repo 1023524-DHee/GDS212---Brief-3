@@ -28,7 +28,7 @@ namespace HorrorVR.Core
 
         private void Start()
         {
-            Invoke("InitialSetup", 1f);
+            Invoke("MovementCheck", 0.1f);
         }
 
         private void Update()
@@ -37,7 +37,7 @@ namespace HorrorVR.Core
         }
 
 
-        private void InitialSetup()
+        public void MovementCheck()
         {
             if(PlayerSettings.continuousMovementEnabled) EnableContinuousMovement();
             if(PlayerSettings.teleportMovementEnabled) EnableTeleportationMovement();
