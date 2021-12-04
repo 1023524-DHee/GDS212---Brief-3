@@ -26,16 +26,10 @@ namespace HorrorVR.Core
             current = this;
         }
 
-        private void Start()
-        {
-            Invoke("MovementCheck", 0.1f);
-        }
-
         private void Update()
         {
             CapsuleFollowHeadset();
         }
-
 
         public void MovementCheck()
         {
