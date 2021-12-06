@@ -26,18 +26,12 @@ namespace HorrorVR.Core
             current = this;
         }
 
-        private void Start()
-        {
-            Invoke("InitialSetup", 1f);
-        }
-
         private void Update()
         {
             CapsuleFollowHeadset();
         }
 
-
-        private void InitialSetup()
+        public void MovementCheck()
         {
             if(PlayerSettings.continuousMovementEnabled) EnableContinuousMovement();
             if(PlayerSettings.teleportMovementEnabled) EnableTeleportationMovement();
