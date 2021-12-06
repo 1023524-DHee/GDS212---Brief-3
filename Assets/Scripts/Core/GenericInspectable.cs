@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace HorrorVR
+namespace HorrorVR.Core
 {
     public class GenericInspectable : MonoBehaviour, IInspectable
     {
         [SerializeField] private bool singleUse;
         [Range (10, 180)]
         [SerializeField] private float lookAngleThreshold;
-        [Range (10, 360)]
+        [Range (10, 180)]
         [SerializeField] private float relativeAngleThreshold;
         [SerializeField] private float distanceThreshold;
         [SerializeField] private UnityEvent OnInspectEvent, OnInspectEndEvent;
