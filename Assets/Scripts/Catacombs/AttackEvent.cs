@@ -32,12 +32,28 @@ namespace HorrorVR.Catacombs
                 Quaternion swipeRotation = Quaternion.LookRotation(swipeVelocityNormalised, Vector2.up);
                 float dot = Mathf.Abs(Quaternion.Dot(swipeRotation, transform.rotation)); // Absolute allows for the swipe to be in either direction, as long as it's parralell
 
+                //Debug.Log($"Rotation offset {(1f - dot) * 90f}");
+                //Debug.Log($"Distance {distance}");
+
                 // If we are within the min distance and min rotation, then we have fulfilled the requirements
                 if (distance <= minimumDistance && dot > (90f - minimumRotation) / 90f)
                 {
+                    perpetrator.Damage(0.1f);
                     Complete();
                 }
             }
+        }
+
+        private void OnDrawGizmos()
+        {
+            SwordSwipe swipe = Sword.Instance.GetVelocityVector();
+
+            Mathfx.ClosestPointOnLineSegment(Camera.main.transform.position, transform.position, swipe.midPoint, out Vector3 pointOnLine, false);
+
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(swipe.midPoint, pointOnLine);
+
+
         }
     }
 }

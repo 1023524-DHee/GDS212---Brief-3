@@ -21,6 +21,8 @@ namespace HorrorVR.Catacombs
 
         public bool isFinished { private set; get; } = false;
 
+        public EnemyController perpetrator;
+
         [Serializable]
         private struct EventStruct
         {
@@ -40,6 +42,9 @@ namespace HorrorVR.Catacombs
             int eventIndex = 0;
             while(eventIndex < events.Length)
             {
+                if (perpetrator.IsDead) break;
+
+                events[eventIndex].attackEvent.perpetrator = perpetrator;
                 events[eventIndex].attackEvent.gameObject.SetActive(true);
                 events[eventIndex].attackEvent.time = events[eventIndex].eventTime;
 
@@ -53,7 +58,7 @@ namespace HorrorVR.Catacombs
             {
                 foreach (var e in events)
                 {
-                    if (e.attackEvent.isFinished)
+                    if ((e.attackEvent.hasStarted && !e.attackEvent.isFinished))
                     {
                         return false;
                     }
@@ -82,8 +87,7 @@ namespace HorrorVR.Catacombs
 
                 yield return null;
             }
-
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
