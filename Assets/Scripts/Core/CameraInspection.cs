@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HorrorVR
+namespace HorrorVR.Core
 {
     public class CameraInspection : MonoBehaviour
     {
@@ -38,8 +38,7 @@ namespace HorrorVR
                     print ("In View");
                     Inactive[i].OnInspect ();
 
-                    if (!Inactive[i].DisableAfterNextUse)
-                        Active.Add (Inactive[i]);
+                    Active.Add (Inactive[i]);
                     Inactive.RemoveAt (i);
                 }
             }
@@ -51,7 +50,8 @@ namespace HorrorVR
                     print ("Not In View");
                     Active[i].OnInspectEnd ();
 
-                    Inactive.Add (Active[i]);
+                    if (!Active[i].DisableAfterNextUse)
+                        Inactive.Add (Active[i]);
                     Active.RemoveAt (i);
                 }
             }

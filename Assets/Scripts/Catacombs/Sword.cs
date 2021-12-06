@@ -88,8 +88,8 @@ namespace HorrorVR.Catacombs
                     Gizmos.color = Color.Lerp(Color.green, Color.red, value);
                     Gizmos.DrawLine(starting, ending);
                 }
-            }
-
+            }
+
     #endif
     }
 }

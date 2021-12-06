@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HorrorVR
+namespace HorrorVR.Core
 {
     public interface IInspectable
     {
