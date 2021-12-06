@@ -14,13 +14,18 @@ namespace HorrorVR.Catacombs
         [SerializeField]
         private Slider slider;
 
+        public bool isFinished { private set; get; } = false;
+        public bool hasStarted { private set; get; } = false;
+
         public UnityEvent onStarted = new UnityEvent();
         public UnityEvent onSucceeded = new UnityEvent();
         public UnityEvent onFailed = new UnityEvent();
 
+        public EnemyController perpetrator;
+
         private void Start()
         {
-            slider.value = 0f;
+            slider.SetValueWithoutNotify(0f);
 
             onStarted.Invoke();
 
@@ -29,16 +34,19 @@ namespace HorrorVR.Catacombs
 
         IEnumerator Sequence()
         {
+            hasStarted = true;
             float currentTime = 0f;
             while (true)
             {
                 currentTime += Time.deltaTime;
-
+                
+                // Increase slider value
                 if (slider)
                 {
-                    slider.value = currentTime / time;
+                    slider.SetValueWithoutNotify(currentTime / time);
                 }
 
+                // If timer runs out, check if the player fulfilled the event's requirements
                 if (currentTime >= time)
                 {
                     if (HasFulfilledRequirements())
@@ -51,7 +59,8 @@ namespace HorrorVR.Catacombs
                         Debug.Log("Failed");
                     }
 
-                    Destroy(gameObject);
+                    isFinished = true;
+                    gameObject.SetActive(false);
                 }
 
                 yield return null;
@@ -61,6 +70,18 @@ namespace HorrorVR.Catacombs
         protected virtual bool HasFulfilledRequirements()
         {
             return true;
+        }
+
+        /// <summary>
+        /// Complete the event before the timer runs out/before HasFulfilledRequirements check
+        /// </summary>
+        protected void Complete()
+        {
+            StopAllCoroutines();
+            slider.SetValueWithoutNotify(1f);
+            onSucceeded.Invoke();
+            isFinished = true;
+            gameObject.SetActive(false);
         }
     }
 }
