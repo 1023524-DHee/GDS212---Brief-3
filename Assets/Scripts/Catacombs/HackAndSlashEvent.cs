@@ -14,6 +14,9 @@ namespace HorrorVR.Catacombs
         [SerializeField]
         private Slider slider;
 
+        [SerializeField]
+        private bool destroyOnFinish = false;
+
         public bool isFinished { private set; get; } = false;
         public bool hasStarted { private set; get; } = false;
 
@@ -25,7 +28,8 @@ namespace HorrorVR.Catacombs
 
         private void Start()
         {
-            slider.SetValueWithoutNotify(0f);
+            //slider.SetValueWithoutNotify(0f);
+            slider.value = 0f;
 
             onStarted.Invoke();
 
@@ -43,7 +47,7 @@ namespace HorrorVR.Catacombs
                 // Increase slider value
                 if (slider)
                 {
-                    slider.SetValueWithoutNotify(currentTime / time);
+                    slider.value = (currentTime / time);
                 }
 
                 // If timer runs out, check if the player fulfilled the event's requirements
@@ -60,7 +64,15 @@ namespace HorrorVR.Catacombs
                     }
 
                     isFinished = true;
-                    gameObject.SetActive(false);
+
+                    if (destroyOnFinish)
+                    {
+                        gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
 
                 yield return null;
@@ -69,7 +81,7 @@ namespace HorrorVR.Catacombs
 
         protected virtual bool HasFulfilledRequirements()
         {
-            return true;
+            return false;
         }
 
         /// <summary>
@@ -78,10 +90,16 @@ namespace HorrorVR.Catacombs
         protected void Complete()
         {
             StopAllCoroutines();
-            slider.SetValueWithoutNotify(1f);
+            slider.value = 1f; //slider.SetValueWithoutNotify(1f);
             onSucceeded.Invoke();
             isFinished = true;
             gameObject.SetActive(false);
+        }
+
+        public void Destroy()
+        {
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
         }
     }
 }
