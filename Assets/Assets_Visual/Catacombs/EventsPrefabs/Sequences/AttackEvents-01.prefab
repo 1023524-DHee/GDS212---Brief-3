@@ -55,6 +55,7 @@ MonoBehaviour:
   isAttack: 0
   attack: 0
   timeUntilAttacks: 0
+  perpetrator: {fileID: 0}
 --- !u!1001 &2087021254225338855
 PrefabInstance:
   m_ObjectHideFlags: 0
