@@ -7,7 +7,7 @@ namespace HorrorVR.Forest
 {
     public class SwordGrab : MonoBehaviour
     {
-        [SerializeField] private XRSimpleInteractable interactable;
+        //[SerializeField] private XRSimpleInteractable interactable;
         [SerializeField] private Transform XRRig, RigFallParent;
         [SerializeField] private Animator floorAnim;
 
@@ -15,7 +15,7 @@ namespace HorrorVR.Forest
 
         private void Awake ()
         {
-            interactable.activated.AddListener (OnInteract); 
+            //interactable.activated.AddListener (OnInteract); 
         }
 
         //private void Update ()
@@ -29,9 +29,9 @@ namespace HorrorVR.Forest
         //    }
         //}
 
-        private void OnInteract (ActivateEventArgs args)
+        public void OnInteract ()
         {
-            transform.parent = args.interactor.attachTransform;
+            //transform.parent = args.interactor.attachTransform;
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;
             GetComponent<Animator> ().SetBool ("Flashing", false);
@@ -44,7 +44,7 @@ namespace HorrorVR.Forest
             yield return new WaitForSeconds (1);
             XRRig.parent = RigFallParent;
             floorAnim.SetTrigger ("Shake");
-            yield return new WaitForSeconds (2);
+            yield return new WaitForSeconds (0.5f);
             floorAnim.SetTrigger ("Collapse");
         }
     }
