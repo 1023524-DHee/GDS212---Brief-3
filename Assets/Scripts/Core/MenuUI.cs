@@ -26,6 +26,10 @@ namespace HorrorVR.Core
         public GameObject optionsPanel;
         public GameObject mainMenuPanel;
 
+        [Header("Camera")]
+        public GameObject canvasTransformGO;
+        public GameObject mainCameraGO;
+
         private InputAction Menu_Press;
 
         public bool _menuIsOpen;
@@ -77,6 +81,8 @@ namespace HorrorVR.Core
             PlayerSettings.snapTurnEnabled = snapTurnToggle.isOn;
 
             MovementTypeManager.current.MovementCheck();
+
+            canvasTransformGO.transform.rotation = mainCameraGO.transform.rotation;
         }
 
         public void OpenOptionsMenu()

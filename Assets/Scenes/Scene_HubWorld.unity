@@ -1138,6 +1138,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 373327966}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &441941012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7091358598816706533, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5005704543743243394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &454450259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4596156958608280, guid: 7c0bb3fb83451e648b37bc9ca8784490,
@@ -25149,6 +25155,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1898297396}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2034434026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5005704542858918998, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5005704543743243394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2034737977
 GameObject:
   m_ObjectHideFlags: 0
@@ -25470,25 +25482,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1966159550, guid: d9d6d86672c692a4c861b3b7c7bbf41a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3001276364530620447, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 27211900}
-    - target: {fileID: 3001276364530620447, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Loadlevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3001276364530620447, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: HorrorVR.Core.MovementTypeManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 5005704542361647151, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_Name
@@ -25549,15 +25542,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5005704544220067935, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+    - target: {fileID: 8816355535512715278, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
-      propertyPath: blackoutMaterial
+      propertyPath: mainCameraGO
       value: 
-      objectReference: {fileID: 2100000, guid: e0d9a24a24612114fb4f31752cd26d40, type: 2}
-    - target: {fileID: 7091358598816706533, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+      objectReference: {fileID: 2034434026}
+    - target: {fileID: 8816355535512715278, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: canvasTransformGO
+      value: 
+      objectReference: {fileID: 441941012}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d6d86672c692a4c861b3b7c7bbf41a, type: 3}

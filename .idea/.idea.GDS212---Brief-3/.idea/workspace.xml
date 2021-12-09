@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="546c8965-a5c2-42b4-851c-68550b195efc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDS212---Brief-3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets_Visual/Hub World/Materials/Blackout.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets_Visual/Hub World/Materials/Blackout.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XR Rig.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/XR Rig.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_HubWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_HubWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/MenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/MenuUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/MovementTypeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/MovementTypeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/TeleportationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/TeleportationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HubWorld/BookLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HubWorld/BookLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="546c8965-a5c2-42b4-851c-68550b195efc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +78,7 @@
       <workItem from="1638435937818" duration="857000" />
       <workItem from="1638441124309" duration="5188000" />
       <workItem from="1638581810911" duration="2567000" />
-      <workItem from="1639053659703" duration="4259000" />
+      <workItem from="1639053659703" duration="4909000" />
     </task>
     <servers />
   </component>
