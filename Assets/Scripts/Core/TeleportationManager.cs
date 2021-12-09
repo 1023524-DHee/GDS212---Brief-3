@@ -31,7 +31,7 @@ namespace HorrorVR.Core
         private bool _isFading;
 
         // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
             Color currentColor = blackoutMaterial.color;
             currentColor.a = 0;
