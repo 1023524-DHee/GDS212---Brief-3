@@ -124,6 +124,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &27211900 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5005704544220067935, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5005704543743243394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57abc26b869e6d428b9c191c6e8778e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &112082409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1563,6 +1575,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 27211900}
+        m_TargetAssemblyTypeName: HorrorVR.Core.MovementTypeManager, Assembly-CSharp
+        m_MethodName: Loadlevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Puzzle_Greybox
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -1664,8 +1688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1325cfb74d9634d83be00140436a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Scene_PuzzleRoom
-  blackoutMaterial: {fileID: 2100000, guid: e0d9a24a24612114fb4f31752cd26d40, type: 2}
   particleSystem: {fileID: 608407553}
 --- !u!199 &608407552
 ParticleSystemRenderer:
@@ -6866,7 +6888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightSource: {fileID: 678591267}
   flickerSpeed: 0.5
-  flickerPercent: 50
+  flickerPercent: 70
   randomNoiseSeed: 1
   noiseSeed: 0
 --- !u!1001 &728536029
@@ -8174,7 +8196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightSource: {fileID: 1112455306}
   flickerSpeed: 0.5
-  flickerPercent: 50
+  flickerPercent: 70
   randomNoiseSeed: 1
   noiseSeed: 0
 --- !u!1 &1158887162
@@ -9777,6 +9799,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 27211900}
+        m_TargetAssemblyTypeName: HorrorVR.Core.MovementTypeManager, Assembly-CSharp
+        m_MethodName: Loadlevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene_TreasureRoom
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -9878,8 +9912,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1325cfb74d9634d83be00140436a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Scene_TreasureRoom
-  blackoutMaterial: {fileID: 2100000, guid: e0d9a24a24612114fb4f31752cd26d40, type: 2}
   particleSystem: {fileID: 1675062553}
 --- !u!199 &1675062552
 ParticleSystemRenderer:
@@ -15012,6 +15044,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 27211900}
+        m_TargetAssemblyTypeName: HorrorVR.Core.MovementTypeManager, Assembly-CSharp
+        m_MethodName: Loadlevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene_Forest
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -15113,8 +15157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1325cfb74d9634d83be00140436a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Scene_Forest
-  blackoutMaterial: {fileID: 2100000, guid: e0d9a24a24612114fb4f31752cd26d40, type: 2}
   particleSystem: {fileID: 1726595178}
 --- !u!199 &1726595177
 ParticleSystemRenderer:
@@ -20015,6 +20057,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 27211900}
+        m_TargetAssemblyTypeName: HorrorVR.Core.MovementTypeManager, Assembly-CSharp
+        m_MethodName: Loadlevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene_Catacombs
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -20116,8 +20170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1325cfb74d9634d83be00140436a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Scene_Catacombs
-  blackoutMaterial: {fileID: 2100000, guid: e0d9a24a24612114fb4f31752cd26d40, type: 2}
   particleSystem: {fileID: 1837018967}
 --- !u!199 &1837018966
 ParticleSystemRenderer:
@@ -25418,6 +25470,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1966159550, guid: d9d6d86672c692a4c861b3b7c7bbf41a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001276364530620447, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 27211900}
+    - target: {fileID: 3001276364530620447, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Loadlevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3001276364530620447, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HorrorVR.Core.MovementTypeManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5005704542361647151, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_Name
@@ -25477,6 +25548,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005704544220067935, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+        type: 3}
+      propertyPath: blackoutMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e0d9a24a24612114fb4f31752cd26d40, type: 2}
+    - target: {fileID: 7091358598816706533, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d6d86672c692a4c861b3b7c7bbf41a, type: 3}
