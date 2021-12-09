@@ -9,11 +9,11 @@ namespace HorrorVR
         [Tooltip("Tag on the sword object.")]
         public string swordTag;
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider sword)
         {
-            if (other.CompareTag(swordTag))
+            if (sword.CompareTag(swordTag))
             {
-                transform.position = new Vector3(0f, -5.599243f, 0f);
+                transform.position = new Vector3(0f, 0.076f, 0f);
             }
         }
     }
