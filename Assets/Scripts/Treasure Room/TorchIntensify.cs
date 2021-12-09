@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.
 
-namespace HorrorVR
+namespace HorrorVR.TreasureRoom
 {
     public class TorchIntensify : MonoBehaviour
     {
@@ -34,7 +33,7 @@ namespace HorrorVR
 
         private void Update ()
         {
-            intensity += (bossSequence.BobInRange && bossSequence.WithinAngleThresh ? 1 : -1) * speed * Time.deltaTime;
+            //intensity += (bossSequence.BobInRange && bossSequence.WithinAngleThresh ? 1 : -1) * speed * Time.deltaTime;
         }
     }
 }
