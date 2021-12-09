@@ -46,14 +46,15 @@ namespace HorrorVR.Catacombs
 
         private void OnDrawGizmos()
         {
-            SwordSwipe swipe = Sword.Instance.GetVelocityVector();
+            if (Sword.Instance)
+            {
+                SwordSwipe swipe = Sword.Instance.GetVelocityVector();
 
-            Mathfx.ClosestPointOnLineSegment(Camera.main.transform.position, transform.position, swipe.midPoint, out Vector3 pointOnLine, false);
+                Mathfx.ClosestPointOnLineSegment(Camera.main.transform.position, transform.position, swipe.midPoint, out Vector3 pointOnLine, false);
 
-            Gizmos.color = Color.blue;
-            Gizmos.DrawLine(swipe.midPoint, pointOnLine);
-
-
+                Gizmos.color = Color.blue;
+                Gizmos.DrawLine(swipe.midPoint, pointOnLine);
+            }
         }
     }
 }
