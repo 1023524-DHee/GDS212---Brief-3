@@ -6,9 +6,22 @@ namespace HorrorVR.Core
 {
     public static class PlayerSettings
     {
-        public static bool continuousMovementEnabled = true;
-        public static bool teleportMovementEnabled = false;
-        public static bool continuousTurnEnabled = true;
-        public static bool snapTurnEnabled = false;
+        private static bool _isInitialised;
+        
+        public static bool continuousMovementEnabled;
+        public static bool teleportMovementEnabled;
+        public static bool continuousTurnEnabled;
+        public static bool snapTurnEnabled;
+
+        public static void InitializeValues(bool contMove, bool teleMove, bool contTurn, bool snapTurn)
+        {
+            if (_isInitialised) return;
+
+            _isInitialised = true;
+            continuousMovementEnabled = contMove;
+            teleportMovementEnabled = teleMove;
+            continuousTurnEnabled = contTurn;
+            snapTurnEnabled = snapTurn;
+        }
     }
 }

@@ -7,6 +7,7 @@ namespace HorrorVR
     public class OpenDoorTorch : MonoBehaviour
     {
         public GameObject door;
+        public bool isNegative;
 
         bool isOpen = false;
 
@@ -29,7 +30,7 @@ namespace HorrorVR
 
         IEnumerator OpenDoor()
         {
-            Quaternion newAngle = Quaternion.Euler(0, initialRotation.y + 90f, 0);
+            Quaternion newAngle = Quaternion.Euler(0, initialRotation.y + (isNegative ? -90f : 90f), 0);
             float startTime = Time.time;
 
             while(Time.time < startTime + 3f)

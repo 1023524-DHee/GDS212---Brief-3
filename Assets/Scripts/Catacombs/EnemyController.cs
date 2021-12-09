@@ -56,6 +56,12 @@ namespace HorrorVR.Catacombs
             GetInput();
             Movement();
 
+            // Look at the position we want to be in
+            Vector3 lookPosition = lookTarget ? lookAtPosition : wantedPosition;
+            Vector3 from = new Vector3(transform.position.x, 0f, transform.position.z);
+            Vector3 to = new Vector3(lookPosition.x, 0f, lookPosition.z);
+            transform.rotation = Quaternion.LookRotation(to - from);
+
             if (isMovingToTargetLocation)
             {
                 if (animator.GetCurrentAnimatorStateInfo(0).IsName("Sword Idle And Rotate Blend Tree") && !animator.IsInTransition(0))
@@ -203,8 +209,8 @@ namespace HorrorVR.Catacombs
 
                 // Rotate the difference by the player rotation
                 // We rotate it because the animator does not know the rotation of the object, so we have to do it ourselves
-                diff.z = diff.z * c - diff.x * s;
-                diff.x = diff.z * s + diff.x * c;
+                diff.x = diff.x * c - diff.z * s;
+                diff.z = diff.x * s + diff.z * c;
 
                 input = -new Vector2(diff.x, diff.z);
                 input = Mathf.Clamp(input.magnitude, 0f, 1f) * input.normalized;
