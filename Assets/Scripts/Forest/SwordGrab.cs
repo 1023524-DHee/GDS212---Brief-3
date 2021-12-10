@@ -35,6 +35,7 @@ namespace HorrorVR.Forest
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;
             GetComponent<Animator> ().SetBool ("Flashing", false);
+            XRRig.GetComponent<CharacterController> ().enabled = false;
 
             StartCoroutine (FallSequence ());
         }
