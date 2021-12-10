@@ -19,7 +19,6 @@ namespace HorrorVR.Core
         [SerializeField] private XRRayInteractor lRayInteractor;
         [SerializeField] private XRRayInteractor rRayInteractor;
         [SerializeField] private TeleportationProvider teleportationProvider;
-        [SerializeField] private Material blackoutMaterial;
 
         private InputAction L_Activate;
         private InputAction R_Activate;
@@ -33,10 +32,6 @@ namespace HorrorVR.Core
         // Start is called before the first frame update
         void Awake()
         {
-            Color currentColor = blackoutMaterial.color;
-            currentColor.a = 0;
-            blackoutMaterial.color = currentColor;
-            
             lRayInteractor.enabled = false;
             rRayInteractor.enabled = false;
         }
@@ -97,7 +92,11 @@ namespace HorrorVR.Core
             
             if (canTeleport)
             {
-                StartCoroutine(Teleport_Coroutine(hit));
+                TeleportRequest request = new TeleportRequest()
+                {
+                    destinationPosition = hit.point
+                };
+                teleportationProvider.QueueTeleportRequest(request);
             }
 
             lRayInteractor.enabled = false;
@@ -110,37 +109,6 @@ namespace HorrorVR.Core
             lRayInteractor.enabled = false;
             rRayInteractor.enabled = false;
             _isActive = false;
-        }
-        
-        private IEnumerator Teleport_Coroutine(RaycastHit hit)
-        {
-            _isFading = true;
-            
-            float startTime = Time.time;
-            Color currentColor = blackoutMaterial.color;
-            while (Time.time < startTime + 0.5f)
-            {
-                currentColor.a = Mathf.Lerp(0, 1, (Time.time - startTime) / 0.5f);
-                blackoutMaterial.color = currentColor;
-                yield return null;
-            }
-
-            TeleportRequest request = new TeleportRequest()
-            {
-                destinationPosition = hit.point
-            };
-            teleportationProvider.QueueTeleportRequest(request);
-            yield return new WaitForSeconds(0.5f);
-            
-            startTime = Time.time;
-            while (Time.time < startTime + 0.5f)
-            {
-                currentColor.a = Mathf.Lerp(1, 0, (Time.time - startTime) / 0.5f);
-                blackoutMaterial.color = currentColor;
-                yield return null;
-            }
-
-            _isFading = false;
         }
 
         private void OnEnable()
