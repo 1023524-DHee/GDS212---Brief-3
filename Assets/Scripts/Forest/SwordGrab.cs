@@ -43,7 +43,7 @@ namespace HorrorVR.Forest
 
         IEnumerator FallSequence ()
         {
-            //MovementTypeManager.current.LoadLevel("Scene_Catacombs");
+            MovementTypeManager.current.Loadlevel("Scene_Catacombs");
             yield return new WaitForSeconds (0.5f);
             XRRig.parent = RigFallParent;
             floorAnim.SetTrigger ("Shake");
