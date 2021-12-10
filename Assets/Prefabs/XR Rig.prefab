@@ -4061,8 +4061,8 @@ MonoBehaviour:
   snapTurnToggle: {fileID: 6515831065680745919}
   optionsPanel: {fileID: 4799829145620909530}
   mainMenuPanel: {fileID: 218656332464021379}
-  canvasTransformGO: {fileID: 0}
-  mainCameraGO: {fileID: 0}
+  canvasTransformGO: {fileID: 7091358598816706533}
+  mainCameraGO: {fileID: 5005704542858918998}
   _menuIsOpen: 0
 --- !u!1 &5005704542858918998
 GameObject:

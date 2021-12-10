@@ -84,12 +84,36 @@ namespace HorrorVR.Core
             continuousTurnProvider.enabled = false;
             snapTurnProvider.enabled = true;
         }
+
+        public void DisableMovement()
+        {
+            continuousMoveProvider.enabled = false;
+
+            teleportationProvider.enabled = false;
+            teleportationManager.enabled = false;
+
+            snapTurnProvider.enabled = false;
+            continuousTurnProvider.enabled = false;
+        }
+        
+        public void EnableMovement()
+        {
+            MovementCheck();
+        }
         #endregion
         
+
+
         #region Level Loaders
         public void Loadlevel(string levelToLoad)
         {
             if (_isFading) return;
+
+            if (levelToLoad == "Scene_HubWorld")
+            {
+                SceneManager.LoadScene(levelToLoad);
+            }
+
 
             if (SceneManager.GetActiveScene().name != levelToLoad)
             {
