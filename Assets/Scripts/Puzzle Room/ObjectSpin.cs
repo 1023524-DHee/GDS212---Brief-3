@@ -10,10 +10,10 @@ using HorrorVR;
 public class ObjectSpin : MonoBehaviour
 {
     //[SerializeField] private InputActionAsset actionAsset;
-    //private bool canInteract;
-    //private bool isSpinning;
+    private bool canInteract;
+    private bool isSpinning;
     private int currentSpinPosition = 0;
-    //int spinAmount = 0;
+    int spinAmount = 0;
     public Animator cubeAnimator;
     public GameObject button;
     
@@ -34,7 +34,7 @@ public class ObjectSpin : MonoBehaviour
         R_Grip.performed += IncreaseInt;
 
         
-    }
+    }*/
 
 	public void IncreaseInt(InputAction.CallbackContext context)
     {
@@ -44,7 +44,7 @@ public class ObjectSpin : MonoBehaviour
         StartCoroutine(SpinTotem_Coroutine());
         spinAmount++;
         Debug.Log(spinAmount);
-    }*/
+    }
 
     //private void Update()
     //{
@@ -103,7 +103,7 @@ public class ObjectSpin : MonoBehaviour
 
     public IEnumerator SpinTotem_Coroutine()
     {
-        button.GetComponent<TotemButton>().isSpinning = true;
+        isSpinning = true;
         float startTime = Time.time;
         currentSpinPosition = (currentSpinPosition + 90)%360;
         Quaternion newRotation = Quaternion.Euler(0f, currentSpinPosition, 0f);
@@ -127,7 +127,7 @@ public class ObjectSpin : MonoBehaviour
             correctPosition = false;
         }
 
-        button.GetComponent<TotemButton>().isSpinning = false;
+        isSpinning = false;
     }
 
 	/*private void OnTriggerEnter(Collider other)
