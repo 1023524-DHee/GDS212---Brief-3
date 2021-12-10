@@ -13,19 +13,25 @@ namespace HorrorVR.Core
     {
         public static MenuUI current;
 
-        [SerializeField] private Canvas menuCanvas;
+        [Header("Interactions")]
         [SerializeField] private InputActionAsset actionAsset;
         [SerializeField] private XRRayInteractor rayInteractor;
-
-        private InputAction Menu_Press;
-
+        
+        [Header("UI")]
+        [SerializeField] private Canvas menuCanvas;
         public Toggle continuousMovementToggle;
         public Toggle teleportMovementToggle;
         public Toggle continuousTurnToggle;
         public Toggle snapTurnToggle;
-
         public GameObject optionsPanel;
         public GameObject mainMenuPanel;
+
+        [Header("Camera")]
+        public GameObject canvasTransformGO;
+        public GameObject mainCameraGO;
+
+        private InputAction Menu_Press;
+
         public bool _menuIsOpen;
 
         private void Awake()
@@ -53,6 +59,7 @@ namespace HorrorVR.Core
             Menu_Press.performed += ToggleMenu;
         }
 
+        #region Menu Toggle Functions
         private void ToggleMenu(InputAction.CallbackContext context)
         {
             ToggleMenu();
@@ -66,8 +73,7 @@ namespace HorrorVR.Core
             rayInteractor.enabled = _menuIsOpen;
             
             menuCanvas.gameObject.SetActive(_menuIsOpen);
-            optionsPanel.gameObject.SetActive(false);
-            mainMenuPanel.gameObject.SetActive(true);
+            OpenMainMenu();
 
             PlayerSettings.continuousMovementEnabled = continuousMovementToggle.isOn;
             PlayerSettings.teleportMovementEnabled = teleportMovementToggle.isOn;
@@ -75,11 +81,8 @@ namespace HorrorVR.Core
             PlayerSettings.snapTurnEnabled = snapTurnToggle.isOn;
 
             MovementTypeManager.current.MovementCheck();
-        }
-        
-        public void LoadScene(string sceneName)
-        {
-            if(SceneManager.GetActiveScene().name != sceneName) SceneManager.LoadScene(sceneName);
+
+            canvasTransformGO.transform.rotation = mainCameraGO.transform.rotation;
         }
 
         public void OpenOptionsMenu()
@@ -93,7 +96,8 @@ namespace HorrorVR.Core
             optionsPanel.gameObject.SetActive(false);
             mainMenuPanel.gameObject.SetActive(true);
         }
-
+        #endregion
+        
         public void QuitGame()
         {
             Application.Quit();
