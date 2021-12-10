@@ -326,6 +326,18 @@ MonoBehaviour:
   onUnpause:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &332465441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332465439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ee4c0c4b5be864888ee82579c5356c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &512870707
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +442,7 @@ GameObject:
   - component: {fileID: 617136894}
   - component: {fileID: 617136893}
   - component: {fileID: 617136892}
+  - component: {fileID: 617136895}
   m_Layer: 0
   m_Name: SkellyTrigger-02
   m_TagString: Untagged
@@ -510,6 +523,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617136895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617136891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81452a09b64378b42925cf177424005a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPosition: {fileID: 617136894}
 --- !u!1001 &749854890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1186,6 +1212,7 @@ GameObject:
   - component: {fileID: 1513864491}
   - component: {fileID: 1513864488}
   - component: {fileID: 1513864487}
+  - component: {fileID: 1513864489}
   m_Layer: 0
   m_Name: SkellyTrigger-01
   m_TagString: Untagged
@@ -1252,6 +1279,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1513864489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513864486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81452a09b64378b42925cf177424005a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopPosition: {fileID: 1513864491}
 --- !u!4 &1513864491
 Transform:
   m_ObjectHideFlags: 0
