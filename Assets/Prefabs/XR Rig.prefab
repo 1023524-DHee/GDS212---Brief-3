@@ -164,7 +164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5005704542858919002}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1006498360
 MeshFilter:
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -856,14 +856,14 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966159550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.23}
+  m_LocalPosition: {x: 0, y: 0, z: 1.2300003}
   m_LocalScale: {x: 0.001, y: 0.001, z: 1}
   m_Children:
   - {fileID: 3502680269008472416}
   - {fileID: 801705561108801360}
   - {fileID: 40961380959862090}
   - {fileID: 5396592721798904923}
-  m_Father: {fileID: 5005704542858919002}
+  m_Father: {fileID: 8777616462763337053}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1113,7 +1113,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2010,7 +2010,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2405,7 +2405,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3092,7 +3092,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3511,7 +3511,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3904,9 +3904,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8816355535512715278}
-        m_TargetAssemblyTypeName: HorrorVR.Core.MenuUI, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 5005704544220067935}
+        m_TargetAssemblyTypeName: HorrorVR.Core.MovementTypeManager, Assembly-CSharp
+        m_MethodName: Loadlevel
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3949,6 +3949,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 8777616462763337053}
   - {fileID: 5005704543563927761}
   - {fileID: 5005704544220067929}
   m_Father: {fileID: 0}
@@ -4050,16 +4051,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f66ffd794dcde8428c91c63c894ef5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuCanvas: {fileID: 1966159553}
   actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   rayInteractor: {fileID: 1680196850}
+  menuCanvas: {fileID: 1966159553}
   continuousMovementToggle: {fileID: 5224043777222444189}
   teleportMovementToggle: {fileID: 1124889183195510958}
   continuousTurnToggle: {fileID: 2541032995438632071}
   snapTurnToggle: {fileID: 6515831065680745919}
   optionsPanel: {fileID: 4799829145620909530}
   mainMenuPanel: {fileID: 218656332464021379}
+  canvasTransformGO: {fileID: 7091358598816706533}
+  mainCameraGO: {fileID: 5005704542858918998}
   _menuIsOpen: 0
 --- !u!1 &5005704542858918998
 GameObject:
@@ -4092,7 +4095,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1966159554}
   - {fileID: 1006498357}
   m_Father: {fileID: 5005704543563927761}
   m_RootOrder: 0
@@ -4263,7 +4265,7 @@ Transform:
   - {fileID: 5005704544306583286}
   - {fileID: 5005704543579087006}
   m_Father: {fileID: 5005704542361647154}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5005704543579087001
 GameObject:
@@ -4541,7 +4543,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5005704542361647154}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5005704544220067925
 MonoBehaviour:
@@ -4708,7 +4710,6 @@ MonoBehaviour:
   lRayInteractor: {fileID: 3470543842412327792}
   rRayInteractor: {fileID: 3756716070599262873}
   teleportationProvider: {fileID: 5005704544220067934}
-  blackoutMaterial: {fileID: 2100000, guid: e0d9a24a24612114fb4f31752cd26d40, type: 2}
 --- !u!114 &5005704544220067935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4728,6 +4729,7 @@ MonoBehaviour:
   continuousTurnProvider: {fileID: 5005704544220067931}
   teleportationProvider: {fileID: 5005704544220067934}
   teleportationManager: {fileID: 900693243}
+  blackoutMaterial: {fileID: 2100000, guid: e0d9a24a24612114fb4f31752cd26d40, type: 2}
 --- !u!1 &5005704544306583281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5044,7 +5046,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6177,6 +6179,37 @@ MonoBehaviour:
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!1 &7091358598816706533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8777616462763337053}
+  m_Layer: 0
+  m_Name: Canvas Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8777616462763337053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7091358598816706533}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.506, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1966159554}
+  m_Father: {fileID: 5005704542361647154}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7686885649448644037
 GameObject:
   m_ObjectHideFlags: 0
@@ -6386,7 +6419,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7180,7 +7213,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7460,15 +7493,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
---- !u!4 &4968349508609128098 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b,
-    type: 3}
-  m_PrefabInstance: {fileID: 5005704543571763935}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4968349508609354434 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5005704543571763935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4968349508609128098 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b,
     type: 3}
   m_PrefabInstance: {fileID: 5005704543571763935}
   m_PrefabAsset: {fileID: 0}
@@ -7546,15 +7579,15 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: a2bdc2166f2537949b507667d9fabc7c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
---- !u!4 &837354166050358893 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5686134208185136530, guid: 1fd3a7c43c8190f4d8c167ebde694364,
-    type: 3}
-  m_PrefabInstance: {fileID: 5005704543983531007}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &837354166050855437 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+    type: 3}
+  m_PrefabInstance: {fileID: 5005704543983531007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &837354166050358893 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5686134208185136530, guid: 1fd3a7c43c8190f4d8c167ebde694364,
     type: 3}
   m_PrefabInstance: {fileID: 5005704543983531007}
   m_PrefabAsset: {fileID: 0}
