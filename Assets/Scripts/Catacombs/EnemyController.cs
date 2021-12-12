@@ -30,6 +30,9 @@ namespace HorrorVR.Catacombs
         [SerializeField]
         private bool isAttacking = false;
 
+        [SerializeField]
+        private bool unpauseOnDeath = true;
+
         // Movement
         private Vector2 input;
         private Vector2 smoothedInput;
@@ -163,6 +166,8 @@ namespace HorrorVR.Catacombs
 
         public void SetAiming()
         {
+            //TODO use this for the look direction, or a modified version
+
             //if (!lookAtTarget)
             //{
             //    // Lerp the aim angles
@@ -239,6 +244,7 @@ namespace HorrorVR.Catacombs
                 StopAllCoroutines();
                 animator.SetFloat("DeathFloat", Random.Range(0, 5));
                 animator.SetTrigger("Die");
+                if (unpauseOnDeath) Pauser.current.Unpause();
             }
         }
     }

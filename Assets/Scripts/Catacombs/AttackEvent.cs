@@ -30,7 +30,7 @@ namespace HorrorVR.Catacombs
                 // Get the rotation dot product from the swipe velocity and the event rotation
                 Vector3 swipeVelocityNormalised = swipe.velocity;
                 Quaternion swipeRotation = Quaternion.LookRotation(swipeVelocityNormalised, Vector2.up);
-                float dot = Mathf.Abs(Quaternion.Dot(swipeRotation, transform.rotation)); // Absolute allows for the swipe to be in either direction, as long as it's parralell
+                float dot = Mathf.Abs(Quaternion.Dot(swipeRotation * Quaternion.AngleAxis(90f, (transform.position - Camera.main.transform.position)).normalized, transform.rotation)); // Absolute allows for the swipe to be in either direction, as long as it's parralell
 
                 //Debug.Log($"Rotation offset {(1f - dot) * 90f}");
                 //Debug.Log($"Distance {distance}");

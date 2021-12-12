@@ -437,9 +437,11 @@ MonoBehaviour:
   - BOB
   - Catacombs
   - Damage
+  - Door
   - EscapeRoom
   - Interactions
   - Player
+  - Skeleton
   - SpookyForest
   - Sword
   - Torch
