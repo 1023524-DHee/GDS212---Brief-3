@@ -93,7 +93,11 @@ namespace HorrorVR.Catacombs
             slider.value = 1f; //slider.SetValueWithoutNotify(1f);
             onSucceeded.Invoke();
             isFinished = true;
-            gameObject.SetActive(false);
+
+            if (destroyOnFinish)
+            {
+                gameObject.SetActive(false);
+            }
         }
 
         public void Destroy()

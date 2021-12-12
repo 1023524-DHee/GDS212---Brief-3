@@ -11,10 +11,12 @@ namespace HorrorVR.TreasureRoom
         [SerializeField] private Vector2 minMaxSpeed;
         [SerializeField] private float furthestDistance, inRangeDistance, atPlayerDistance, angleThreshold;
 
-        //private BobState State => state;
-        //private Transform Bob => bob;
-        private bool inRange => bob.transform.localPosition.z <= inRangeDistance;
-        private bool withinAngleThresh => Vector3.Angle ((torch.position - player.position).ZeroY (), (bob.position - player.position).ZeroY ()) < angleThreshold;
+        public BobState State => state;
+        public float MoveSpeedRatio => Mathf.InverseLerp (minMaxSpeed.x, minMaxSpeed.y, moveSpeed);
+        public float StaggerRatio => 1 - timeToStagger / 3;
+        
+        public bool InRange => bob.transform.localPosition.z <= inRangeDistance;
+        public bool WithinAngleThresh => Vector3.Angle ((torch.position - player.position).ZeroY (), (bob.position - player.position).ZeroY ()) < angleThreshold;
 
         private BobState state;
         private float _moveSpeed;
@@ -39,7 +41,7 @@ namespace HorrorVR.TreasureRoom
 
         private void Update ()
         {
-            print (timeToStagger);
+            //print (timeToStagger);
             switch (state)
             {
                 case BobState.Idle:
@@ -49,12 +51,12 @@ namespace HorrorVR.TreasureRoom
                     break;
 
                 case BobState.Approaching:
-                    moveSpeed += inRange && withinAngleThresh ? -Time.deltaTime : 2 * Time.deltaTime;
+                    moveSpeed += InRange && WithinAngleThresh ? -Time.deltaTime : 2 * Time.deltaTime;
                     Move (moveSpeed);
                     
-                    if (inRange)
+                    if (InRange)
                     {
-                        if (withinAngleThresh)
+                        if (WithinAngleThresh)
                         {
                             timeToStagger -= Time.deltaTime;
                             if (timeToStagger <= 0)
