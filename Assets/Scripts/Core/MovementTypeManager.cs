@@ -127,12 +127,13 @@ namespace HorrorVR.Core
         private IEnumerator LoadLevel_Coroutine(string levelToLoad)
         {
             _isFading = true;
+            Time.timeScale = 1;
             
             float startTime = Time.time;
             Color currentColor = blackoutMaterial.color;
-            while (Time.time < startTime + 5f)
+            while (Time.time < startTime + 2f)
             {
-                currentColor.a = Mathf.Lerp(0, 1, (Time.time - startTime) / 5f);
+                currentColor.a = Mathf.Lerp(0, 1, (Time.time - startTime) / 2f);
                 blackoutMaterial.color = currentColor;
                 yield return null;
             }
