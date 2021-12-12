@@ -28,6 +28,9 @@ namespace HorrorVR.Core
 
         private bool _isFading;
 
+        // Don't hate me Dickson please ;-;
+        public TeleportationProvider TeleportationProvider => teleportationProvider;
+
         private void Awake()
         {
             current = this;
