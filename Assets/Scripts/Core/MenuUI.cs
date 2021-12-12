@@ -25,6 +25,7 @@ namespace HorrorVR.Core
         public Toggle snapTurnToggle;
         public GameObject optionsPanel;
         public GameObject mainMenuPanel;
+        public GameObject levelSelectPanel;
 
         [Header("Camera")]
         public GameObject canvasTransformGO;
@@ -85,16 +86,28 @@ namespace HorrorVR.Core
             canvasTransformGO.transform.rotation = mainCameraGO.transform.rotation;
         }
 
+        public void OpenMainMenu()
+        {
+            mainMenuPanel.gameObject.SetActive(true);
+            
+            optionsPanel.gameObject.SetActive(false);
+            levelSelectPanel.gameObject.SetActive(false);
+        }
+
         public void OpenOptionsMenu()
         {
             optionsPanel.gameObject.SetActive(true);
+            
             mainMenuPanel.gameObject.SetActive(false);
+            levelSelectPanel.gameObject.SetActive(false);
         }
 
-        public void OpenMainMenu()
+        public void OpenLevelSelectMenu()
         {
+            levelSelectPanel.gameObject.SetActive(true);
+            
             optionsPanel.gameObject.SetActive(false);
-            mainMenuPanel.gameObject.SetActive(true);
+            mainMenuPanel.gameObject.SetActive(false);
         }
         #endregion
         
