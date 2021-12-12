@@ -6,34 +6,46 @@ namespace HorrorVR.TreasureRoom
 {
     public class TorchIntensify : MonoBehaviour
     {
-        [SerializeField] private BossSequence bossSequence;
+        [SerializeField] private BobController bob;
         [SerializeField] private float speed;
-        [SerializeField] private float maxIntensity;
-        [SerializeField] private Light torchLight;
-        [SerializeField] private ParticleSystem torchParticles;
 
-        private float startLightIntensity;
+        private Animator anim;
+        private bool canCharge = true;
 
         private void Start ()
         {
-            startLightIntensity = torchLight.intensity;
+            anim = GetComponent<Animator> ();
         }
 
+        private float _intensity;
         private float intensity 
         { 
             set
             {
-                intensity = Mathf.Clamp (value, 1, maxIntensity);
-                torchLight.intensity = startLightIntensity * intensity;
-                ParticleSystem.MainModule psMain = torchParticles.main;
-                psMain.startSize = 0.08f * intensity;
+                _intensity = Mathf.Clamp01 (value);
+                anim.SetFloat ("Intensity", _intensity);
             } 
-            get { return intensity; }
+            get { return _intensity; }
         }
 
         private void Update ()
         {
-            //intensity += (bossSequence.BobInRange && bossSequence.WithinAngleThresh ? 1 : -1) * speed * Time.deltaTime;
+            print (bob.StaggerRatio);
+            if (bob.State == BobState.Approaching)
+            {
+                if (!canCharge)
+                {
+                    canCharge = true;
+                    anim.SetBool ("CanCharge", true);
+                }
+                intensity = bob.StaggerRatio;
+            }
+            else if (canCharge)
+            {
+                canCharge = false;
+                anim.SetBool ("CanCharge", false);
+                intensity = 0;
+            }
         }
     }
 }
