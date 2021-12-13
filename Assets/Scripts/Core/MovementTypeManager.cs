@@ -123,6 +123,11 @@ namespace HorrorVR.Core
                 StartCoroutine(LoadLevel_Coroutine(levelToLoad));
             }
         }
+
+        public void ReloadLevel()
+        {
+            StartCoroutine(LoadLevel_Coroutine(SceneManager.GetActiveScene().name));
+        }
         
         private IEnumerator LoadLevel_Coroutine(string levelToLoad)
         {
