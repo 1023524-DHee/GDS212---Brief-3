@@ -15,7 +15,7 @@ namespace HorrorVR.TreasureRoom
         public float MoveSpeedRatio => Mathf.InverseLerp (minMaxSpeed.x, minMaxSpeed.y, moveSpeed);
         public float StaggerRatio => 1 - timeToStagger / 3;
         
-        public bool InRange => bob.transform.localPosition.z <= inRangeDistance;
+        public bool InRange => -bob.transform.localPosition.z <= inRangeDistance;
         public bool WithinAngleThresh => Vector3.Angle ((torch.position - player.position).ZeroY (), (bob.position - player.position).ZeroY ()) < angleThreshold;
 
         private BobState state;
@@ -25,17 +25,15 @@ namespace HorrorVR.TreasureRoom
             set
             {
                 _moveSpeed = Mathf.Clamp (value, minMaxSpeed.x, minMaxSpeed.y);
-                //bobAnim.SetFloat ("ApproachSpeed", moveSpeed / minMaxSpeed.y);
+                bobAnim.SetFloat ("ApproachSpeed", moveSpeed / minMaxSpeed.y);
             }
         }
-        private float timeToStagger, idleWaitTime;
+        private float timeToStagger, idleWaitTime, atPlayerWaitTime;
         private int health = 4;
-
-        private BossSequence bossSequence;
+        private bool attacking = false;
 
         private void Start ()
         {
-            bossSequence = GetComponent<BossSequence> ();
             Idle ();
         }
 
@@ -61,25 +59,51 @@ namespace HorrorVR.TreasureRoom
                             timeToStagger -= Time.deltaTime;
                             if (timeToStagger <= 0)
                             {
-                                //bobAnim.SetTrigger ("Stagger");
+                                print ("Staggering");
+                                bobAnim.SetTrigger ("Stagger");
+
                                 health -= 1;
-                                state = BobState.Retreating;
+                                state = BobState.AtPlayer;
+                                atPlayerWaitTime = 0;
+                                attacking = false;
+                                break;
                             }
                         }
-                        else if (bob.transform.localPosition.z <= atPlayerDistance)
+                        else
+                            timeToStagger = Mathf.Min (timeToStagger + Time.deltaTime, 3);
+
+                        if (-bob.transform.localPosition.z <= atPlayerDistance && !attacking)
                         {
-                            //bobAnim.SetTrigger ("Attack");
-                            state = BobState.Retreating;
+                            print ("Starting Attack");
+                            bobAnim.SetFloat ("AttackType", ((float)Random.Range (0, 3) / 2f));
+                            bobAnim.SetTrigger ("Attack");
+                            attacking = true;
                         }
                     }
                     break;
 
+                case BobState.AtPlayer:
+                    if (atPlayerWaitTime > 0)
+                        atPlayerWaitTime -= Time.deltaTime;
+                    else
+                        Retreat ();
+                    break;
+
                 case BobState.Retreating:
                     Move (-minMaxSpeed.y);
-                    if (bob.transform.localPosition.z >= furthestDistance)
+                    if (-bob.transform.localPosition.z >= furthestDistance)
                         Idle ();
                     break;
             }
+        }
+
+        public void AttackComplete ()
+        {
+            print ("Attack Successful");
+            //state = BobState.AtPlayer;
+            //atPlayerWaitTime = 0.75f;
+            Retreat ();
+            attacking = false;
         }
 
         private void Approach ()
@@ -87,9 +111,15 @@ namespace HorrorVR.TreasureRoom
             SetRandomDirection ();
             moveSpeed = minMaxSpeed.y;
             timeToStagger = 3;
-            //bobAnim.SetFloat ("ApproachSpeed", 1);
-            //bobAnim.SetTrigger ("Approach");
+            bobAnim.SetTrigger ("Approach");
+            bobAnim.SetFloat ("ApproachSpeed", 1);
             state = BobState.Approaching;
+        }
+
+        private void Retreat ()
+        {
+            bobAnim.SetFloat ("ApproachSpeed", -1);
+            state = BobState.Retreating;
         }
 
         private void Idle ()
@@ -100,7 +130,7 @@ namespace HorrorVR.TreasureRoom
 
         private void Move (float speed)
         {
-            float newZ = bob.transform.localPosition.z - speed * Time.deltaTime;
+            float newZ = bob.transform.localPosition.z + speed * Time.deltaTime;
             bob.transform.localPosition = transform.localPosition.SetZ (newZ);
         }
 
