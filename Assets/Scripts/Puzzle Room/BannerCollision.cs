@@ -13,7 +13,7 @@ namespace HorrorVR
         {
             if (sword.CompareTag(swordTag))
             {
-                transform.position = new Vector3(0f, 76f, 0f);
+                transform.position = new Vector3(0f, 75f, 0f);
             }
         }
     }
