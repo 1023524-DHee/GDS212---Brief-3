@@ -30,7 +30,7 @@ namespace HorrorVR.TreasureRoom
 
         private void Update ()
         {
-            print (bob.StaggerRatio);
+            //print (bob.StaggerRatio);
             if (bob.State == BobState.Approaching)
             {
                 if (!canCharge)
