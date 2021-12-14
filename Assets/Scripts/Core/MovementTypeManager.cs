@@ -11,7 +11,7 @@ namespace HorrorVR.Core
     public class MovementTypeManager : MonoBehaviour
     {
         public static MovementTypeManager current;
-        
+
         [Header("XR Rig")]
         [SerializeField]private CharacterController characterController;
         [SerializeField]private XRRig rig;
@@ -122,6 +122,11 @@ namespace HorrorVR.Core
             {
                 StartCoroutine(LoadLevel_Coroutine(levelToLoad));
             }
+        }
+
+        public void ReloadLevel()
+        {
+            StartCoroutine(LoadLevel_Coroutine(SceneManager.GetActiveScene().name));
         }
         
         private IEnumerator LoadLevel_Coroutine(string levelToLoad)

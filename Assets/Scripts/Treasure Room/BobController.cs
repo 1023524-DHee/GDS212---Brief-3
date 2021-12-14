@@ -25,17 +25,15 @@ namespace HorrorVR.TreasureRoom
             set
             {
                 _moveSpeed = Mathf.Clamp (value, minMaxSpeed.x, minMaxSpeed.y);
-                //bobAnim.SetFloat ("ApproachSpeed", moveSpeed / minMaxSpeed.y);
+                bobAnim.SetFloat ("ApproachSpeed", moveSpeed / minMaxSpeed.y);
             }
         }
-        private float timeToStagger, idleWaitTime;
+        private float timeToStagger, idleWaitTime, atPlayerWaitTime;
         private int health = 4;
-
-        private BossSequence bossSequence;
+        private bool attacking = false;
 
         private void Start ()
         {
-            bossSequence = GetComponent<BossSequence> ();
             Idle ();
         }
 
@@ -61,9 +59,14 @@ namespace HorrorVR.TreasureRoom
                             timeToStagger -= Time.deltaTime;
                             if (timeToStagger <= 0)
                             {
-                                //bobAnim.SetTrigger ("Stagger");
+                                print ("Staggering");
+                                bobAnim.SetTrigger ("Stagger");
+
                                 health -= 1;
-                                state = BobState.Retreating;
+                                state = BobState.AtPlayer;
+                                atPlayerWaitTime = 0;
+                                attacking = false;
+                                break;
                             }
                         }
                         else
@@ -71,10 +74,19 @@ namespace HorrorVR.TreasureRoom
 
                         if (-bob.localPosition.z <= atPlayerDistance && !attacking)
                         {
-                            //bobAnim.SetTrigger ("Attack");
-                            state = BobState.Retreating;
+                            print ("Starting Attack");
+                            bobAnim.SetFloat ("AttackType", ((float)Random.Range (0, 3) / 2f));
+                            bobAnim.SetTrigger ("Attack");
+                            attacking = true;
                         }
                     }
+                    break;
+
+                case BobState.AtPlayer:
+                    if (atPlayerWaitTime > 0)
+                        atPlayerWaitTime -= Time.deltaTime;
+                    else
+                        Retreat ();
                     break;
 
                 case BobState.Retreating:
@@ -85,14 +97,29 @@ namespace HorrorVR.TreasureRoom
             }
         }
 
+        public void AttackComplete ()
+        {
+            print ("Attack Successful");
+            //state = BobState.AtPlayer;
+            //atPlayerWaitTime = 0.75f;
+            Retreat ();
+            attacking = false;
+        }
+
         private void Approach ()
         {
             SetRandomDirection ();
             moveSpeed = minMaxSpeed.y;
             timeToStagger = 3;
-            //bobAnim.SetFloat ("ApproachSpeed", 1);
-            //bobAnim.SetTrigger ("Approach");
+            bobAnim.SetTrigger ("Approach");
+            bobAnim.SetFloat ("ApproachSpeed", 1);
             state = BobState.Approaching;
+        }
+
+        private void Retreat ()
+        {
+            bobAnim.SetFloat ("ApproachSpeed", -1);
+            state = BobState.Retreating;
         }
 
         private void Idle ()
