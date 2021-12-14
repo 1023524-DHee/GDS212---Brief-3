@@ -15,7 +15,7 @@ namespace HorrorVR.TreasureRoom
         public float MoveSpeedRatio => Mathf.InverseLerp (minMaxSpeed.x, minMaxSpeed.y, moveSpeed);
         public float StaggerRatio => 1 - timeToStagger / 3;
         
-        public bool InRange => bob.transform.localPosition.z <= inRangeDistance;
+        public bool InRange => -bob.localPosition.z <= inRangeDistance;
         public bool WithinAngleThresh => Vector3.Angle ((torch.position - player.position).ZeroY (), (bob.position - player.position).ZeroY ()) < angleThreshold;
 
         private BobState state;
@@ -66,7 +66,10 @@ namespace HorrorVR.TreasureRoom
                                 state = BobState.Retreating;
                             }
                         }
-                        else if (bob.transform.localPosition.z <= atPlayerDistance)
+                        else
+                            timeToStagger = Mathf.Min (timeToStagger + Time.deltaTime, 3);
+
+                        if (-bob.localPosition.z <= atPlayerDistance && !attacking)
                         {
                             //bobAnim.SetTrigger ("Attack");
                             state = BobState.Retreating;
@@ -76,7 +79,7 @@ namespace HorrorVR.TreasureRoom
 
                 case BobState.Retreating:
                     Move (-minMaxSpeed.y);
-                    if (bob.transform.localPosition.z >= furthestDistance)
+                    if (-bob.localPosition.z >= furthestDistance)
                         Idle ();
                     break;
             }
@@ -100,8 +103,8 @@ namespace HorrorVR.TreasureRoom
 
         private void Move (float speed)
         {
-            float newZ = bob.transform.localPosition.z - speed * Time.deltaTime;
-            bob.transform.localPosition = transform.localPosition.SetZ (newZ);
+            //transform.localPosition.AddZ (speed * Time.deltaTime);
+            bob.transform.localPosition += Vector3.forward * speed * Time.deltaTime;
         }
 
         private void SetRandomDirection ()
