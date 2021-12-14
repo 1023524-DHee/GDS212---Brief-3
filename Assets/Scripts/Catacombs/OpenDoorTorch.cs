@@ -8,6 +8,7 @@ namespace HorrorVR
     {
         public GameObject door;
         public bool isNegative;
+        public float openTime = 3;
 
         bool isOpen = false;
 
@@ -33,7 +34,7 @@ namespace HorrorVR
             Quaternion newAngle = Quaternion.Euler(0, initialRotation.y + (isNegative ? -90f : 90f), 0);
             float startTime = Time.time;
 
-            while(Time.time < startTime + 3f)
+            while(Time.time < startTime + openTime)
             {
                 door.transform.rotation = Quaternion.Lerp(initialRotation, newAngle, (Time.time - startTime) / 3f);
                 yield return null;
