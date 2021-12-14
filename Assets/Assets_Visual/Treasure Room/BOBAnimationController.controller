@@ -34,7 +34,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b3ac596abe99a644293387af1dafebcc, type: 2}
+    m_Motion: {fileID: 7400000, guid: 25767efd9c4884a4fa8cb102a70cbda4, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1.5
@@ -42,7 +42,7 @@ BlendTree:
     m_DirectBlendParameter: ApproachSpeed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b164e1422d6c51c469694d12ba06ae67, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6e9feb36d7643fe4eb9b1319f6820b76, type: 2}
     m_Threshold: 0.5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1.5
@@ -50,7 +50,7 @@ BlendTree:
     m_DirectBlendParameter: ApproachSpeed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b1212cdb1d468cb498db61231d88dfa9, type: 2}
+    m_Motion: {fileID: 7400000, guid: 16d13a86cae18a648912ed0e5412871b, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1.5
@@ -61,7 +61,7 @@ BlendTree:
   m_BlendParameterY: ApproachSpeed
   m_MinThreshold: 0
   m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
+  m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
 --- !u!1101 &-4413261725722870398
@@ -96,7 +96,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Attack Center
+  m_Name: Attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -191,7 +191,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: fcbc60677a915314faa8478926feb0aa, type: 2}
+  m_Motion: {fileID: 8663566893583106169, guid: 8728c9c70a10a034297432b100feea4a,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -293,7 +294,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 35e01ec22c037414f9555f70be54bb66, type: 2}
+  m_Motion: {fileID: -5328894918516266462, guid: 8728c9c70a10a034297432b100feea4a,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: ApproachSpeed
   m_MirrorParameter: 

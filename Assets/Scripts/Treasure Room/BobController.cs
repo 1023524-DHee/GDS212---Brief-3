@@ -39,7 +39,7 @@ namespace HorrorVR.TreasureRoom
 
         private void Update ()
         {
-            //print (timeToStagger);
+            //print ($"{-bob.localPosition.z} <= {inRangeDistance} ? {InRange}");
             switch (state)
             {
                 case BobState.Idle:
@@ -61,6 +61,7 @@ namespace HorrorVR.TreasureRoom
                             {
                                 print ("Staggering");
                                 bobAnim.SetTrigger ("Stagger");
+                                FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 2", bob.gameObject);
 
                                 health -= 1;
                                 state = BobState.AtPlayer;
@@ -72,6 +73,7 @@ namespace HorrorVR.TreasureRoom
                         else
                             timeToStagger = Mathf.Min (timeToStagger + Time.deltaTime, 3);
 
+                        print ($"At Player: {-bob.localPosition.z <= atPlayerDistance}, Attacking: {attacking}");
                         if (-bob.localPosition.z <= atPlayerDistance && !attacking)
                         {
                             print ("Starting Attack");
@@ -102,6 +104,7 @@ namespace HorrorVR.TreasureRoom
             print ("Attack Successful");
             //state = BobState.AtPlayer;
             //atPlayerWaitTime = 0.75f;
+            FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 3", bob.gameObject);
             Retreat ();
             attacking = false;
         }
