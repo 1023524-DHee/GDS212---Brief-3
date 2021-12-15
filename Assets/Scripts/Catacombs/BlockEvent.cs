@@ -38,6 +38,18 @@ namespace HorrorVR.Catacombs
             return false;
         }
 
+        protected override void OnFailed()
+        {
+            if (PlayerHealth.current)
+            {
+                PlayerHealth.current.Damage();
+            }
+            else
+            {
+                Debug.LogWarning("No player health in scene. If you want the player to take damage please add one");
+            }
+        }
+
 
         // Old Method (non-projected, yeah yucky yucky)
         //protected override bool HasFulfilledRequirements()

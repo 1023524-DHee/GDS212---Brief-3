@@ -62,13 +62,14 @@ namespace HorrorVR.Catacombs
                     if (HasFulfilledRequirements())
                     {
                         if (!succeedEvent.IsNull) RuntimeManager.PlayOneShot(succeedEvent, transform.position);
+                        OnSucceeded();
                         onSucceeded.Invoke();
                     }
                     else
                     {
                         if (!failEvent.IsNull) RuntimeManager.PlayOneShot(failEvent, transform.position);
+                        OnFailed();
                         onFailed.Invoke();
-                        Debug.Log("Failed");
                     }
 
                     isFinished = true;
@@ -85,6 +86,16 @@ namespace HorrorVR.Catacombs
 
                 yield return null;
             }
+        }
+
+        protected virtual void OnFailed()
+        {
+
+        }
+
+        protected virtual void OnSucceeded()
+        {
+
         }
 
         protected virtual bool HasFulfilledRequirements()
