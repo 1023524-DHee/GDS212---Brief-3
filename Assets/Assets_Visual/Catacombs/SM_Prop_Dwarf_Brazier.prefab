@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6065330376198105287}
   - component: {fileID: 6096963575536392041}
   - component: {fileID: 5173665009932108297}
+  - component: {fileID: 1570703684118959994}
   m_Layer: 0
   m_Name: SM_Prop_Dwarf_Brazier
   m_TagString: Untagged
@@ -113,6 +114,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torchGO: {fileID: 5271819256419993498}
   torchTime: 999
+--- !u!114 &1570703684118959994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6086748831878167669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bdfba51f8bdb84fbbc07e34c1f9a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  isNegative: 0
+  openTime: 3
 --- !u!1001 &3307527061881676745
 PrefabInstance:
   m_ObjectHideFlags: 0

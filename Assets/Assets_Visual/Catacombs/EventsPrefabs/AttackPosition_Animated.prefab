@@ -361,7 +361,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &3761864695837046088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,7 +428,21 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   perpetrator: {fileID: 0}
-  minimumDistance: 0.15
+  succeedEvent:
+    Guid:
+      Data1: 1426685423
+      Data2: 1135737533
+      Data3: 1779146678
+      Data4: -747441883
+    Path: event:/Audio_Events/Player/Sword/SwordStoneImpact
+  failEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  minimumDistance: 0.333
   minimumRotation: 25
 --- !u!95 &423222421896936719
 Animator:

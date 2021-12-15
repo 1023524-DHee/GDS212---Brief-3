@@ -85,7 +85,7 @@ Material:
     - LineThickness: 0.01
     - Metallic: 0
     - NoiseScale: 28.9
-    - PercentDissolved: 42.8
+    - PercentDissolved: 0
     - Smoothness: 0
     - UseObjectUV: 0
     - _AlphaClip: 0

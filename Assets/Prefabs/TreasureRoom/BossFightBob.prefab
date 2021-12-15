@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2600910087588466033
 Transform:
   m_ObjectHideFlags: 0
@@ -48,11 +48,42 @@ MonoBehaviour:
   torch: {fileID: 0}
   player: {fileID: 0}
   bobAnim: {fileID: 4031469956394914021}
+  footsteps: {fileID: 4576102575836574384}
   minMaxSpeed: {x: 0.25, y: 1.5}
   furthestDistance: 9
   inRangeDistance: 4
   atPlayerDistance: 2
   angleThreshold: 30
+  DeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: HorrorVR.DeathFadeout, Assembly-CSharp
+        m_MethodName: Fade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4576102575836574384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7663249599818731557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0565ee071c3991d4583f475a1ab086f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeRange: {x: 0.1, y: 0.2}
+  pitchRange: {x: 0.3, y: 0.4}
+  canPlay: 1
 --- !u!1001 &2600910087533681657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -817,6 +848,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4946949091102353355, guid: 6253eeab8b17b954c8b3692cae3b2842,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 2324
+      objectReference: {fileID: 0}
     - target: {fileID: 5401044461409925031, guid: 6253eeab8b17b954c8b3692cae3b2842,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1237,11 +1273,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 10.191879
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8901732973736606644, guid: 6253eeab8b17b954c8b3692cae3b2842, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6253eeab8b17b954c8b3692cae3b2842, type: 3}
 --- !u!4 &229095770649287028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2825340892204008077, guid: 6253eeab8b17b954c8b3692cae3b2842,
+    type: 3}
+  m_PrefabInstance: {fileID: 2600910087533681657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7663249599818731557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5638820201831418844, guid: 6253eeab8b17b954c8b3692cae3b2842,
     type: 3}
   m_PrefabInstance: {fileID: 2600910087533681657}
   m_PrefabAsset: {fileID: 0}

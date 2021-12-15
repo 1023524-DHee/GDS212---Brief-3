@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using HorrorVR.Core;
 
 namespace HorrorVR
 {
@@ -49,6 +51,7 @@ namespace HorrorVR
             if (other.CompareTag ("Player"))
             {
                 walkin = false;
+                MovementTypeManager.current.Loadlevel(SceneManager.GetActiveScene().name);
             }
         }
     }
