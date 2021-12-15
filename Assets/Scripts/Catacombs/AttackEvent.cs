@@ -15,31 +15,37 @@ namespace HorrorVR.Catacombs
 
         private void Update()
         {
-            // Detect swing
-            // Check if swing is correct orientation and position
-            // Call Complete() if it is correct
-
-            SwordSwipe swipe = Sword.Instance.GetVelocityVector();
-
-            if (swipe.isFastEnough)
+            if (!isFinished)
             {
-                // Get the distance from the swipe point to the closest point on the event projection
-                Mathfx.ClosestPointOnLineSegment(Camera.main.transform.position, transform.position, swipe.midPoint, out Vector3 pointOnLine, false);
-                float distance = Vector3.Distance(swipe.midPoint, pointOnLine);
+                // Detect swing
+                // Check if swing is correct orientation and position
+                // Call Complete() if it is correct
 
-                // Get the rotation dot product from the swipe velocity and the event rotation
-                Vector3 swipeVelocityNormalised = swipe.velocity;
-                Quaternion swipeRotation = Quaternion.LookRotation(swipeVelocityNormalised, Vector2.up);
-                float dot = Mathf.Abs(Quaternion.Dot(swipeRotation * Quaternion.AngleAxis(90f, (transform.position - Camera.main.transform.position)).normalized, transform.rotation)); // Absolute allows for the swipe to be in either direction, as long as it's parralell
+                SwordSwipe swipe = Sword.Instance.GetVelocityVector();
 
-                //Debug.Log($"Rotation offset {(1f - dot) * 90f}");
-                //Debug.Log($"Distance {distance}");
-
-                // If we are within the min distance and min rotation, then we have fulfilled the requirements
-                if (distance <= minimumDistance && dot > (90f - minimumRotation) / 90f)
+                if (swipe.isFastEnough)
                 {
-                    perpetrator.Damage(0.1f);
-                    Complete();
+                    // Get the distance from the swipe point to the closest point on the event projection
+                    //Mathfx.ClosestPointOnLineSegment(Camera.main.transform.position, transform.position, swipe.midPoint, out Vector3 pointOnLine, false);
+                    Mathfx.ClosestPointOnLineSegment(swipe.start, swipe.end, transform.position, out Vector3 closestSwipePointToEvent);
+                    Mathfx.ClosestPointOnLineSegment(Camera.main.transform.position, transform.position, closestSwipePointToEvent, out Vector3 pointOnLine, false);
+                    float distance = Vector3.Distance(swipe.midPoint, pointOnLine);
+
+                    // Get the angle from the swipe and the event rotation
+                    // We do both normal and inverse as my parallel thing wasn't working >:|
+                    Vector3 swipeVelocityNormalised = (swipe.end - swipe.start).normalized;
+                    Vector3 inverseSwipeVelocityNormalised = (swipe.start - swipe.end).normalized;
+                    Quaternion swipeRotation = Quaternion.LookRotation(Camera.main.transform.forward, swipeVelocityNormalised);
+                    Quaternion inverseSwipeRotation = Quaternion.LookRotation(Camera.main.transform.forward, inverseSwipeVelocityNormalised);
+                    float angle = Mathf.Abs(Quaternion.Angle(swipeRotation, transform.rotation));
+                    float inverseAngle = Mathf.Abs(Quaternion.Angle(inverseSwipeRotation, transform.rotation));
+
+                    // If we are within the min distance and min rotation, then we have fulfilled the requirements
+                    if (distance <= minimumDistance && (angle < minimumRotation || inverseAngle < minimumRotation))// > (90f - minimumRotation) / 90f)
+                    {
+                        perpetrator.Damage(1);
+                        Complete();
+                    }
                 }
             }
         }
@@ -54,6 +60,11 @@ namespace HorrorVR.Catacombs
 
                 Gizmos.color = Color.blue;
                 Gizmos.DrawLine(swipe.midPoint, pointOnLine);
+
+                //Vector3 swipeVelocityNormalised = swipe.velocity.normalized;
+                //Quaternion swipeRotation = Quaternion.LookRotation(swipeVelocityNormalised, Vector2.up);
+                //Gizmos.color = Color.yellow;
+                //Gizmos.DrawLine(swipe.midPoint, );
             }
         }
     }

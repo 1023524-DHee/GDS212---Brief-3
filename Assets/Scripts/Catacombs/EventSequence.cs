@@ -45,8 +45,8 @@ namespace HorrorVR.Catacombs
                 if (perpetrator.IsDead) break;
 
                 events[eventIndex].attackEvent.perpetrator = perpetrator;
-                events[eventIndex].attackEvent.gameObject.SetActive(true);
                 events[eventIndex].attackEvent.time = events[eventIndex].eventTime;
+                events[eventIndex].attackEvent.gameObject.SetActive(true);
 
                 yield return new WaitForSeconds(events[eventIndex].waitTime);
 

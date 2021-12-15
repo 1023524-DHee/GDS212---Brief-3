@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using FMODUnity;
 
 namespace HorrorVR.TreasureRoom
 {
@@ -8,14 +10,16 @@ namespace HorrorVR.TreasureRoom
     {
         [SerializeField] private Transform bob, torch, player;
         [SerializeField] private Animator bobAnim;
+        [SerializeField] private BobFootsteps footsteps;
         [SerializeField] private Vector2 minMaxSpeed;
         [SerializeField] private float furthestDistance, inRangeDistance, atPlayerDistance, angleThreshold;
+        [SerializeField] private UnityEvent DeathEvent;
 
         public BobState State => state;
         public float MoveSpeedRatio => Mathf.InverseLerp (minMaxSpeed.x, minMaxSpeed.y, moveSpeed);
         public float StaggerRatio => 1 - timeToStagger / 3;
         
-        public bool InRange => -bob.transform.localPosition.z <= inRangeDistance;
+        public bool InRange => -bob.localPosition.z <= inRangeDistance;
         public bool WithinAngleThresh => Vector3.Angle ((torch.position - player.position).ZeroY (), (bob.position - player.position).ZeroY ()) < angleThreshold;
 
         private BobState state;
@@ -31,15 +35,16 @@ namespace HorrorVR.TreasureRoom
         private float timeToStagger, idleWaitTime, atPlayerWaitTime;
         private int health = 4;
         private bool attacking = false;
+        private FMOD.Studio.EventInstance music;
 
         private void Start ()
         {
             Idle ();
+            //StartMusic ();
         }
 
         private void Update ()
         {
-            //print (timeToStagger);
             switch (state)
             {
                 case BobState.Idle:
@@ -61,18 +66,31 @@ namespace HorrorVR.TreasureRoom
                             {
                                 print ("Staggering");
                                 bobAnim.SetTrigger ("Stagger");
-
-                                health -= 1;
-                                state = BobState.AtPlayer;
-                                atPlayerWaitTime = 0;
+                                FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 2", bob.gameObject);
                                 attacking = false;
+
+                                if (--health <= 0)
+                                {
+                                    state = BobState.Defeated;
+                                    bobAnim.SetTrigger ("Die");
+                                    FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 4", bob.gameObject);
+                                    DeathEvent?.Invoke ();
+                                    StopMusic ();
+                                }
+                                else
+                                {
+                                    state = BobState.AtPlayer;
+                                    atPlayerWaitTime = 0;
+                                }
+
                                 break;
                             }
                         }
                         else
                             timeToStagger = Mathf.Min (timeToStagger + Time.deltaTime, 3);
 
-                        if (-bob.transform.localPosition.z <= atPlayerDistance && !attacking)
+                        print ($"At Player: {-bob.localPosition.z <= atPlayerDistance}, Attacking: {attacking}");
+                        if (-bob.localPosition.z <= atPlayerDistance && !attacking)
                         {
                             print ("Starting Attack");
                             bobAnim.SetFloat ("AttackType", ((float)Random.Range (0, 3) / 2f));
@@ -91,8 +109,14 @@ namespace HorrorVR.TreasureRoom
 
                 case BobState.Retreating:
                     Move (-minMaxSpeed.y);
-                    if (-bob.transform.localPosition.z >= furthestDistance)
+                    if (-bob.localPosition.z >= furthestDistance)
                         Idle ();
+                    break;
+
+                case BobState.Defeated:
+                    //float speed = bobAnim.GetFloat ("StaggerSpeed");
+                    //bobAnim.SetFloat ("StaggerSpeed", Mathf.Max (speed - Time.time, 0));
+                    //bobAnim.SetTrigger ("Die");
                     break;
             }
         }
@@ -102,6 +126,7 @@ namespace HorrorVR.TreasureRoom
             print ("Attack Successful");
             //state = BobState.AtPlayer;
             //atPlayerWaitTime = 0.75f;
+            FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 3", bob.gameObject);
             Retreat ();
             attacking = false;
         }
@@ -114,6 +139,7 @@ namespace HorrorVR.TreasureRoom
             bobAnim.SetTrigger ("Approach");
             bobAnim.SetFloat ("ApproachSpeed", 1);
             state = BobState.Approaching;
+            footsteps.canPlay = true;
         }
 
         private void Retreat ()
@@ -126,12 +152,13 @@ namespace HorrorVR.TreasureRoom
         {
             idleWaitTime = Random.Range (3, 5);
             state = BobState.Idle;
+            footsteps.canPlay = false;
         }
 
         private void Move (float speed)
         {
-            float newZ = bob.transform.localPosition.z + speed * Time.deltaTime;
-            bob.transform.localPosition = transform.localPosition.SetZ (newZ);
+            //transform.localPosition.AddZ (speed * Time.deltaTime);
+            bob.transform.localPosition += Vector3.forward * speed * Time.deltaTime;
         }
 
         private void SetRandomDirection ()
@@ -140,6 +167,19 @@ namespace HorrorVR.TreasureRoom
             rotation.y = Random.Range (0, 360);
             transform.rotation = Quaternion.Euler (rotation);
         }
+
+        public void StartMusic ()
+        {
+            music = RuntimeManager.CreateInstance ("event:/Audio_Events/BOB/Atmosphere/BOB Theme 3");
+            music.setVolume (0.3f);
+            RuntimeManager.AttachInstanceToGameObject (music, player);
+            music.start ();
+        }
+
+        private void StopMusic ()
+        {
+            music.stop (FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
     }
 
     public enum BobState
@@ -147,6 +187,7 @@ namespace HorrorVR.TreasureRoom
         Idle,
         Approaching,
         AtPlayer,
-        Retreating
+        Retreating,
+        Defeated
     }
 }

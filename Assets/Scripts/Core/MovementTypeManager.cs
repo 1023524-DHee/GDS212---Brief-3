@@ -11,7 +11,7 @@ namespace HorrorVR.Core
     public class MovementTypeManager : MonoBehaviour
     {
         public static MovementTypeManager current;
-        
+
         [Header("XR Rig")]
         [SerializeField]private CharacterController characterController;
         [SerializeField]private XRRig rig;
