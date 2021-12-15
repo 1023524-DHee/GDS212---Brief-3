@@ -3870,6 +3870,18 @@ MonoBehaviour:
           m_StringArgument: TurnGreen
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 810875031}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dissolve
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 367118003}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -5266,6 +5278,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 605867790}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &605867799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605867793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df989178a767094295a8bb8951ec976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &611101716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6871,10 +6895,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 605867791}
     m_Modifications:
+    - target: {fileID: 3457826630327198799, guid: 9058b05c96142b0448c9a737fb378ba2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457826630327198799, guid: 9058b05c96142b0448c9a737fb378ba2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0265bcad6a82e734c876e189bdae2249, type: 2}
     - target: {fileID: 3818021759725487514, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
       propertyPath: m_Name
       value: SwordOfDestiny
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818021759725487514, guid: 9058b05c96142b0448c9a737fb378ba2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4591285831478943520, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
@@ -6884,17 +6923,17 @@ PrefabInstance:
     - target: {fileID: 4591285831478943520, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.043
+      value: 0.043000057
       objectReference: {fileID: 0}
     - target: {fileID: 4591285831478943520, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.023
+      value: 0.02300008
       objectReference: {fileID: 0}
     - target: {fileID: 4591285831478943520, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0339
+      value: 0.033899937
       objectReference: {fileID: 0}
     - target: {fileID: 4591285831478943520, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
@@ -6904,12 +6943,12 @@ PrefabInstance:
     - target: {fileID: 4591285831478943520, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4591285831478943520, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4591285831478943520, guid: 9058b05c96142b0448c9a737fb378ba2,
         type: 3}
@@ -6938,6 +6977,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9058b05c96142b0448c9a737fb378ba2, type: 3}
+--- !u!1 &810875030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3818021759725487514, guid: 9058b05c96142b0448c9a737fb378ba2,
+    type: 3}
+  m_PrefabInstance: {fileID: 810875029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &810875031
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810875030}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69dda8e110f9bfb42b3e184d3bfa14fa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &814836077
 GameObject:
   m_ObjectHideFlags: 0
@@ -7611,7 +7675,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-306312
+  m_Name: pb_Mesh-379904
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20559,6 +20623,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &1741131635
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741131632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: 1ea1761967c9e7b4997106609f542e33, type: 3}
 --- !u!1001 &1741142152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32185,6 +32263,41 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 605867792}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 605867799}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HorrorVR.DeathFadeout, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2600910087588466039, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
         type: 3}
       propertyPath: m_Name
@@ -32213,7 +32326,7 @@ PrefabInstance:
     - target: {fileID: 6971394157133970482, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 2300
+      value: 2306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b7a4c970d6a29748ba8e2dfc821659f, type: 3}

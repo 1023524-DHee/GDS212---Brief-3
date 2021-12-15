@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace HorrorVR.TreasureRoom
 {
@@ -10,6 +11,7 @@ namespace HorrorVR.TreasureRoom
         [SerializeField] private Animator bobAnim;
         [SerializeField] private Vector2 minMaxSpeed;
         [SerializeField] private float furthestDistance, inRangeDistance, atPlayerDistance, angleThreshold;
+        [SerializeField] private UnityEvent DeathEvent;
 
         public BobState State => state;
         public float MoveSpeedRatio => Mathf.InverseLerp (minMaxSpeed.x, minMaxSpeed.y, moveSpeed);
@@ -29,7 +31,7 @@ namespace HorrorVR.TreasureRoom
             }
         }
         private float timeToStagger, idleWaitTime, atPlayerWaitTime;
-        private int health = 1;
+        private int health = 4;
         private bool attacking = false;
 
         private void Start ()
@@ -68,6 +70,7 @@ namespace HorrorVR.TreasureRoom
                                     state = BobState.Defeated;
                                     bobAnim.SetTrigger ("Die");
                                     FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 4", bob.gameObject);
+                                    DeathEvent?.Invoke ();
                                 }
                                 else
                                 {
