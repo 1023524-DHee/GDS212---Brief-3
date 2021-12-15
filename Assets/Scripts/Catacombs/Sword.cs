@@ -26,6 +26,8 @@ namespace HorrorVR.Catacombs
 
         public struct SwordSwipe
         {
+            public Vector3 start;
+            public Vector3 end;
             public Vector3 midPoint;
             public Vector3 velocity;
             public bool isFastEnough;
@@ -68,7 +70,9 @@ namespace HorrorVR.Catacombs
             {
                 midPoint = (starting + ending) / 2f,
                 velocity = (ending - starting).normalized * averageVelocity, // Get the direction from the start to the end, and then multiply it by the average velocity. This will give the velocity vector of the swipe
-                isFastEnough = value >= 1f
+                isFastEnough = value >= 1f,
+                start = starting,
+                end = ending
             };
         }
 
