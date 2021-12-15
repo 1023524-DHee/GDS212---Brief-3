@@ -9,6 +9,7 @@ namespace HorrorVR.TreasureRoom
     {
         [SerializeField] private Transform bob, torch, player;
         [SerializeField] private Animator bobAnim;
+        [SerializeField] private BobFootsteps footsteps;
         [SerializeField] private Vector2 minMaxSpeed;
         [SerializeField] private float furthestDistance, inRangeDistance, atPlayerDistance, angleThreshold;
         [SerializeField] private UnityEvent DeathEvent;
@@ -134,6 +135,7 @@ namespace HorrorVR.TreasureRoom
             bobAnim.SetTrigger ("Approach");
             bobAnim.SetFloat ("ApproachSpeed", 1);
             state = BobState.Approaching;
+            footsteps.canPlay = true;
         }
 
         private void Retreat ()
@@ -146,6 +148,7 @@ namespace HorrorVR.TreasureRoom
         {
             idleWaitTime = Random.Range (3, 5);
             state = BobState.Idle;
+            footsteps.canPlay = false;
         }
 
         private void Move (float speed)
