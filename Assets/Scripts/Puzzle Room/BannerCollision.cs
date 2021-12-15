@@ -19,9 +19,13 @@ namespace HorrorVR
 		{
             initialPosition = transform.position;
             endPosition = initialPosition + new Vector3(0, -75f, 0);
-
         }
 
+        private void BannerDrop_Start()
+        {
+            StartCoroutine(BannerDrop());
+        }
+        
 		private void OnTriggerEnter(Collider sword)
         {
             if (sword.CompareTag(swordTag))
@@ -34,7 +38,11 @@ namespace HorrorVR
         {
             float startTime = Time.time;
 
-            RuntimeManager.PlayOneShot(bannerSound);
+            var instance = RuntimeManager.CreateInstance(bannerSound);
+            RuntimeManager.AttachInstanceToGameObject(instance, transform);
+            instance.setVolume(1f);
+            instance.start();
+            
             while (Time.time < startTime + 3f)
             {
                 transform.position = Vector3.Lerp(initialPosition, endPosition, (Time.time - startTime) / 3f);
