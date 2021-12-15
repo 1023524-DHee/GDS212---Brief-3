@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace HorrorVR.TreasureRoom
 {
@@ -10,12 +11,13 @@ namespace HorrorVR.TreasureRoom
         [SerializeField] private Animator bobAnim;
         [SerializeField] private Vector2 minMaxSpeed;
         [SerializeField] private float furthestDistance, inRangeDistance, atPlayerDistance, angleThreshold;
+        [SerializeField] private UnityEvent DeathEvent;
 
         public BobState State => state;
         public float MoveSpeedRatio => Mathf.InverseLerp (minMaxSpeed.x, minMaxSpeed.y, moveSpeed);
         public float StaggerRatio => 1 - timeToStagger / 3;
         
-        public bool InRange => -bob.transform.localPosition.z <= inRangeDistance;
+        public bool InRange => -bob.localPosition.z <= inRangeDistance;
         public bool WithinAngleThresh => Vector3.Angle ((torch.position - player.position).ZeroY (), (bob.position - player.position).ZeroY ()) < angleThreshold;
 
         private BobState state;
@@ -39,7 +41,6 @@ namespace HorrorVR.TreasureRoom
 
         private void Update ()
         {
-            //print (timeToStagger);
             switch (state)
             {
                 case BobState.Idle:
@@ -61,18 +62,30 @@ namespace HorrorVR.TreasureRoom
                             {
                                 print ("Staggering");
                                 bobAnim.SetTrigger ("Stagger");
-
-                                health -= 1;
-                                state = BobState.AtPlayer;
-                                atPlayerWaitTime = 0;
+                                FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 2", bob.gameObject);
                                 attacking = false;
+
+                                if (--health <= 0)
+                                {
+                                    state = BobState.Defeated;
+                                    bobAnim.SetTrigger ("Die");
+                                    FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 4", bob.gameObject);
+                                    DeathEvent?.Invoke ();
+                                }
+                                else
+                                {
+                                    state = BobState.AtPlayer;
+                                    atPlayerWaitTime = 0;
+                                }
+
                                 break;
                             }
                         }
                         else
                             timeToStagger = Mathf.Min (timeToStagger + Time.deltaTime, 3);
 
-                        if (-bob.transform.localPosition.z <= atPlayerDistance && !attacking)
+                        print ($"At Player: {-bob.localPosition.z <= atPlayerDistance}, Attacking: {attacking}");
+                        if (-bob.localPosition.z <= atPlayerDistance && !attacking)
                         {
                             print ("Starting Attack");
                             bobAnim.SetFloat ("AttackType", ((float)Random.Range (0, 3) / 2f));
@@ -91,8 +104,14 @@ namespace HorrorVR.TreasureRoom
 
                 case BobState.Retreating:
                     Move (-minMaxSpeed.y);
-                    if (-bob.transform.localPosition.z >= furthestDistance)
+                    if (-bob.localPosition.z >= furthestDistance)
                         Idle ();
+                    break;
+
+                case BobState.Defeated:
+                    //float speed = bobAnim.GetFloat ("StaggerSpeed");
+                    //bobAnim.SetFloat ("StaggerSpeed", Mathf.Max (speed - Time.time, 0));
+                    //bobAnim.SetTrigger ("Die");
                     break;
             }
         }
@@ -102,6 +121,7 @@ namespace HorrorVR.TreasureRoom
             print ("Attack Successful");
             //state = BobState.AtPlayer;
             //atPlayerWaitTime = 0.75f;
+            FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 3", bob.gameObject);
             Retreat ();
             attacking = false;
         }
@@ -130,8 +150,8 @@ namespace HorrorVR.TreasureRoom
 
         private void Move (float speed)
         {
-            float newZ = bob.transform.localPosition.z + speed * Time.deltaTime;
-            bob.transform.localPosition = transform.localPosition.SetZ (newZ);
+            //transform.localPosition.AddZ (speed * Time.deltaTime);
+            bob.transform.localPosition += Vector3.forward * speed * Time.deltaTime;
         }
 
         private void SetRandomDirection ()
@@ -147,6 +167,7 @@ namespace HorrorVR.TreasureRoom
         Idle,
         Approaching,
         AtPlayer,
-        Retreating
+        Retreating,
+        Defeated
     }
 }

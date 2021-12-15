@@ -38,7 +38,7 @@ public class ObjectSpin : MonoBehaviour
 
 	public void IncreaseInt(/*InputAction.CallbackContext context*/)
     {
-        if (!canInteract) return;
+        //if (!canInteract) return;
         if (isSpinning) return;
 
         StartCoroutine(SpinTotem_Coroutine());

@@ -7,7 +7,6 @@ namespace HorrorVR.TreasureRoom
     public class TorchIntensify : MonoBehaviour
     {
         [SerializeField] private BobController bob;
-        [SerializeField] private float speed;
 
         private Animator anim;
         private bool canCharge = true;
@@ -18,13 +17,13 @@ namespace HorrorVR.TreasureRoom
         }
 
         private float _intensity;
-        private float intensity 
-        { 
+        private float intensity
+        {
             set
             {
                 _intensity = Mathf.Clamp01 (value);
                 anim.SetFloat ("Intensity", _intensity);
-            } 
+            }
             get { return _intensity; }
         }
 
