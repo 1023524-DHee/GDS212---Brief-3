@@ -45,7 +45,11 @@ namespace HorrorVR
         public void OpenDoor()
         {
             StartCoroutine(OpenDoor_Coroutine());
-            RuntimeManager.PlayOneShot(doorSound);
+            var instance = RuntimeManager.CreateInstance(doorSound);
+            instance.setVolume(50f);
+            RuntimeManager.AttachInstanceToGameObject(instance, transform);
+            instance.start();
+            instance.release();
         }
 
         IEnumerator OpenDoor_Coroutine()
