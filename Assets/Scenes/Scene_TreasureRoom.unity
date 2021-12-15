@@ -3933,6 +3933,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1734288323}
+        m_TargetAssemblyTypeName: HorrorVR.TreasureRoom.BobController, Assembly-CSharp
+        m_MethodName: StartMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!850595691 &495637376
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -5262,7 +5274,7 @@ PrefabInstance:
     - target: {fileID: 5005704544220067930, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_MoveSpeed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5005704544220067935, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
@@ -6663,6 +6675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 763418219}
+  - component: {fileID: 763418220}
   m_Layer: 0
   m_Name: ShadowCylinders
   m_TagString: Untagged
@@ -6696,6 +6709,36 @@ Transform:
   m_Father: {fileID: 1483337603}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &763418220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763418218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1957130584
+      Data2: 1142892155
+      Data3: 932503197
+      Data4: -451872315
+    Path: event:/Audio_Events/BOB/Atmosphere/BOB Theme 3
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &771316474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7573,7 +7616,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh193554
+  m_Name: pb_Mesh68182
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17134,7 +17177,6 @@ GameObject:
   - component: {fileID: 1247841251}
   - component: {fileID: 1247841250}
   - component: {fileID: 1247841249}
-  - component: {fileID: 1247841248}
   m_Layer: 0
   m_Name: CircleCollider
   m_TagString: Untagged
@@ -17156,36 +17198,6 @@ Transform:
   m_Father: {fileID: 1483337603}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1247841248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247841246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
 --- !u!64 &1247841249
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33141,9 +33153,44 @@ PrefabInstance:
       objectReference: {fileID: 605867792}
     - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
         type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
       propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 605867799}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
+      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2600910087588466039, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
         type: 3}
       propertyPath: m_Name

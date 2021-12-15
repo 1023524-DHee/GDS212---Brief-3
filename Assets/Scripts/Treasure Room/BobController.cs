@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using FMODUnity;
 
 namespace HorrorVR.TreasureRoom
 {
@@ -32,12 +33,14 @@ namespace HorrorVR.TreasureRoom
             }
         }
         private float timeToStagger, idleWaitTime, atPlayerWaitTime;
-        private int health = 4;
+        private int health = 1;
         private bool attacking = false;
+        private FMOD.Studio.EventInstance music;
 
         private void Start ()
         {
             Idle ();
+            //StartMusic ();
         }
 
         private void Update ()
@@ -72,6 +75,7 @@ namespace HorrorVR.TreasureRoom
                                     bobAnim.SetTrigger ("Die");
                                     FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 4", bob.gameObject);
                                     DeathEvent?.Invoke ();
+                                    StopMusic ();
                                 }
                                 else
                                 {
@@ -162,6 +166,19 @@ namespace HorrorVR.TreasureRoom
             Vector3 rotation = transform.rotation.eulerAngles;
             rotation.y = Random.Range (0, 360);
             transform.rotation = Quaternion.Euler (rotation);
+        }
+
+        public void StartMusic ()
+        {
+            music = RuntimeManager.CreateInstance ("event:/Audio_Events/BOB/Atmosphere/BOB Theme 3");
+            music.setVolume (0.3f);
+            RuntimeManager.AttachInstanceToGameObject (music, player);
+            music.start ();
+        }
+
+        private void StopMusic ()
+        {
+            music.stop (FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
     }
 
