@@ -4722,13 +4722,13 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 736454545
-      Data2: 1179279959
-      Data3: -36833358
-      Data4: -2086698005
-    Path: event:/Audio_Events/Catacombs/Rocks/SlidingRocks1
+      Data1: -248245981
+      Data2: 1134479460
+      Data3: 1511200662
+      Data4: -950348519
+    Path: event:/Audio_Events/EscapeRoom/Atmosphere/Escape Room Atmosphere
   Event: 
-  PlayEvent: 0
+  PlayEvent: 11
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
