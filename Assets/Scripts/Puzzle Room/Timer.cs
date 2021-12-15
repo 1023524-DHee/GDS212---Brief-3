@@ -1,31 +1,43 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HorrorVR.Core;
 
 public class Timer : MonoBehaviour
 {
     [Tooltip("How long the timer will last.")]
     public float startingTime;
     float currentTime;
+    bool noTimeEventCalled = false;
+    [Tooltip("Name of the hub scene")]
+    public string hubScene;
 
     void Start()
     {
-        currentTime = startingTime;
+        StartCoroutine(Timer_Coroutine());
+        //currentTime = startingTime;
     }
 
-    
-    void Update()
+
+    //void Update()
+    //{
+    //    currentTime -= 1 * Time.deltaTime;
+
+    //    if (currentTime == 0.5 * startingTime)
+    //    {
+    //        Debug.Log("Half-Time Reached");
+    //    }
+
+    //    if (currentTime == 0 && noTimeEventCalled == false)
+    //    {
+    //        Debug.Log("Time's Up");
+    //        MovementTypeManager.current.Loadlevel(hubScene);
+    //    }
+    //}
+
+    private IEnumerator Timer_Coroutine()
     {
-        currentTime -= 1 * Time.deltaTime; 
-
-        if (currentTime == 0.5 * startingTime)
-        {
-            Debug.Log("Half-Time Reached");
-        }
-
-        if (currentTime == 0)
-        {
-            Debug.Log("Time's Up");
-        }
+        yield return new WaitForSeconds(startingTime);
+        MovementTypeManager.current.Loadlevel(hubScene);
     }
 }

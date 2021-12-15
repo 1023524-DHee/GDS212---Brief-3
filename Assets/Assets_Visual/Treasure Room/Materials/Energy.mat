@@ -81,7 +81,7 @@ Material:
     - CellDensity: 6.5
     - Intensity: 1
     - TimeFactor: 3.88
-    - Transparency: 1
+    - Transparency: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
