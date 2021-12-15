@@ -3882,6 +3882,45 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2088092432}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1681365622}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 782098332}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &508060402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6697,11 +6736,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2385370, guid: 97a267ab0b992684b9580fd114e57deb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21796008f5c58784cb2fb2b8dd561803, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97a267ab0b992684b9580fd114e57deb, type: 3}
 --- !u!4 &782098331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 466000, guid: 97a267ab0b992684b9580fd114e57deb,
+    type: 3}
+  m_PrefabInstance: {fileID: 782098330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &782098332 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2385370, guid: 97a267ab0b992684b9580fd114e57deb,
     type: 3}
   m_PrefabInstance: {fileID: 782098330}
   m_PrefabAsset: {fileID: 0}
@@ -19789,11 +19838,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2385370, guid: 97a267ab0b992684b9580fd114e57deb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21796008f5c58784cb2fb2b8dd561803, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97a267ab0b992684b9580fd114e57deb, type: 3}
 --- !u!4 &1681365621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 466000, guid: 97a267ab0b992684b9580fd114e57deb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1681365620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1681365622 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2385370, guid: 97a267ab0b992684b9580fd114e57deb,
     type: 3}
   m_PrefabInstance: {fileID: 1681365620}
   m_PrefabAsset: {fileID: 0}
@@ -27188,11 +27247,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2385370, guid: 97a267ab0b992684b9580fd114e57deb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21796008f5c58784cb2fb2b8dd561803, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97a267ab0b992684b9580fd114e57deb, type: 3}
 --- !u!4 &2088092431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 466000, guid: 97a267ab0b992684b9580fd114e57deb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2088092430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2088092432 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2385370, guid: 97a267ab0b992684b9580fd114e57deb,
     type: 3}
   m_PrefabInstance: {fileID: 2088092430}
   m_PrefabAsset: {fileID: 0}
