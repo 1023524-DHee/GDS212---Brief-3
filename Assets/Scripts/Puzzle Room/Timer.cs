@@ -1,6 +1,7 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HorrorVR.Core;
 
 public class Timer : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class Timer : MonoBehaviour
         if (currentTime == 0 && noTimeEventCalled == false)
         {
             Debug.Log("Time's Up");
-            PlayerMovementManager.current.LoadScene("Scene_Name");
+            MovementTypeManager.current.Loadlevel(hubScene);
         }
     }
 }
