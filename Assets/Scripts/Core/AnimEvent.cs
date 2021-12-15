@@ -7,11 +7,11 @@ namespace HorrorVR
 {
     public class AnimEvent : MonoBehaviour
     {
-        public UnityEvent Event;
+        public UnityEvent[] Events;
         
-        public void TriggerEvent ()
+        public void TriggerEvent (int eventNum)
         {
-            Event?.Invoke ();
+            Events[eventNum]?.Invoke ();
         }
     }
 }
