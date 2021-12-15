@@ -15,17 +15,21 @@ namespace HorrorVR.Catacombs
         protected override bool HasFulfilledRequirements()
         {
             // This gets us how close our rotations are to the correct orientation
-            float dot = Quaternion.Dot(Sword.Instance.transform.rotation, transform.rotation);
+            //float dot = Quaternion.Dot(Sword.Instance.transform.rotation, transform.rotation);
+            float angle = Quaternion.Angle(Sword.Instance.transform.rotation, transform.rotation);
+            float inverseAngle = Quaternion.Angle(Sword.Instance.transform.rotation, transform.rotation * Quaternion.AngleAxis(180f, transform.forward));
 
             // This makes sure we can have the sword in either direction, no specific direction needed (parallel instead of exact)
-            dot = Mathf.Abs(dot);
+            //dot = Mathf.Abs(dot);
+            angle = Mathf.Abs(angle);
+            inverseAngle = Mathf.Abs(inverseAngle);
 
             // Distance... (we want to check the distance from the sword to the projected line from the camera to this event)
             Mathfx.ClosestPointOnLineSegment(Camera.main.transform.position, transform.position, Sword.Instance.midPoint.position, out Vector3 pointOnLine, false);
             float distance = Vector3.Distance(Sword.Instance.midPoint.position, pointOnLine);
 
             // If we are within the min distance and min rotation, then we have fulfilled the requirements
-            if (distance <= minimumDistance && dot > (90f - minimumRotation) / 90f)
+            if (distance <= minimumDistance && (angle < minimumRotation || inverseAngle < minimumRotation))
             {
                 Debug.Log("Blocked attack");
                 return true;

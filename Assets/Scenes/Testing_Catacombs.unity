@@ -1566,5 +1566,34 @@ PrefabInstance:
       propertyPath: targetPosition
       value: 
       objectReference: {fileID: 1965125866}
+    - target: {fileID: 7491890662123622957, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
+        type: 3}
+      propertyPath: attackPatterns.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491890662123622957, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
+        type: 3}
+      propertyPath: attackPatterns.Array.data[0]
+      value: 
+      objectReference: {fileID: 8052068605153340371, guid: 0c6550bb6042456458299f0d795b2a0f,
+        type: 3}
+    - target: {fileID: 7491890662123622957, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
+        type: 3}
+      propertyPath: attackPatterns.Array.data[1]
+      value: 
+      objectReference: {fileID: 8052068605153340371, guid: f2d4c2acd9fd2534eaa7790409c10b00,
+        type: 3}
+    - target: {fileID: 7491890662123622957, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
+        type: 3}
+      propertyPath: attackPatterns.Array.data[2]
+      value: 
+      objectReference: {fileID: 8052068605153340371, guid: 3103d5f740440924cb868d8c2a9cf7b3,
+        type: 3}
+    - target: {fileID: 7491890662123622957, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
+        type: 3}
+      propertyPath: attackPatterns.Array.data[3]
+      value: 
+      objectReference: {fileID: 8052068605153340371, guid: c8e4bcf099419d44ab2258e947479da7,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 841e42e7c66aea74eb7d3ad774c32fe0, type: 3}

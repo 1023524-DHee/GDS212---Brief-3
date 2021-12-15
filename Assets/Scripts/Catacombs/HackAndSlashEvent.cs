@@ -1,3 +1,4 @@
+using FMODUnity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -25,6 +26,11 @@ namespace HorrorVR.Catacombs
         public UnityEvent onFailed = new UnityEvent();
 
         public EnemyController perpetrator;
+
+        [SerializeField]
+        private EventReference succeedEvent;
+        [SerializeField]
+        private EventReference failEvent;
 
         private void Start()
         {
@@ -55,10 +61,12 @@ namespace HorrorVR.Catacombs
                 {
                     if (HasFulfilledRequirements())
                     {
+                        if (!succeedEvent.IsNull) RuntimeManager.PlayOneShot(succeedEvent, transform.position);
                         onSucceeded.Invoke();
                     }
                     else
                     {
+                        if (!failEvent.IsNull) RuntimeManager.PlayOneShot(failEvent, transform.position);
                         onFailed.Invoke();
                         Debug.Log("Failed");
                     }
