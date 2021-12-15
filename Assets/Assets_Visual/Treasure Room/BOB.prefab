@@ -3967,7 +3967,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1372d3a585c419d499c594d0a7fa47bb, type: 2}
+  - {fileID: 2100000, guid: bf5aa2c555f24004cb9ff3a8d38415df, type: 2}
   - {fileID: 2100000, guid: f600701df9872724cb7e724b2aa6d05d, type: 2}
   - {fileID: 2100000, guid: 730ff2409105e5a448311fd14ceaa423, type: 2}
   m_StaticBatchInfo:
@@ -4273,21 +4273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef9ec1d89423964393af66089a44dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HorrorVR.TreasureRoom.BobController, Assembly-CSharp
-        m_MethodName: AttackComplete
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  Events: []
 --- !u!1 &5720738539940646587
 GameObject:
   m_ObjectHideFlags: 0

@@ -66,6 +66,8 @@ namespace HorrorVR.TreasureRoom
                                 if (--health <= 0)
                                 {
                                     state = BobState.Defeated;
+                                    bobAnim.SetTrigger ("Die");
+                                    FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 4", bob.gameObject);
                                 }
                                 else
                                 {
@@ -104,8 +106,9 @@ namespace HorrorVR.TreasureRoom
                     break;
 
                 case BobState.Defeated:
-                    float speed = bobAnim.GetFloat ("StaggerSpeed");
-                    bobAnim.SetFloat ("StaggerSpeed", Mathf.Max (speed - Time.time, 0));
+                    //float speed = bobAnim.GetFloat ("StaggerSpeed");
+                    //bobAnim.SetFloat ("StaggerSpeed", Mathf.Max (speed - Time.time, 0));
+                    //bobAnim.SetTrigger ("Die");
                     break;
             }
         }
