@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene_Catacombs.unity
     guid: db7127869b5ca90419538cdc71feed79
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_PuzzleRoom.unity
     guid: 655b025ebde22bb49bf44cf0f572bb29
   - enabled: 1
