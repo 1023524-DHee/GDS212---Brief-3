@@ -9,6 +9,10 @@ namespace HorrorVR.Catacombs
 {
     public class EnemyController : MonoBehaviour
     {
+        [SerializeField]
+        private int maxHealth = 5;
+        private int currentHealth;
+
         [Header("Components")]
 
         [SerializeField]
@@ -51,6 +55,8 @@ namespace HorrorVR.Catacombs
             wantedPosition = targetPosition.position;//transform.position;
 
             lookAtPosition = lookTarget.position;
+
+            currentHealth = maxHealth;
         }
 
         // Update is called once per frame
@@ -231,15 +237,14 @@ namespace HorrorVR.Catacombs
         {
             get
             {
-                return health <= 0f;
+                return currentHealth <= 0;
             }
         }
 
-        float health = 1f;
-        public void Damage(float damage)
+        public void Damage(int damage)
         {
-            health -= damage;
-            if (health <= 0f)
+            currentHealth -= damage;
+            if (currentHealth <= 0)
             {
                 StopAllCoroutines();
                 animator.SetFloat("DeathFloat", Random.Range(0, 5));
