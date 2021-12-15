@@ -29,7 +29,7 @@ namespace HorrorVR.TreasureRoom
             }
         }
         private float timeToStagger, idleWaitTime, atPlayerWaitTime;
-        private int health = 4;
+        private int health = 1;
         private bool attacking = false;
 
         private void Start ()
@@ -39,7 +39,6 @@ namespace HorrorVR.TreasureRoom
 
         private void Update ()
         {
-            //print ($"{-bob.localPosition.z} <= {inRangeDistance} ? {InRange}");
             switch (state)
             {
                 case BobState.Idle:
@@ -62,11 +61,18 @@ namespace HorrorVR.TreasureRoom
                                 print ("Staggering");
                                 bobAnim.SetTrigger ("Stagger");
                                 FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 2", bob.gameObject);
-
-                                health -= 1;
-                                state = BobState.AtPlayer;
-                                atPlayerWaitTime = 0;
                                 attacking = false;
+
+                                if (--health <= 0)
+                                {
+                                    state = BobState.Defeated;
+                                }
+                                else
+                                {
+                                    state = BobState.AtPlayer;
+                                    atPlayerWaitTime = 0;
+                                }
+
                                 break;
                             }
                         }
@@ -95,6 +101,11 @@ namespace HorrorVR.TreasureRoom
                     Move (-minMaxSpeed.y);
                     if (-bob.localPosition.z >= furthestDistance)
                         Idle ();
+                    break;
+
+                case BobState.Defeated:
+                    float speed = bobAnim.GetFloat ("StaggerSpeed");
+                    bobAnim.SetFloat ("StaggerSpeed", Mathf.Max (speed - Time.time, 0));
                     break;
             }
         }
@@ -150,6 +161,7 @@ namespace HorrorVR.TreasureRoom
         Idle,
         Approaching,
         AtPlayer,
-        Retreating
+        Retreating,
+        Defeated
     }
 }
