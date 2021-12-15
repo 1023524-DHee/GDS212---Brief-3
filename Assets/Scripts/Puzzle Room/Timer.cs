@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using HorrorVR.Core;
+using FMODUnity;
 
 public class Timer : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Timer : MonoBehaviour
     bool noTimeEventCalled = false;
     [Tooltip("Name of the hub scene")]
     public string hubScene;
+    public EventReference bannerSound;
 
     void Start()
     {
@@ -39,5 +41,6 @@ public class Timer : MonoBehaviour
     {
         yield return new WaitForSeconds(startingTime);
         MovementTypeManager.current.Loadlevel(hubScene);
+        RuntimeManager.PlayOneShot(bannerSound);
     }
 }

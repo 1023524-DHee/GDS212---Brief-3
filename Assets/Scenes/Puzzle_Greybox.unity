@@ -229,8 +229,8 @@ Transform:
   - {fileID: 653233053}
   - {fileID: 1860000866}
   - {fileID: 509246749}
-  - {fileID: 2087360032}
   - {fileID: 255773669}
+  - {fileID: 2087360032}
   - {fileID: 1908969811}
   - {fileID: 1154556522}
   - {fileID: 1161059454}
@@ -375,6 +375,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swordTag: Sword
+  bannerSound:
+    Guid:
+      Data1: 1835398489
+      Data2: 1272979567
+      Data3: -1121869892
+      Data4: -1737215046
+    Path: event:/Audio_Events/EscapeRoom/Curtain/Banner fall
 --- !u!1001 &77179834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -485,12 +492,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeAnimator: {fileID: 0}
-  button: {fileID: 0}
+  button: {fileID: 456305606}
   correctPosition: 0
   positionNumber: 90
   gate: {fileID: 733899633}
   trigger: {fileID: 0}
   otherCollider: {fileID: 0}
+  bannerSound:
+    Guid:
+      Data1: 1509493932
+      Data2: 1323654660
+      Data3: 2146913461
+      Data4: 1483190241
+    Path: event:/Audio_Events/EscapeRoom/Stone/Stone Slide
 --- !u!65 &113276600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -517,6 +531,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.03, z: 0.01}
   m_Center: {x: 0, y: 0.01, z: 0}
+--- !u!114 &113276602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113276597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1509493932
+      Data2: 1323654660
+      Data3: 2146913461
+      Data4: 1483190241
+    Path: event:/Audio_Events/EscapeRoom/Stone/Stone Slide
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &120436223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -672,12 +716,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeAnimator: {fileID: 0}
-  button: {fileID: 0}
+  button: {fileID: 1973236620}
   correctPosition: 0
   positionNumber: 180
   gate: {fileID: 733899633}
-  trigger: {fileID: 0}
+  trigger: {fileID: 460754484}
   otherCollider: {fileID: 0}
+  bannerSound:
+    Guid:
+      Data1: 1509493932
+      Data2: 1323654660
+      Data3: 2146913461
+      Data4: 1483190241
+    Path: event:/Audio_Events/EscapeRoom/Stone/Stone Slide
+--- !u!114 &120436229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120436225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1509493932
+      Data2: 1323654660
+      Data3: 2146913461
+      Data4: 1483190241
+    Path: event:/Audio_Events/EscapeRoom/Stone/Stone Slide
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &126546405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,12 +953,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeAnimator: {fileID: 0}
-  button: {fileID: 0}
+  button: {fileID: 472303974}
   correctPosition: 0
   positionNumber: 90
   gate: {fileID: 733899633}
   trigger: {fileID: 0}
   otherCollider: {fileID: 0}
+  bannerSound:
+    Guid:
+      Data1: 1509493932
+      Data2: 1323654660
+      Data3: 2146913461
+      Data4: 1483190241
+    Path: event:/Audio_Events/EscapeRoom/Stone/Stone Slide
 --- !u!65 &175388382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -904,6 +992,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.03, z: 0.01}
   m_Center: {x: 0, y: 0.01, z: 0}
+--- !u!114 &175388384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175388379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1509493932
+      Data2: 1323654660
+      Data3: 2146913461
+      Data4: 1483190241
+    Path: event:/Audio_Events/EscapeRoom/Stone/Stone Slide
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &181956434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1462,12 +1580,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a2701bbf4fd225141af0ab279353ea85,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2701bbf4fd225141af0ab279353ea85,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.009861755
+      value: 0.010585608
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2701bbf4fd225141af0ab279353ea85,
         type: 3}
@@ -1492,7 +1610,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a2701bbf4fd225141af0ab279353ea85,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.01
+      value: 13.191
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a2701bbf4fd225141af0ab279353ea85,
         type: 3}
@@ -4468,6 +4586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 733899632}
   - component: {fileID: 733899633}
+  - component: {fileID: 733899634}
   m_Layer: 0
   m_Name: TDoor
   m_TagString: Untagged
@@ -4483,7 +4602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733899631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5394149, y: 2.1864274, z: 6.370802}
+  m_LocalPosition: {x: 0.5394149, y: 2.186427, z: 6.370802}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 774462496}
@@ -4510,7 +4629,44 @@ MonoBehaviour:
   objectThree: {fileID: 113276599}
   objectFour: {fileID: 175388381}
   gateOpened: 0
-  finalPosition: {x: -6.951041, y: 5.095784, z: 13.07045}
+  finalPosition: {x: 0.5394149, y: 5.225, z: 6.370802}
+  bannerSound:
+    Guid:
+      Data1: 1478411923
+      Data2: 1115420112
+      Data3: 660376457
+      Data4: -891101395
+    Path: event:/Audio_Events/EscapeRoom/Metal Door/Metal Door
+--- !u!114 &733899634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733899631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1478411923
+      Data2: 1115420112
+      Data3: 660376457
+      Data4: -891101395
+    Path: event:/Audio_Events/EscapeRoom/Metal Door/Metal Door
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &746502982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff5583b2777f83143b7b3e1b68747a26,
@@ -4608,7 +4764,7 @@ GameObject:
   - component: {fileID: 847032183}
   - component: {fileID: 847032182}
   m_Layer: 0
-  m_Name: Sound
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4635,7 +4791,7 @@ MonoBehaviour:
       Data4: -950348519
     Path: event:/Audio_Events/EscapeRoom/Atmosphere/Escape Room Atmosphere
   Event: 
-  PlayEvent: 11
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -4911,6 +5067,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 147.40492, y: 500, z: 62.39066}
   m_Center: {x: -78.89868, y: 250, z: -0.00005494147}
+--- !u!1 &921320856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9a71c39f6d44c6a4fb604cfeea5a1756,
+    type: 3}
+  m_PrefabInstance: {fileID: 1247784859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &921320857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921320856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 202.36122, y: -18.8, z: 136.77419}
+  m_Center: {x: -0.000003814698, y: 82.5, z: -0.00012207031}
 --- !u!1001 &947121662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6358,6 +6533,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingTime: 240
   hubScene: Scene_HubWorld
+  bannerSound:
+    Guid:
+      Data1: 113866984
+      Data2: 1331079181
+      Data3: 1789887654
+      Data4: -549067402
+    Path: event:/Audio_Events/EscapeRoom/Door Smash/499308-Door_Break_-Kicking_in_Wooden_Door_Intense_Crush_-02_016499_
 --- !u!4 &1216805986
 Transform:
   m_ObjectHideFlags: 0
@@ -7473,12 +7655,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeAnimator: {fileID: 0}
-  button: {fileID: 0}
+  button: {fileID: 719078540}
   correctPosition: 0
   positionNumber: 270
   gate: {fileID: 733899633}
   trigger: {fileID: 0}
   otherCollider: {fileID: 0}
+  bannerSound:
+    Guid:
+      Data1: 1509493932
+      Data2: 1323654660
+      Data3: 2146913461
+      Data4: 1483190241
+    Path: event:/Audio_Events/EscapeRoom/Stone/Stone Slide
 --- !u!65 &1534430503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7505,6 +7694,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.03, z: 0.01}
   m_Center: {x: 0, y: 0.01, z: 0}
+--- !u!114 &1534430505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534430500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1509493932
+      Data2: 1323654660
+      Data3: 2146913461
+      Data4: 1483190241
+    Path: event:/Audio_Events/EscapeRoom/Stone/Stone Slide
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1574038316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7706,7 +7925,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 500.00015, y: 196, z: 74.3}
+  m_Size: {x: 500.00015, y: 196, z: 14}
   m_Center: {x: -250.00012, y: 425.1, z: -0.000061035156}
 --- !u!1001 &1600808032
 PrefabInstance:
@@ -9861,7 +10080,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973236620}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -1.3785, y: 3.085, z: -6.254}
+  m_LocalPosition: {x: -1.3785, y: 3.085, z: -6.323}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 2057581744}

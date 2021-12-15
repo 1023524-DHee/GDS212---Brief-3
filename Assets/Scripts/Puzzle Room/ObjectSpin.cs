@@ -6,6 +6,7 @@ using UnityEngine.Animations;
 using UnityEngine.UIElements;
 using UnityEngine.InputSystem;
 using HorrorVR;
+using FMODUnity;
 
 public class ObjectSpin : MonoBehaviour
 {
@@ -22,8 +23,9 @@ public class ObjectSpin : MonoBehaviour
     public PositonChecker gate;
     public Collider trigger;
     public Collider otherCollider;
+    public EventReference bannerSound;
 
-	/*private void Start()
+    /*private void Start()
 	{
         var L_Grip = actionAsset.FindActionMap("XRI LeftHand").FindAction("Grip");
         L_Grip.Enable();
@@ -36,7 +38,7 @@ public class ObjectSpin : MonoBehaviour
         
     }*/
 
-	public void IncreaseInt(/*InputAction.CallbackContext context*/)
+    public void IncreaseInt(/*InputAction.CallbackContext context*/)
     {
         //if (!canInteract) return;
         if (isSpinning) return;
@@ -128,6 +130,8 @@ public class ObjectSpin : MonoBehaviour
         }
 
         isSpinning = false;
+        RuntimeManager.PlayOneShot(bannerSound);
+
     }
 
 	/*private void OnTriggerEnter(Collider other)
