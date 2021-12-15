@@ -14,23 +14,30 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        currentTime = startingTime;
+        StartCoroutine(Timer_Coroutine());
+        //currentTime = startingTime;
     }
 
 
-    void Update()
+    //void Update()
+    //{
+    //    currentTime -= 1 * Time.deltaTime;
+
+    //    if (currentTime == 0.5 * startingTime)
+    //    {
+    //        Debug.Log("Half-Time Reached");
+    //    }
+
+    //    if (currentTime == 0 && noTimeEventCalled == false)
+    //    {
+    //        Debug.Log("Time's Up");
+    //        MovementTypeManager.current.Loadlevel(hubScene);
+    //    }
+    //}
+
+    private IEnumerator Timer_Coroutine()
     {
-        currentTime -= 1 * Time.deltaTime;
-
-        if (currentTime == 0.5 * startingTime)
-        {
-            Debug.Log("Half-Time Reached");
-        }
-
-        if (currentTime == 0 && noTimeEventCalled == false)
-        {
-            Debug.Log("Time's Up");
-            MovementTypeManager.current.Loadlevel(hubScene);
-        }
+        yield return new WaitForSeconds(startingTime);
+        MovementTypeManager.current.Loadlevel(hubScene);
     }
 }
