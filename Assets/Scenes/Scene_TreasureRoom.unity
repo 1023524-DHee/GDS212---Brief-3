@@ -1073,7 +1073,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74384365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.79, y: 3.13, z: -1.05}
+  m_LocalPosition: {x: -0.979, y: 3.13, z: 2.414}
   m_LocalScale: {x: 0.5, y: 0.25, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1379127015}
@@ -3945,6 +3945,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 605867801}
+        m_TargetAssemblyTypeName: HorrorVR.XRRigCircleCenter, Assembly-CSharp
+        m_MethodName: DoThing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!850595691 &495637376
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -5244,17 +5256,17 @@ PrefabInstance:
     - target: {fileID: 5005704542858918997, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.08627451
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5005704542858918997, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.07450981
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5005704542858918997, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.07450981
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5005704542858919002, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
@@ -5368,6 +5380,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3df989178a767094295a8bb8951ec976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &605867800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5005704542361647151, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
+    type: 3}
+  m_PrefabInstance: {fileID: 605867790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &605867801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605867800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4cd56175543b0947a1549702a672264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setPosition: {x: -1.9605851, y: 2.7433267, z: 23.870802}
+  setRotation: {x: 0, y: 180, z: 0}
 --- !u!1001 &611101716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7272,7 +7304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848835677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.59, y: 3.13, z: -1.05}
+  m_LocalPosition: {x: -4.037, y: 3.13, z: 2.4139998}
   m_LocalScale: {x: 0.5, y: 0.25, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1379127015}
@@ -7616,7 +7648,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh68182
+  m_Name: pb_Mesh3243938
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7948,7 +7980,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67672
+  m_Name: pb_Mesh3242924
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33153,8 +33185,13 @@ PrefabInstance:
       objectReference: {fileID: 605867792}
     - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
         type: 3}
+      propertyPath: camPlane
+      value: 
+      objectReference: {fileID: 605867796}
+    - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
+        type: 3}
       propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2600910087588466038, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
         type: 3}
@@ -33224,7 +33261,7 @@ PrefabInstance:
     - target: {fileID: 6971394157133970482, guid: 8b7a4c970d6a29748ba8e2dfc821659f,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 2327
+      value: 2330
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b7a4c970d6a29748ba8e2dfc821659f, type: 3}

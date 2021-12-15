@@ -9,7 +9,7 @@ namespace HorrorVR.TreasureRoom
     public class BobController : MonoBehaviour
     {
         [SerializeField] private Transform bob, torch, player;
-        [SerializeField] private Animator bobAnim;
+        [SerializeField] private Animator bobAnim, camPlane;
         [SerializeField] private BobFootsteps footsteps;
         [SerializeField] private Vector2 minMaxSpeed;
         [SerializeField] private float furthestDistance, inRangeDistance, atPlayerDistance, angleThreshold;
@@ -127,6 +127,7 @@ namespace HorrorVR.TreasureRoom
             //state = BobState.AtPlayer;
             //atPlayerWaitTime = 0.75f;
             FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 3", bob.gameObject);
+            camPlane.SetTrigger ("HitRed");
             Retreat ();
             attacking = false;
         }
