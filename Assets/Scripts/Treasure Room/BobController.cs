@@ -33,7 +33,7 @@ namespace HorrorVR.TreasureRoom
             }
         }
         private float timeToStagger, idleWaitTime, atPlayerWaitTime;
-        private int health = 1;
+        private int health = 4;
         private bool attacking = false;
         private FMOD.Studio.EventInstance music;
 
