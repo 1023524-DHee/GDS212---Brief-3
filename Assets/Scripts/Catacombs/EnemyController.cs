@@ -9,6 +9,10 @@ namespace HorrorVR.Catacombs
 {
     public class EnemyController : MonoBehaviour
     {
+        [SerializeField]
+        private int maxHealth = 5;
+        private int currentHealth;
+
         [Header("Components")]
 
         [SerializeField]
@@ -33,52 +37,47 @@ namespace HorrorVR.Catacombs
         [SerializeField]
         private bool unpauseOnDeath = true;
 
+        private bool isMovingToPoint = true;
+
         // Movement
         private Vector2 input;
         private Vector2 smoothedInput;
         private Vector2 previousInput;
         private Vector3 wantedPosition;
-        private bool isMovingToTargetLocation = true;
 
         // Head looking
         private bool lookAtTarget = true;
         private Vector3 lookAtPosition;
         private float lookAtWeight = 0f;
 
-        // Start is called before the first frame update
-        void Start()
+        private void OnEnable()
         {
-            wantedPosition = targetPosition.position;//transform.position;
-
             lookAtPosition = lookTarget.position;
+
+            currentHealth = maxHealth;
         }
 
         // Update is called once per frame
         void Update()
         {
+            if (IsDead) return;
+
+            wantedPosition = targetPosition.position;
+
             GetInput();
             Movement();
 
             // Look at the position we want to be in
             Vector3 lookPosition = lookTarget ? lookAtPosition : wantedPosition;
-            Vector3 from = new Vector3(transform.position.x, 0f, transform.position.z);
+            Vector3 from = new Vector3(wantedPosition.x, 0f, wantedPosition.z);
             Vector3 to = new Vector3(lookPosition.x, 0f, lookPosition.z);
             transform.rotation = Quaternion.LookRotation(to - from);
 
-            if (isMovingToTargetLocation)
-            {
-                if (animator.GetCurrentAnimatorStateInfo(0).IsName("Sword Idle And Rotate Blend Tree") && !animator.IsInTransition(0))
-                {
-                    isMovingToTargetLocation = false;
-                }
-            }
+            if (isMovingToPoint) return;
 
-            if (!isMovingToTargetLocation)
+            if (!isAttacking)
             {
-                if (!isAttacking)
-                {
-                    StartCoroutine(AttackSequence(attackPatterns[Random.Range(0, attackPatterns.Length)]));
-                }
+                StartCoroutine(AttackSequence(attackPatterns[Random.Range(0, attackPatterns.Length)]));
             }
         }
 
@@ -119,7 +118,7 @@ namespace HorrorVR.Catacombs
             // If we move from inside of the walking dead zone (set by animator) to outside of it, then we set the start angle
             if (smoothedInput.magnitude >= 0.2f && previousInput.magnitude < 0.2f)
             {
-                animator.SetFloat("WalkStartAngle", Vector2.SignedAngle(Vector2.up, new Vector2(smoothedInput.x, smoothedInput.y)));// - transform.eulerAngles.y);
+                animator.SetFloat("WalkStartAngle", Vector2.SignedAngle(Vector2.up, new Vector2(-smoothedInput.x, smoothedInput.y)));// - transform.eulerAngles.y);
             }
 
             // Set some animation values
@@ -130,7 +129,7 @@ namespace HorrorVR.Catacombs
             // If we move from out of the walking dead zone (set by animator) to inside it, then we set the stop angle
             if (smoothedInput.magnitude < 0.2f && previousInput.magnitude >= 0.2f)
             {
-                animator.SetFloat("WalkStopAngle", Vector2.SignedAngle(Vector2.up, new Vector2(smoothedInput.x, smoothedInput.y)));// - transform.eulerAngles.y);
+                animator.SetFloat("WalkStopAngle", Vector2.SignedAngle(Vector2.up, new Vector2(-smoothedInput.x, smoothedInput.y)));// - transform.eulerAngles.y);
             }
 
             if (lookAtTarget)
@@ -204,25 +203,19 @@ namespace HorrorVR.Catacombs
 
         public void GetInput()
         {
-            if (Vector3.Distance(transform.position, wantedPosition) >= 0.5f)
+            if (Vector3.Distance(transform.position, wantedPosition) >= 0.75f)
             {
                 Vector3 diff = wantedPosition - transform.position;
 
-                // Cos and Sin of player rotation
-                float s = Mathf.Sin(transform.eulerAngles.y * Mathf.Deg2Rad + Mathf.PI);
-                float c = Mathf.Cos(transform.eulerAngles.y * Mathf.Deg2Rad + Mathf.PI);
+                Vector3 dir = Quaternion.Euler(0f, -transform.eulerAngles.y, 0f) * diff;
 
-                // Rotate the difference by the player rotation
-                // We rotate it because the animator does not know the rotation of the object, so we have to do it ourselves
-                diff.x = diff.x * c - diff.z * s;
-                diff.z = diff.x * s + diff.z * c;
-
-                input = -new Vector2(diff.x, diff.z);
+                input = new Vector2(dir.x, dir.z);
                 input = Mathf.Clamp(input.magnitude, 0f, 1f) * input.normalized;
             }
             else
             {
                 input = Vector2.zero;
+                isMovingToPoint = false;
             }
         }
 
@@ -231,15 +224,14 @@ namespace HorrorVR.Catacombs
         {
             get
             {
-                return health <= 0f;
+                return currentHealth <= 0;
             }
         }
 
-        float health = 1f;
-        public void Damage(float damage)
+        public void Damage(int damage)
         {
-            health -= damage;
-            if (health <= 0f)
+            currentHealth -= damage;
+            if (currentHealth <= 0)
             {
                 StopAllCoroutines();
                 animator.SetFloat("DeathFloat", Random.Range(0, 5));

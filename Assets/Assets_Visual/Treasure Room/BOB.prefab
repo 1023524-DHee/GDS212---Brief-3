@@ -3967,7 +3967,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1372d3a585c419d499c594d0a7fa47bb, type: 2}
+  - {fileID: 2100000, guid: bf5aa2c555f24004cb9ff3a8d38415df, type: 2}
   - {fileID: 2100000, guid: f600701df9872724cb7e724b2aa6d05d, type: 2}
   - {fileID: 2100000, guid: 730ff2409105e5a448311fd14ceaa423, type: 2}
   m_StaticBatchInfo:
@@ -4213,6 +4213,7 @@ GameObject:
   - component: {fileID: 4975014918085742950}
   - component: {fileID: 1435207238363433756}
   - component: {fileID: 1657120903}
+  - component: {fileID: 8901732973736606644}
   m_Layer: 0
   m_Name: B.O.B_V1.5.1
   m_TagString: Untagged
@@ -4229,7 +4230,7 @@ Transform:
   m_GameObject: {fileID: 5638820201831418844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
   m_Children:
   - {fileID: 4159664587965121016}
   - {fileID: 2410305892588973764}
@@ -4273,21 +4274,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef9ec1d89423964393af66089a44dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HorrorVR.TreasureRoom.BobController, Assembly-CSharp
-        m_MethodName: AttackComplete
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  Events: []
+--- !u!114 &8901732973736606644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5638820201831418844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0565ee071c3991d4583f475a1ab086f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeRange: {x: 0, y: 0}
+  pitchRange: {x: 0, y: 0}
+  canPlay: 1
 --- !u!1 &5720738539940646587
 GameObject:
   m_ObjectHideFlags: 0
@@ -4376,7 +4378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5738668539785022427}
   m_LocalRotation: {x: -0.000000029802326, y: 0.00000008940697, z: 0.7071067, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.0018615292, z: 0.0007181825}
+  m_LocalPosition: {x: 0, y: 0.015, z: 0.0007}
   m_LocalScale: {x: 0.84999985, y: 0.8499999, z: 0.84999967}
   m_Children:
   - {fileID: 9067279019825038187}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 namespace HorrorVR
 {
@@ -8,8 +9,14 @@ namespace HorrorVR
     {
         public GameObject door;
         public bool isNegative;
+        public float openTime = 3;
 
-        bool isOpen = false;
+        public bool isOpen = false;
+        public DoorGroup doorGroupParent;
+        public bool doorGroupCheckIsOpen;
+        public GameObject bats;
+
+        public FMODUnity.EventReference doorSound;
 
         private Quaternion initialRotation;
 
@@ -21,21 +28,43 @@ namespace HorrorVR
 
         private void OnTriggerEnter(Collider other)
         {
-            if(isOpen == false)
+            if(!isOpen)
             {
-                StartCoroutine(OpenDoor());
-                isOpen = true;
+                if (doorGroupParent != null)
+                {
+                    doorGroupCheckIsOpen = true;
+                    doorGroupParent.CheckOpenDoor();
+                }
+                else if (doorGroupParent == null)
+                {
+                    OpenDoor();
+                    
+                }
             }
+            
         }
 
-        IEnumerator OpenDoor()
+        public void OpenDoor()
         {
+            StartCoroutine(OpenDoor_Coroutine());
+            var instance = RuntimeManager.CreateInstance(doorSound);
+            instance.setVolume(30f);
+            RuntimeManager.AttachInstanceToGameObject(instance, transform);
+            instance.start();
+            instance.release();
+            if (bats != null)
+                bats.SetActive(true);
+        }
+
+        IEnumerator OpenDoor_Coroutine()
+        {
+            isOpen = true;
             Quaternion newAngle = Quaternion.Euler(0, initialRotation.y + (isNegative ? -90f : 90f), 0);
             float startTime = Time.time;
 
-            while(Time.time < startTime + 3f)
+            while(Time.time < startTime + openTime)
             {
-                door.transform.rotation = Quaternion.Lerp(initialRotation, newAngle, (Time.time - startTime) / 3f);
+                door.transform.rotation = Quaternion.Lerp(initialRotation, newAngle, (Time.time - startTime) / openTime);
                 yield return null;
             }
         }
