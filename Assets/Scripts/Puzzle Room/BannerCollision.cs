@@ -46,8 +46,10 @@ namespace HorrorVR
             while (Time.time < startTime + 3f)
             {
                 transform.position = Vector3.Lerp(initialPosition, endPosition, (Time.time - startTime) / 3f);
-                yield break;
+                yield return null;
             }
+
+            instance.stop ();
         }
     }
 }
