@@ -14,6 +14,7 @@ namespace HorrorVR
         public bool isOpen = false;
         public DoorGroup doorGroupParent;
         public bool doorGroupCheckIsOpen;
+        public GameObject bats;
 
         public FMODUnity.EventReference doorSound;
 
@@ -37,6 +38,7 @@ namespace HorrorVR
                 else if (doorGroupParent == null)
                 {
                     OpenDoor();
+                    
                 }
             }
             
@@ -46,10 +48,12 @@ namespace HorrorVR
         {
             StartCoroutine(OpenDoor_Coroutine());
             var instance = RuntimeManager.CreateInstance(doorSound);
-            instance.setVolume(50f);
+            instance.setVolume(30f);
             RuntimeManager.AttachInstanceToGameObject(instance, transform);
             instance.start();
             instance.release();
+            if (bats != null)
+                bats.SetActive(true);
         }
 
         IEnumerator OpenDoor_Coroutine()

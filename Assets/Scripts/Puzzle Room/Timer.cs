@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using HorrorVR.Core;
+using FMODUnity;
 
 public class Timer : MonoBehaviour
 {
     [Tooltip("How long the timer will last.")]
     public float startingTime;
+    public Animator fader;
     float currentTime;
     bool noTimeEventCalled = false;
     [Tooltip("Name of the hub scene")]
     public string hubScene;
+    public EventReference bannerSound;
 
     void Start()
     {
@@ -38,6 +41,11 @@ public class Timer : MonoBehaviour
     private IEnumerator Timer_Coroutine()
     {
         yield return new WaitForSeconds(startingTime);
-        MovementTypeManager.current.Loadlevel(hubScene);
+        fader.SetTrigger ("FadeRed");
+        FMODUnity.RuntimeManager.PlayOneShot ("event:/Audio_Events/BOB/Roar/BOB Roar 3");
+        yield return new WaitForSeconds (1.5f);
+        //MovementTypeManager.current.Loadlevel(hubScene);
+        MovementTypeManager.current.ReloadLevel();
+        RuntimeManager.PlayOneShot(bannerSound);
     }
 }
