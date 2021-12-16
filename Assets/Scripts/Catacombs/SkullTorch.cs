@@ -26,5 +26,13 @@ namespace HorrorVR
                 }
             }
         }
+
+        public void TurnOffTorchPleaseAndThangkYou ()
+        {
+            foreach (GameObject torch in listOfTorches)
+            {
+                torch.SetActive (false);
+            }
+        }
     }
 }
