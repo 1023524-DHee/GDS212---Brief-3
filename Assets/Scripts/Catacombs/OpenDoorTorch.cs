@@ -52,7 +52,8 @@ namespace HorrorVR
             RuntimeManager.AttachInstanceToGameObject(instance, transform);
             instance.start();
             instance.release();
-            bats.SetActive(true);
+            if (bats != null)
+                bats.SetActive(true);
         }
 
         IEnumerator OpenDoor_Coroutine()

@@ -6711,7 +6711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 1411294874}
   isNegative: 0
-  openTime: 20
+  openTime: 15
   isOpen: 0
   doorGroupParent: {fileID: 1400057857}
   doorGroupCheckIsOpen: 0
@@ -8189,7 +8189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 670762879}
   isNegative: 1
-  openTime: 20
+  openTime: 15
   isOpen: 0
   doorGroupParent: {fileID: 1400057857}
   doorGroupCheckIsOpen: 0
@@ -8331,7 +8331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4856560500797912, guid: a96e5f683447c4a44a219f2964f4eb46, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4856560500797912, guid: a96e5f683447c4a44a219f2964f4eb46, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9627,7 +9627,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-57520
+  m_Name: pb_Mesh55174
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27347,7 +27347,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1613026749
 PrefabInstance:
@@ -34320,7 +34320,7 @@ PrefabInstance:
     - target: {fileID: 5005704542361647154, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5005704542361647154, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
