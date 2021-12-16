@@ -16388,7 +16388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1245b66a56538374aad2712975fd6418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 5
+  startingTime: 240
   fader: {fileID: 630757083}
   hubScene: Scene_HubWorld
   bannerSound:

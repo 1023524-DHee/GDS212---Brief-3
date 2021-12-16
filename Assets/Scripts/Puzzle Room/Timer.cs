@@ -44,7 +44,8 @@ public class Timer : MonoBehaviour
         fader.SetTrigger ("FadeRed");
         FMODUnity.RuntimeManager.PlayOneShot ("event:/Audio_Events/BOB/Roar/BOB Roar 3");
         yield return new WaitForSeconds (1.5f);
-        MovementTypeManager.current.Loadlevel(hubScene);
+        //MovementTypeManager.current.Loadlevel(hubScene);
+        MovementTypeManager.current.ReloadLevel();
         RuntimeManager.PlayOneShot(bannerSound);
     }
 }
