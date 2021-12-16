@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     [Tooltip("How long the timer will last.")]
     public float startingTime;
+    public Animator fader;
     float currentTime;
     bool noTimeEventCalled = false;
     [Tooltip("Name of the hub scene")]
@@ -40,6 +41,9 @@ public class Timer : MonoBehaviour
     private IEnumerator Timer_Coroutine()
     {
         yield return new WaitForSeconds(startingTime);
+        fader.SetTrigger ("FadeRed");
+        FMODUnity.RuntimeManager.PlayOneShot ("event:/Audio_Events/BOB/Roar/BOB Roar 3");
+        yield return new WaitForSeconds (1.5f);
         MovementTypeManager.current.Loadlevel(hubScene);
         RuntimeManager.PlayOneShot(bannerSound);
     }

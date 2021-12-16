@@ -49,7 +49,7 @@ namespace HorrorVR
                 yield return null;
             }
 
-            instance.stop ();
+            instance.stop (FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
     }
 }
