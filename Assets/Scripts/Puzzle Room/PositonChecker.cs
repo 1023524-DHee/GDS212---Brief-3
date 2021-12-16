@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class PositonChecker : MonoBehaviour
 {
@@ -12,9 +13,10 @@ public class PositonChecker : MonoBehaviour
 
     private Vector3 initialPosition;
     public Vector3 finalPosition;
+    public EventReference bannerSound;
 
 
-	private void Start()
+    private void Start()
 	{
         initialPosition = transform.position;
 	}
@@ -25,6 +27,7 @@ public class PositonChecker : MonoBehaviour
             && objectThree.correctPosition == true && objectFour.correctPosition == true && gateOpened == false)
         {
             OpenGate();
+            RuntimeManager.PlayOneShot(bannerSound);
         }
     }
 
