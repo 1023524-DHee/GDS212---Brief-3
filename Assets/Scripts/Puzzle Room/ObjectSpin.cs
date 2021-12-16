@@ -64,6 +64,6 @@ public class ObjectSpin : MonoBehaviour
         }
 
         isSpinning = false;
-        instance.stop(STOP_MODE.ALLOWFADEOUT);
+        instance.stop(STOP_MODE.IMMEDIATE);
     }
 }
