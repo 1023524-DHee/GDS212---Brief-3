@@ -3780,7 +3780,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60834
+  m_Name: pb_Mesh136456
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6453,6 +6453,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 220537920}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &220537922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220537921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 338492309
+      Data2: 1281083089
+      Data3: 125949577
+      Data4: -16569307
+    Path: event:/Audio_Events/EscapeRoom/Flames Alit/Fire Lite
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &222887684
 GameObject:
   m_ObjectHideFlags: 0
@@ -12598,6 +12628,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 49202566}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &683175095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683175094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 338492309
+      Data2: 1281083089
+      Data3: 125949577
+      Data4: -16569307
+    Path: event:/Audio_Events/EscapeRoom/Flames Alit/Fire Lite
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &688088631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15347,6 +15407,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 872491122}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &872491124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872491123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 338492309
+      Data2: 1281083089
+      Data3: 125949577
+      Data4: -16569307
+    Path: event:/Audio_Events/EscapeRoom/Flames Alit/Fire Lite
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &891012813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17862,6 +17952,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 964972660}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &964972662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964972661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 338492309
+      Data2: 1281083089
+      Data3: 125949577
+      Data4: -16569307
+    Path: event:/Audio_Events/EscapeRoom/Flames Alit/Fire Lite
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &974252340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19110,7 +19230,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60924
+  m_Name: pb_Mesh136552
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19844,6 +19964,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1108694600}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1108694602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108694601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 338492309
+      Data2: 1281083089
+      Data3: 125949577
+      Data4: -16569307
+    Path: event:/Audio_Events/EscapeRoom/Flames Alit/Fire Lite
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1111573889
 GameObject:
   m_ObjectHideFlags: 0
@@ -28484,7 +28634,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61882
+  m_Name: pb_Mesh137542
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30304,6 +30454,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1727920825}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1727920827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727920826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 338492309
+      Data2: 1281083089
+      Data3: 125949577
+      Data4: -16569307
+    Path: event:/Audio_Events/EscapeRoom/Flames Alit/Fire Lite
+  Event: 
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1735747814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34325,7 +34505,7 @@ PrefabInstance:
     - target: {fileID: 5005704542361647154, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -2.205
       objectReference: {fileID: 0}
     - target: {fileID: 5005704542361647154, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
@@ -34335,7 +34515,7 @@ PrefabInstance:
     - target: {fileID: 5005704542361647154, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5
+      value: 2.616
       objectReference: {fileID: 0}
     - target: {fileID: 5005704542361647154, guid: d9d6d86672c692a4c861b3b7c7bbf41a,
         type: 3}

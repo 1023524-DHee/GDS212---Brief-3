@@ -13,7 +13,7 @@ namespace HorrorVR
         {
             if (Torch.gameObject.tag == "Torch")
             {
-                torchGO.SetActive(true);
+                if (torchGO != null) torchGO.SetActive(true);
                 StopCoroutine(TorchCoroutine());
             }
         }
@@ -26,7 +26,7 @@ namespace HorrorVR
 
         IEnumerator TorchCoroutine()
         {
-            torchGO.SetActive(true);
+            if(torchGO != null) torchGO.SetActive(true);
             float startTime = Time.time;
 
             while(Time.time < (startTime + torchTime))
