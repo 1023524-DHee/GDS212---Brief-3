@@ -6,6 +6,8 @@ using UnityEngine.Animations;
 using UnityEngine.UIElements;
 using UnityEngine.InputSystem;
 using HorrorVR;
+using FMODUnity;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 public class ObjectSpin : MonoBehaviour
 {
@@ -22,21 +24,9 @@ public class ObjectSpin : MonoBehaviour
     public PositonChecker gate;
     public Collider trigger;
     public Collider otherCollider;
+    public EventReference spinSound;
 
-	/*private void Start()
-	{
-        var L_Grip = actionAsset.FindActionMap("XRI LeftHand").FindAction("Grip");
-        L_Grip.Enable();
-        L_Grip.performed += IncreaseInt;
-
-        var R_Grip = actionAsset.FindActionMap("XRI RightHand").FindAction("Grip");
-        R_Grip.Enable();
-        R_Grip.performed += IncreaseInt;
-
-        
-    }*/
-
-	public void IncreaseInt(/*InputAction.CallbackContext context*/)
+    public void IncreaseInt(/*InputAction.CallbackContext context*/)
     {
         //if (!canInteract) return;
         if (isSpinning) return;
@@ -46,61 +36,6 @@ public class ObjectSpin : MonoBehaviour
         Debug.Log(spinAmount);
     }
 
-    //private void Update()
-    //{
-    //    switch (spinAmount)
-    //    {
-    //        case 0:
-    //            if(positionNumber == 0)
-    //            {
-    //                correctPosition = true;
-    //            }
-    //            break;
-
-    //        case 1:
-    //            //0-90 
-    //            cubeAnimator.Play("CubeAnim0-90");
-    //            if (positionNumber == 90)
-    //            {
-    //                correctPosition = true;
-    //            }
-    //            break;
-
-    //        case 2:
-    //            //90-180
-    //            cubeAnimator.Play("CubeAnim90-180");
-    //            if (positionNumber == 180)
-    //            {
-    //                correctPosition = true;
-    //            }
-    //            break;
-
-    //        case 3:
-    //            //180-270 
-    //            cubeAnimator.Play("CubeAnim180-270");
-    //            if (positionNumber == 270)
-    //            {
-    //                correctPosition = true;
-    //            }
-    //            break;
-
-    //        case 4:
-    //            //270-360
-    //            cubeAnimator.Play("CubeAnim270-0");
-    //            if (positionNumber == 0)
-    //            {
-    //                correctPosition = true;
-    //            }
-    //            spinAmount = 0;
-    //            break;
-    //    }
-
-    //    if (gate.gateOpened == true)
-    //    {
-    //        correctPosition = false;
-    //    }
-    //}
-
     public IEnumerator SpinTotem_Coroutine()
     {
         isSpinning = true;
@@ -108,16 +43,17 @@ public class ObjectSpin : MonoBehaviour
         currentSpinPosition = (currentSpinPosition + 90)%360;
         Quaternion newRotation = Quaternion.Euler(0f, currentSpinPosition, 0f);
 
+        var instance = RuntimeManager.CreateInstance(spinSound);
+        RuntimeManager.AttachInstanceToGameObject(instance, transform);
+        instance.setVolume(1f);
+        instance.start();
+        
 		while (Time.time < (startTime + 1f))
 		{
 			transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, (Time.time - startTime));
 			yield return null;
 		}
 
-		//transform.Rotate(new Vector3(0, transform.rotation.y + 90f, 0f));
-		//yield return new WaitForSeconds(0.5f);
-
-		
         if (currentSpinPosition == positionNumber)
         {
             correctPosition = true;
@@ -128,15 +64,6 @@ public class ObjectSpin : MonoBehaviour
         }
 
         isSpinning = false;
+        instance.stop(STOP_MODE.IMMEDIATE);
     }
-
-	/*private void OnTriggerEnter(Collider other)
-	{
-        canInteract = true;
-	}
-
-	private void OnTriggerExit(Collider other)
-	{
-        canInteract = false;
-    }*/
 }
