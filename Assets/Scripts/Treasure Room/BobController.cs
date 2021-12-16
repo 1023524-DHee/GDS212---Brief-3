@@ -33,7 +33,8 @@ namespace HorrorVR.TreasureRoom
             }
         }
         private float timeToStagger, idleWaitTime, atPlayerWaitTime;
-        private int health = 4;
+        private int bobHealth = 4;
+        private int playerHealth = 2;
         private bool attacking = false;
         private FMOD.Studio.EventInstance music;
 
@@ -69,7 +70,7 @@ namespace HorrorVR.TreasureRoom
                                 FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 2", bob.gameObject);
                                 attacking = false;
 
-                                if (--health <= 0)
+                                if (--bobHealth <= 0)
                                 {
                                     state = BobState.Defeated;
                                     bobAnim.SetTrigger ("Die");
@@ -89,7 +90,7 @@ namespace HorrorVR.TreasureRoom
                         else
                             timeToStagger = Mathf.Min (timeToStagger + Time.deltaTime, 3);
 
-                        print ($"At Player: {-bob.localPosition.z <= atPlayerDistance}, Attacking: {attacking}");
+                        //print ($"At Player: {-bob.localPosition.z <= atPlayerDistance}, Attacking: {attacking}");
                         if (-bob.localPosition.z <= atPlayerDistance && !attacking)
                         {
                             print ("Starting Attack");
@@ -123,13 +124,22 @@ namespace HorrorVR.TreasureRoom
 
         public void AttackComplete ()
         {
+            if (state != BobState.Approaching) return;
             print ("Attack Successful");
             //state = BobState.AtPlayer;
             //atPlayerWaitTime = 0.75f;
-            FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 3", bob.gameObject);
-            camPlane.SetTrigger ("HitRed");
-            Retreat ();
-            attacking = false;
+            print (playerHealth - 1);
+            if (--playerHealth <= 0)
+            {
+                StartCoroutine (PlayerDeath ());
+            }
+            else
+            {
+                camPlane.SetTrigger ("HitRed");
+                RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 3", bob.gameObject);
+                Retreat ();
+                attacking = false;
+            }
         }
 
         private void Approach ()
@@ -180,6 +190,16 @@ namespace HorrorVR.TreasureRoom
         private void StopMusic ()
         {
             music.stop (FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+
+        private IEnumerator PlayerDeath ()
+        {
+            state = BobState.Defeated;
+            camPlane.SetTrigger ("FadeRed");
+            RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Breath/BOB Breathing 2", bob.gameObject);
+            bobAnim.SetTrigger ("PlayerDeath");
+            yield return new WaitForSeconds (2);
+            Core.MovementTypeManager.current.ReloadLevel ();
         }
     }
 
