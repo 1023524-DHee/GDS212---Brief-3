@@ -2577,6 +2577,7 @@ GameObject:
   - component: {fileID: 366459628880907193}
   - component: {fileID: 310783114925669593}
   - component: {fileID: 361502588703539279}
+  - component: {fileID: 8620522869246747399}
   m_Layer: 0
   m_Name: Enemy_Skeleton_02
   m_TagString: Untagged
@@ -2641,6 +2642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 163f054388a0a8f43b16cd96638898b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 5
   animator: {fileID: 310783114925669593}
   playerPosition: {fileID: 0}
   lookTarget: {fileID: 0}
@@ -2650,6 +2652,27 @@ MonoBehaviour:
   - {fileID: 8052068605153340371, guid: f2d4c2acd9fd2534eaa7790409c10b00, type: 3}
   - {fileID: 8052068605153340371, guid: c8e4bcf099419d44ab2258e947479da7, type: 3}
   isAttacking: 0
+  unpauseOnDeath: 1
+--- !u!114 &8620522869246747399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362424634828081919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a89c1065984c354f8282dccc35fddea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepEvent:
+    Guid:
+      Data1: 620146428
+      Data2: 1128342675
+      Data3: -1223123280
+      Data4: -694975282
+    Path: event:/Audio_Events/Catacombs/Skeleton/Skeleton-Walk
+  footstepPosition: {fileID: 366088508773390819}
 --- !u!1 &362434176844230911
 GameObject:
   m_ObjectHideFlags: 0
