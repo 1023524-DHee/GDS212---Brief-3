@@ -43,6 +43,9 @@ namespace HorrorVR
             anim.SetBool ("Chase", false);
             anim.SetTrigger ("Die");
             fader.SetTrigger ("FadeRed");
+
+            yield return new WaitForSeconds (1.5f);
+            Core.MovementTypeManager.current.ReloadLevel ();
             //FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Breath/BOB Breathing 2", gameObject);
         }
 
@@ -51,7 +54,6 @@ namespace HorrorVR
             if (other.CompareTag ("Player"))
             {
                 walkin = false;
-                MovementTypeManager.current.Loadlevel(SceneManager.GetActiveScene().name);
             }
         }
     }

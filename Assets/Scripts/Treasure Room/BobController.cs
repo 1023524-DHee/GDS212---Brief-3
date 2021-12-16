@@ -76,6 +76,7 @@ namespace HorrorVR.TreasureRoom
                                     bobAnim.SetTrigger ("Die");
                                     FMODUnity.RuntimeManager.PlayOneShotAttached ("event:/Audio_Events/BOB/Roar/BOB Roar 4", bob.gameObject);
                                     DeathEvent?.Invoke ();
+                                    StartCoroutine (LoadHub ());
                                     StopMusic ();
                                 }
                                 else
@@ -120,6 +121,12 @@ namespace HorrorVR.TreasureRoom
                     //bobAnim.SetTrigger ("Die");
                     break;
             }
+        }
+
+        IEnumerator LoadHub ()
+        {
+            yield return new WaitForSeconds (8.5f);
+            Core.MovementTypeManager.current.Loadlevel ("Scene_HubWorld");
         }
 
         public void AttackComplete ()
