@@ -430,11 +430,11 @@ MonoBehaviour:
   perpetrator: {fileID: 0}
   succeedEvent:
     Guid:
-      Data1: 1426685423
-      Data2: 1135737533
-      Data3: 1779146678
-      Data4: -747441883
-    Path: event:/Audio_Events/Player/Sword/SwordStoneImpact
+      Data1: 531266757
+      Data2: 1151177168
+      Data3: -1462669949
+      Data4: -1838888231
+    Path: event:/Audio_Events/Catacombs/Sword/Sword-HitSkeleton
   failEvent:
     Guid:
       Data1: 0

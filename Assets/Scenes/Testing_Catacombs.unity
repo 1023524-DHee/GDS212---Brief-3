@@ -354,6 +354,7 @@ MonoBehaviour:
   timeToFullyHeal: 3
   timeBeforeHeal: 3
   damagePerHit: 10
+  lerpSpeed: 5
   playerDamageVolume: {fileID: 1316774466}
 --- !u!1 &512870707
 GameObject:
@@ -538,7 +539,7 @@ Transform:
   m_LocalScale: {x: 2.3, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &617136895
 MonoBehaviour:
@@ -563,7 +564,7 @@ PrefabInstance:
     - target: {fileID: 7132816071821314857, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7132816071821314857, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
         type: 3}
@@ -1409,7 +1410,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &361502588708828301
 PrefabInstance:
@@ -1533,7 +1534,7 @@ PrefabInstance:
     - target: {fileID: 7132816071821314857, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7132816071821314857, guid: 841e42e7c66aea74eb7d3ad774c32fe0,
         type: 3}

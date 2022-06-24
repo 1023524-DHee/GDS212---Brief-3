@@ -612,18 +612,18 @@ MonoBehaviour:
   perpetrator: {fileID: 0}
   succeedEvent:
     Guid:
-      Data1: 1426685423
-      Data2: 1135737533
-      Data3: 1779146678
-      Data4: -747441883
-    Path: event:/Audio_Events/Player/Sword/SwordStoneImpact
+      Data1: -1833072676
+      Data2: 1131282581
+      Data3: -1789885014
+      Data4: 1666274983
+    Path: event:/Audio_Events/Catacombs/Skeleton/Skeleon-Block
   failEvent:
     Guid:
-      Data1: -819288167
-      Data2: 1237539204
-      Data3: -1913457512
-      Data4: -581113846
-    Path: event:/Audio_Events/Player/Damage/DamagePlayer
+      Data1: 1825989086
+      Data2: 1084146380
+      Data3: -1189232754
+      Data4: -1624384139
+    Path: event:/Audio_Events/Catacombs/Sword/Sword-HitPlayer
   minimumDistance: 0.6
   minimumRotation: 40
 --- !u!95 &7551854876125340559
